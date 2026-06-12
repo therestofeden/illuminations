@@ -15,6 +15,17 @@ Companion to the writing at *Il Divano Color Senape*.
 
 *(more to come)*
 
+## Live site
+
+A landing page plus the interactive dashboards deploy to **GitHub Pages** via
+`.github/workflows/deploy-pages.yml` (no manual build — it bundles `site/index.html`
+with each study's `docs/` and publishes on every push to `main`).
+
+To turn it on **after making the repo public**: *Settings → Pages → Source =
+"GitHub Actions"*. The site then goes live at `https://<user>.github.io/illuminations/`,
+with the trophic explorer at `…/trophic-structure/`. (GitHub Pages is free only on
+public repos; while the repo is private the workflow stays dormant.)
+
 ## How this repo is organised
 
 ```
