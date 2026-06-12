@@ -1,0 +1,8 @@
+# Raw OECD ICIO data — large, redistribute per OECD terms. Fetch via download_data.sh
+icio2023/
+icio_data/
+*.zip
+
+__pycache__/
+*.pyc
+.DS_Store

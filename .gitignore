@@ -1,0 +1,26 @@
+# Raw third-party datasets — large; fetch via each study's download script
+**/icio2023/
+**/icio_data/
+*.zip
+
+# Python
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (used only to vendor D3 when rebuilding the dashboard)
+**/node_modules/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local scratch
+*.svg
+_check.js
+album_preview.png
+dash_network.png
+dash_ranking.png
+dash_scatter.png

@@ -1,0 +1,1351 @@
+code,country,archetype,sector,level,level_global,output_share
+DEU,Germany,Deep manufacturing,A01_02,1.7262,2.1701,0.009555
+DEU,Germany,Deep manufacturing,A03,1.8017,2.5427,6.7e-05
+DEU,Germany,Deep manufacturing,B05_06,1.6404,2.397,0.001098
+DEU,Germany,Deep manufacturing,B07_08,1.7339,2.2763,0.001033
+DEU,Germany,Deep manufacturing,B09,1.6792,2.1522,4e-05
+DEU,Germany,Deep manufacturing,C10T12,2.0337,2.6052,0.03058
+DEU,Germany,Deep manufacturing,C13T15,1.7613,2.4415,0.003649
+DEU,Germany,Deep manufacturing,C16,1.9482,2.4919,0.003909
+DEU,Germany,Deep manufacturing,C17_18,1.8795,2.4487,0.008826
+DEU,Germany,Deep manufacturing,C19,1.6019,2.7523,0.008903
+DEU,Germany,Deep manufacturing,C20,1.6708,2.4125,0.021393
+DEU,Germany,Deep manufacturing,C21,1.7351,2.3209,0.011267
+DEU,Germany,Deep manufacturing,C22,1.7171,2.38,0.013223
+DEU,Germany,Deep manufacturing,C23,1.7472,2.2777,0.007925
+DEU,Germany,Deep manufacturing,C24,1.8372,2.9489,0.016131
+DEU,Germany,Deep manufacturing,C25,1.757,2.3324,0.021455
+DEU,Germany,Deep manufacturing,C26,1.563,2.1951,0.015017
+DEU,Germany,Deep manufacturing,C27,1.6751,2.3374,0.016826
+DEU,Germany,Deep manufacturing,C28,1.7654,2.3969,0.043045
+DEU,Germany,Deep manufacturing,C29,1.8414,2.5499,0.063849
+DEU,Germany,Deep manufacturing,C30,1.8111,2.6431,0.008818
+DEU,Germany,Deep manufacturing,C31T33,1.6872,2.2873,0.016263
+DEU,Germany,Deep manufacturing,D,1.7564,2.1447,0.024189
+DEU,Germany,Deep manufacturing,E,1.824,2.0873,0.011796
+DEU,Germany,Deep manufacturing,F,1.7639,2.1881,0.055836
+DEU,Germany,Deep manufacturing,G,1.6311,1.8727,0.086334
+DEU,Germany,Deep manufacturing,H49,1.8002,2.1066,0.017938
+DEU,Germany,Deep manufacturing,H50,1.7973,2.7327,0.005757
+DEU,Germany,Deep manufacturing,H51,1.9229,2.5189,0.003985
+DEU,Germany,Deep manufacturing,H52,1.9646,2.3102,0.022902
+DEU,Germany,Deep manufacturing,H53,1.964,2.2876,0.007338
+DEU,Germany,Deep manufacturing,I,1.7538,2.0665,0.016153
+DEU,Germany,Deep manufacturing,J58T60,1.7893,2.0945,0.011237
+DEU,Germany,Deep manufacturing,J61,1.8847,2.2062,0.010837
+DEU,Germany,Deep manufacturing,J62_63,1.499,1.8431,0.026177
+DEU,Germany,Deep manufacturing,K,1.7992,2.08,0.043574
+DEU,Germany,Deep manufacturing,L,1.3994,1.5013,0.068629
+DEU,Germany,Deep manufacturing,M,1.6652,1.8817,0.059051
+DEU,Germany,Deep manufacturing,N,1.5856,1.8256,0.044055
+DEU,Germany,Deep manufacturing,O,1.5107,1.7182,0.048205
+DEU,Germany,Deep manufacturing,P,1.32,1.4242,0.029646
+DEU,Germany,Deep manufacturing,Q,1.4395,1.6382,0.055964
+DEU,Germany,Deep manufacturing,R,1.5271,1.7022,0.010726
+DEU,Germany,Deep manufacturing,S,1.4188,1.572,0.015615
+DEU,Germany,Deep manufacturing,T,1.0,1.0,0.001183
+JPN,Japan,Deep manufacturing,A01_02,1.8082,2.0891,0.010893
+JPN,Japan,Deep manufacturing,A03,1.7627,2.0615,0.001457
+JPN,Japan,Deep manufacturing,B05_06,1.4192,1.5502,0.000124
+JPN,Japan,Deep manufacturing,B07_08,1.7311,2.049,0.000484
+JPN,Japan,Deep manufacturing,B09,1.7867,2.1195,0.00017
+JPN,Japan,Deep manufacturing,C10T12,1.949,2.2271,0.035174
+JPN,Japan,Deep manufacturing,C13T15,1.8377,2.2376,0.00374
+JPN,Japan,Deep manufacturing,C16,1.9005,2.2859,0.002459
+JPN,Japan,Deep manufacturing,C17_18,1.9465,2.215,0.012435
+JPN,Japan,Deep manufacturing,C19,1.1907,2.1716,0.017497
+JPN,Japan,Deep manufacturing,C20,1.9076,2.3396,0.021325
+JPN,Japan,Deep manufacturing,C21,1.6529,1.9289,0.008705
+JPN,Japan,Deep manufacturing,C22,1.9114,2.2425,0.014413
+JPN,Japan,Deep manufacturing,C23,1.6166,1.9748,0.006303
+JPN,Japan,Deep manufacturing,C24,2.1976,2.8147,0.03744
+JPN,Japan,Deep manufacturing,C25,1.9735,2.3155,0.012629
+JPN,Japan,Deep manufacturing,C26,1.8933,2.2693,0.019821
+JPN,Japan,Deep manufacturing,C27,1.9243,2.3,0.017933
+JPN,Japan,Deep manufacturing,C28,1.8977,2.2111,0.036984
+JPN,Japan,Deep manufacturing,C29,2.4999,2.9314,0.051886
+JPN,Japan,Deep manufacturing,C30,2.1397,2.7476,0.006984
+JPN,Japan,Deep manufacturing,C31T33,1.7459,2.0297,0.01284
+JPN,Japan,Deep manufacturing,D,1.4462,2.0463,0.022401
+JPN,Japan,Deep manufacturing,E,1.4034,1.4951,0.012013
+JPN,Japan,Deep manufacturing,F,1.7926,2.0775,0.064755
+JPN,Japan,Deep manufacturing,G,1.5591,1.7335,0.112766
+JPN,Japan,Deep manufacturing,H49,1.3751,1.5088,0.025646
+JPN,Japan,Deep manufacturing,H50,1.6706,2.5517,0.004274
+JPN,Japan,Deep manufacturing,H51,1.9739,2.4309,0.003257
+JPN,Japan,Deep manufacturing,H52,1.4887,1.6158,0.011762
+JPN,Japan,Deep manufacturing,H53,1.3602,1.469,0.001565
+JPN,Japan,Deep manufacturing,I,1.8428,2.0666,0.030636
+JPN,Japan,Deep manufacturing,J58T60,1.9102,2.1028,0.011951
+JPN,Japan,Deep manufacturing,J61,1.8523,2.0162,0.021034
+JPN,Japan,Deep manufacturing,J62_63,1.5713,1.7125,0.021139
+JPN,Japan,Deep manufacturing,K,1.4974,1.6231,0.034632
+JPN,Japan,Deep manufacturing,L,1.2339,1.2785,0.077054
+JPN,Japan,Deep manufacturing,M,1.507,1.6502,0.040839
+JPN,Japan,Deep manufacturing,N,1.4241,1.5481,0.027123
+JPN,Japan,Deep manufacturing,O,1.4166,1.5496,0.039273
+JPN,Japan,Deep manufacturing,P,1.231,1.295,0.022289
+JPN,Japan,Deep manufacturing,Q,1.448,1.5956,0.063205
+JPN,Japan,Deep manufacturing,R,1.5601,1.7326,0.008345
+JPN,Japan,Deep manufacturing,S,1.6017,1.7747,0.012347
+JPN,Japan,Deep manufacturing,T,1.0,1.0,0.0
+KOR,South Korea,Deep manufacturing,A01_02,1.7894,2.208,0.012889
+KOR,South Korea,Deep manufacturing,A03,2.0235,2.6448,0.002005
+KOR,South Korea,Deep manufacturing,B05_06,1.5495,1.8078,9.1e-05
+KOR,South Korea,Deep manufacturing,B07_08,1.8881,2.3523,0.000936
+KOR,South Korea,Deep manufacturing,B09,1.7018,2.0895,7e-06
+KOR,South Korea,Deep manufacturing,C10T12,2.3664,2.96,0.030399
+KOR,South Korea,Deep manufacturing,C13T15,2.2421,3.0374,0.017622
+KOR,South Korea,Deep manufacturing,C16,2.0935,2.7108,0.001987
+KOR,South Korea,Deep manufacturing,C17_18,2.1749,2.7186,0.009178
+KOR,South Korea,Deep manufacturing,C19,1.3808,2.724,0.029741
+KOR,South Korea,Deep manufacturing,C20,1.9257,2.7834,0.038362
+KOR,South Korea,Deep manufacturing,C21,1.8981,2.3363,0.005903
+KOR,South Korea,Deep manufacturing,C22,2.0127,2.7164,0.019804
+KOR,South Korea,Deep manufacturing,C23,2.098,2.722,0.009969
+KOR,South Korea,Deep manufacturing,C24,1.9535,2.9477,0.034665
+KOR,South Korea,Deep manufacturing,C25,2.0664,2.7226,0.024359
+KOR,South Korea,Deep manufacturing,C26,1.7109,2.4697,0.072252
+KOR,South Korea,Deep manufacturing,C27,2.118,2.8875,0.024378
+KOR,South Korea,Deep manufacturing,C28,2.1107,2.8141,0.034156
+KOR,South Korea,Deep manufacturing,C29,2.5029,3.2346,0.048084
+KOR,South Korea,Deep manufacturing,C30,2.2122,2.9934,0.011779
+KOR,South Korea,Deep manufacturing,C31T33,2.0401,2.6655,0.008241
+KOR,South Korea,Deep manufacturing,D,1.5387,2.5553,0.02257
+KOR,South Korea,Deep manufacturing,E,1.6479,2.0025,0.005065
+KOR,South Korea,Deep manufacturing,F,1.9894,2.4938,0.061385
+KOR,South Korea,Deep manufacturing,G,1.7449,2.033,0.063651
+KOR,South Korea,Deep manufacturing,H49,1.8021,2.3873,0.014845
+KOR,South Korea,Deep manufacturing,H50,2.0498,2.9931,0.005256
+KOR,South Korea,Deep manufacturing,H51,1.8714,2.5921,0.00516
+KOR,South Korea,Deep manufacturing,H52,1.861,2.247,0.010119
+KOR,South Korea,Deep manufacturing,H53,2.0229,2.5761,0.002366
+KOR,South Korea,Deep manufacturing,I,2.2136,2.7282,0.036437
+KOR,South Korea,Deep manufacturing,J58T60,1.7376,2.0233,0.013265
+KOR,South Korea,Deep manufacturing,J61,1.8989,2.2233,0.009943
+KOR,South Korea,Deep manufacturing,J62_63,1.4958,1.7328,0.012663
+KOR,South Korea,Deep manufacturing,K,1.6667,1.8366,0.042921
+KOR,South Korea,Deep manufacturing,L,1.4287,1.5349,0.047037
+KOR,South Korea,Deep manufacturing,M,1.7672,2.1191,0.054658
+KOR,South Korea,Deep manufacturing,N,1.5216,1.7382,0.023062
+KOR,South Korea,Deep manufacturing,O,1.384,1.5528,0.038288
+KOR,South Korea,Deep manufacturing,P,1.5161,1.733,0.032207
+KOR,South Korea,Deep manufacturing,Q,1.7349,2.1043,0.039967
+KOR,South Korea,Deep manufacturing,R,1.8476,2.2262,0.009213
+KOR,South Korea,Deep manufacturing,S,2.0091,2.5127,0.012597
+KOR,South Korea,Deep manufacturing,T,1.0,1.0,0.000519
+CHN,China,Deep manufacturing,A01_02,2.2238,2.4059,0.055344
+CHN,China,Deep manufacturing,A03,2.1807,2.3344,0.00609
+CHN,China,Deep manufacturing,B05_06,2.3886,2.6232,0.017983
+CHN,China,Deep manufacturing,B07_08,2.4853,2.8426,0.009123
+CHN,China,Deep manufacturing,B09,2.7037,3.0503,0.000823
+CHN,China,Deep manufacturing,C10T12,2.6552,2.8428,0.049382
+CHN,China,Deep manufacturing,C13T15,2.9366,3.1415,0.043194
+CHN,China,Deep manufacturing,C16,2.7494,3.0196,0.00629
+CHN,China,Deep manufacturing,C17_18,2.7255,3.0091,0.013795
+CHN,China,Deep manufacturing,C19,2.0892,2.7652,0.0188
+CHN,China,Deep manufacturing,C20,2.6158,3.0284,0.03644
+CHN,China,Deep manufacturing,C21,2.6054,2.8213,0.011533
+CHN,China,Deep manufacturing,C22,2.7629,3.1425,0.016318
+CHN,China,Deep manufacturing,C23,2.5906,2.8489,0.028175
+CHN,China,Deep manufacturing,C24,2.6301,3.1027,0.05115
+CHN,China,Deep manufacturing,C25,2.8361,3.1897,0.023717
+CHN,China,Deep manufacturing,C26,2.6278,3.2282,0.047688
+CHN,China,Deep manufacturing,C27,2.8607,3.3051,0.026817
+CHN,China,Deep manufacturing,C28,2.7469,3.1226,0.035809
+CHN,China,Deep manufacturing,C29,2.8539,3.2083,0.027152
+CHN,China,Deep manufacturing,C30,2.8309,3.2386,0.006691
+CHN,China,Deep manufacturing,C31T33,2.8467,3.1594,0.010469
+CHN,China,Deep manufacturing,D,2.4015,2.6986,0.030007
+CHN,China,Deep manufacturing,E,2.4884,2.6965,0.006634
+CHN,China,Deep manufacturing,F,2.715,2.9816,0.101702
+CHN,China,Deep manufacturing,G,1.7414,1.8659,0.058285
+CHN,China,Deep manufacturing,H49,2.1017,2.2817,0.024866
+CHN,China,Deep manufacturing,H50,2.057,2.3826,0.005478
+CHN,China,Deep manufacturing,H51,2.2366,2.5785,0.002763
+CHN,China,Deep manufacturing,H52,2.2404,2.5452,0.005668
+CHN,China,Deep manufacturing,H53,2.2081,2.4101,0.002227
+CHN,China,Deep manufacturing,I,2.2989,2.4394,0.016601
+CHN,China,Deep manufacturing,J58T60,2.0464,2.1954,0.002593
+CHN,China,Deep manufacturing,J61,1.6297,1.744,0.008601
+CHN,China,Deep manufacturing,J62_63,1.9995,2.1844,0.01025
+CHN,China,Deep manufacturing,K,1.3215,1.355,0.034917
+CHN,China,Deep manufacturing,L,1.1696,1.184,0.02901
+CHN,China,Deep manufacturing,M,2.5306,2.8125,0.030435
+CHN,China,Deep manufacturing,N,1.2804,1.3229,0.013865
+CHN,China,Deep manufacturing,O,1.6835,1.7724,0.027393
+CHN,China,Deep manufacturing,P,1.5274,1.6073,0.019111
+CHN,China,Deep manufacturing,Q,2.0737,2.2281,0.016243
+CHN,China,Deep manufacturing,R,1.2743,1.3055,0.002837
+CHN,China,Deep manufacturing,S,1.3073,1.3574,0.007732
+CHN,China,Deep manufacturing,T,1.0,1.0,0.0
+ITA,Italy,Deep manufacturing,A01_02,1.6496,1.9524,0.017518
+ITA,Italy,Deep manufacturing,A03,1.7267,2.1124,0.00047
+ITA,Italy,Deep manufacturing,B05_06,1.8712,2.2261,0.001467
+ITA,Italy,Deep manufacturing,B07_08,1.7382,2.0858,0.000976
+ITA,Italy,Deep manufacturing,B09,1.8836,2.3051,0.000152
+ITA,Italy,Deep manufacturing,C10T12,2.2394,2.7283,0.042272
+ITA,Italy,Deep manufacturing,C13T15,1.9994,2.5008,0.025208
+ITA,Italy,Deep manufacturing,C16,2.0153,2.524,0.004203
+ITA,Italy,Deep manufacturing,C17_18,2.0806,2.6058,0.010493
+ITA,Italy,Deep manufacturing,C19,1.7194,2.8874,0.014683
+ITA,Italy,Deep manufacturing,C20,1.9533,2.8223,0.015056
+ITA,Italy,Deep manufacturing,C21,1.8172,2.3649,0.007805
+ITA,Italy,Deep manufacturing,C22,1.9472,2.6646,0.013306
+ITA,Italy,Deep manufacturing,C23,2.0172,2.5445,0.009303
+ITA,Italy,Deep manufacturing,C24,2.1667,3.1371,0.018174
+ITA,Italy,Deep manufacturing,C25,1.9762,2.5443,0.026954
+ITA,Italy,Deep manufacturing,C26,1.7696,2.4517,0.006856
+ITA,Italy,Deep manufacturing,C27,1.938,2.7358,0.011611
+ITA,Italy,Deep manufacturing,C28,2.0333,2.6585,0.038145
+ITA,Italy,Deep manufacturing,C29,2.0731,2.864,0.018481
+ITA,Italy,Deep manufacturing,C30,1.9825,2.7017,0.00895
+ITA,Italy,Deep manufacturing,C31T33,1.9115,2.4494,0.019467
+ITA,Italy,Deep manufacturing,D,2.1257,2.5328,0.027437
+ITA,Italy,Deep manufacturing,E,1.9892,2.2924,0.013138
+ITA,Italy,Deep manufacturing,F,2.0842,2.4187,0.056784
+ITA,Italy,Deep manufacturing,G,1.6996,1.9328,0.109662
+ITA,Italy,Deep manufacturing,H49,1.8097,2.1157,0.028609
+ITA,Italy,Deep manufacturing,H50,2.0716,2.5614,0.003758
+ITA,Italy,Deep manufacturing,H51,2.1251,2.602,0.003215
+ITA,Italy,Deep manufacturing,H52,1.8604,2.1388,0.021942
+ITA,Italy,Deep manufacturing,H53,1.9077,2.1848,0.002097
+ITA,Italy,Deep manufacturing,I,1.753,2.0006,0.035999
+ITA,Italy,Deep manufacturing,J58T60,2.0738,2.3442,0.007011
+ITA,Italy,Deep manufacturing,J61,1.8122,2.0768,0.011251
+ITA,Italy,Deep manufacturing,J62_63,1.6924,1.9427,0.018862
+ITA,Italy,Deep manufacturing,K,1.5697,1.7633,0.0404
+ITA,Italy,Deep manufacturing,L,1.1762,1.2359,0.072557
+ITA,Italy,Deep manufacturing,M,1.6659,1.8722,0.053231
+ITA,Italy,Deep manufacturing,N,1.8181,2.0615,0.034678
+ITA,Italy,Deep manufacturing,O,1.4665,1.5887,0.043898
+ITA,Italy,Deep manufacturing,P,1.2455,1.3089,0.023646
+ITA,Italy,Deep manufacturing,Q,1.576,1.8309,0.048883
+ITA,Italy,Deep manufacturing,R,1.8991,2.1198,0.013443
+ITA,Italy,Deep manufacturing,S,1.5604,1.7591,0.012648
+ITA,Italy,Deep manufacturing,T,1.0,1.0,0.005299
+CZE,Czechia,Deep manufacturing,A01_02,1.8179,2.4505,0.02194
+CZE,Czechia,Deep manufacturing,A03,1.7252,2.5266,0.000143
+CZE,Czechia,Deep manufacturing,B05_06,1.5837,2.1761,0.002993
+CZE,Czechia,Deep manufacturing,B07_08,1.7542,2.3092,0.001691
+CZE,Czechia,Deep manufacturing,B09,1.7039,2.1602,0.000347
+CZE,Czechia,Deep manufacturing,C10T12,1.9555,2.6026,0.029245
+CZE,Czechia,Deep manufacturing,C13T15,1.6735,2.4101,0.006172
+CZE,Czechia,Deep manufacturing,C16,1.9085,2.5932,0.007515
+CZE,Czechia,Deep manufacturing,C17_18,1.7793,2.6386,0.009934
+CZE,Czechia,Deep manufacturing,C19,1.8694,2.8694,0.000586
+CZE,Czechia,Deep manufacturing,C20,1.5798,2.7764,0.022084
+CZE,Czechia,Deep manufacturing,C21,1.6811,2.3127,0.003988
+CZE,Czechia,Deep manufacturing,C22,1.5755,2.6557,0.023032
+CZE,Czechia,Deep manufacturing,C23,1.7453,2.475,0.012205
+CZE,Czechia,Deep manufacturing,C24,1.8754,3.0321,0.015687
+CZE,Czechia,Deep manufacturing,C25,1.7148,2.6015,0.031865
+CZE,Czechia,Deep manufacturing,C26,1.42,3.0696,0.026743
+CZE,Czechia,Deep manufacturing,C27,1.5589,2.8166,0.025807
+CZE,Czechia,Deep manufacturing,C28,1.7499,2.7187,0.029248
+CZE,Czechia,Deep manufacturing,C29,1.7221,3.0535,0.103841
+CZE,Czechia,Deep manufacturing,C30,1.4455,2.662,0.005784
+CZE,Czechia,Deep manufacturing,C31T33,1.6732,2.4552,0.019751
+CZE,Czechia,Deep manufacturing,D,1.7334,2.3998,0.02987
+CZE,Czechia,Deep manufacturing,E,1.9526,2.5136,0.010501
+CZE,Czechia,Deep manufacturing,F,2.0399,2.7184,0.074511
+CZE,Czechia,Deep manufacturing,G,1.6821,2.0815,0.086523
+CZE,Czechia,Deep manufacturing,H49,1.8299,2.3548,0.028952
+CZE,Czechia,Deep manufacturing,H50,1.9914,2.6802,0.00012
+CZE,Czechia,Deep manufacturing,H51,2.2578,3.0387,0.002752
+CZE,Czechia,Deep manufacturing,H52,1.9404,2.4044,0.023825
+CZE,Czechia,Deep manufacturing,H53,1.6826,2.1965,0.003018
+CZE,Czechia,Deep manufacturing,I,1.6889,2.184,0.018438
+CZE,Czechia,Deep manufacturing,J58T60,1.672,2.0805,0.009965
+CZE,Czechia,Deep manufacturing,J61,1.4495,2.1944,0.01063
+CZE,Czechia,Deep manufacturing,J62_63,1.3966,1.6356,0.023078
+CZE,Czechia,Deep manufacturing,K,1.634,1.9397,0.030587
+CZE,Czechia,Deep manufacturing,L,1.6635,2.0019,0.06754
+CZE,Czechia,Deep manufacturing,M,1.7651,2.21,0.04735
+CZE,Czechia,Deep manufacturing,N,2.0337,2.4915,0.024461
+CZE,Czechia,Deep manufacturing,O,1.4664,1.7104,0.035168
+CZE,Czechia,Deep manufacturing,P,1.2574,1.4277,0.023738
+CZE,Czechia,Deep manufacturing,Q,1.4254,1.7837,0.030371
+CZE,Czechia,Deep manufacturing,R,1.856,2.2384,0.010001
+CZE,Czechia,Deep manufacturing,S,1.6206,1.9727,0.007529
+CZE,Czechia,Deep manufacturing,T,1.0,1.0,0.000472
+SAU,Saudi Arabia,Resource & extraction,A01_02,1.3151,1.4633,0.022204
+SAU,Saudi Arabia,Resource & extraction,A03,1.6305,2.0489,0.002501
+SAU,Saudi Arabia,Resource & extraction,B05_06,1.0364,1.0713,0.190415
+SAU,Saudi Arabia,Resource & extraction,B07_08,1.1418,1.2353,0.002899
+SAU,Saudi Arabia,Resource & extraction,B09,1.1996,1.3834,0.001062
+SAU,Saudi Arabia,Resource & extraction,C10T12,1.6443,1.9548,0.027692
+SAU,Saudi Arabia,Resource & extraction,C13T15,1.6795,2.1227,0.009538
+SAU,Saudi Arabia,Resource & extraction,C16,1.6465,2.0116,0.00178
+SAU,Saudi Arabia,Resource & extraction,C17_18,1.6957,2.0891,0.007518
+SAU,Saudi Arabia,Resource & extraction,C19,1.582,1.6416,0.051625
+SAU,Saudi Arabia,Resource & extraction,C20,1.7339,2.0079,0.04041
+SAU,Saudi Arabia,Resource & extraction,C21,1.4069,1.8612,0.001775
+SAU,Saudi Arabia,Resource & extraction,C22,1.7274,2.1429,0.009024
+SAU,Saudi Arabia,Resource & extraction,C23,1.6087,1.8766,0.01369
+SAU,Saudi Arabia,Resource & extraction,C24,1.9328,2.473,0.007398
+SAU,Saudi Arabia,Resource & extraction,C25,1.6157,2.1825,0.010066
+SAU,Saudi Arabia,Resource & extraction,C26,1.1903,1.5618,0.001025
+SAU,Saudi Arabia,Resource & extraction,C27,1.5634,2.0091,0.01135
+SAU,Saudi Arabia,Resource & extraction,C28,1.4118,1.7716,0.005687
+SAU,Saudi Arabia,Resource & extraction,C29,1.6957,2.1269,0.001857
+SAU,Saudi Arabia,Resource & extraction,C30,1.8347,2.5241,0.000534
+SAU,Saudi Arabia,Resource & extraction,C31T33,1.5048,2.0393,0.008854
+SAU,Saudi Arabia,Resource & extraction,D,1.6021,1.7702,0.017477
+SAU,Saudi Arabia,Resource & extraction,E,1.5816,1.8621,0.0045
+SAU,Saudi Arabia,Resource & extraction,F,1.7312,2.1371,0.089522
+SAU,Saudi Arabia,Resource & extraction,G,1.5016,1.7907,0.095394
+SAU,Saudi Arabia,Resource & extraction,H49,1.3419,1.5001,0.008219
+SAU,Saudi Arabia,Resource & extraction,H50,1.5142,1.866,0.000222
+SAU,Saudi Arabia,Resource & extraction,H51,1.7152,2.0788,0.014261
+SAU,Saudi Arabia,Resource & extraction,H52,1.4205,1.6887,0.00909
+SAU,Saudi Arabia,Resource & extraction,H53,1.4439,1.7902,0.000891
+SAU,Saudi Arabia,Resource & extraction,I,1.5017,1.7892,0.020842
+SAU,Saudi Arabia,Resource & extraction,J58T60,1.6204,2.1243,0.007498
+SAU,Saudi Arabia,Resource & extraction,J61,1.4459,1.6777,0.024315
+SAU,Saudi Arabia,Resource & extraction,J62_63,1.1484,1.2539,0.0064
+SAU,Saudi Arabia,Resource & extraction,K,1.1112,1.1748,0.027001
+SAU,Saudi Arabia,Resource & extraction,L,1.148,1.1763,0.028081
+SAU,Saudi Arabia,Resource & extraction,M,1.302,1.5934,0.008615
+SAU,Saudi Arabia,Resource & extraction,N,1.2448,1.4078,0.017404
+SAU,Saudi Arabia,Resource & extraction,O,1.2927,1.4365,0.090135
+SAU,Saudi Arabia,Resource & extraction,P,1.129,1.1969,0.053033
+SAU,Saudi Arabia,Resource & extraction,Q,1.3702,1.6489,0.03379
+SAU,Saudi Arabia,Resource & extraction,R,1.5047,1.8403,0.003357
+SAU,Saudi Arabia,Resource & extraction,S,1.4542,1.7956,0.006794
+SAU,Saudi Arabia,Resource & extraction,T,1.0,1.0,0.004258
+NOR,Norway,Resource & extraction,A01_02,1.7507,2.1909,0.008048
+NOR,Norway,Resource & extraction,A03,1.8994,2.3402,0.01832
+NOR,Norway,Resource & extraction,B05_06,1.2968,1.4608,0.104665
+NOR,Norway,Resource & extraction,B07_08,1.8207,2.3979,0.002566
+NOR,Norway,Resource & extraction,B09,2.0395,2.6573,0.016756
+NOR,Norway,Resource & extraction,C10T12,2.2844,2.9213,0.04049
+NOR,Norway,Resource & extraction,C13T15,1.6502,2.4544,0.001659
+NOR,Norway,Resource & extraction,C16,1.9444,2.6508,0.005053
+NOR,Norway,Resource & extraction,C17_18,1.8808,2.5458,0.003883
+NOR,Norway,Resource & extraction,C19,2.0961,2.6143,0.011318
+NOR,Norway,Resource & extraction,C20,1.6851,2.3851,0.007932
+NOR,Norway,Resource & extraction,C21,1.4977,1.9781,0.002646
+NOR,Norway,Resource & extraction,C22,1.5615,2.4284,0.002087
+NOR,Norway,Resource & extraction,C23,1.86,2.5948,0.006132
+NOR,Norway,Resource & extraction,C24,1.9093,3.0152,0.014361
+NOR,Norway,Resource & extraction,C25,1.6941,2.5517,0.008381
+NOR,Norway,Resource & extraction,C26,1.6212,2.4608,0.00399
+NOR,Norway,Resource & extraction,C27,1.733,2.7583,0.004227
+NOR,Norway,Resource & extraction,C28,1.7112,2.6505,0.009251
+NOR,Norway,Resource & extraction,C29,1.7315,2.759,0.001617
+NOR,Norway,Resource & extraction,C30,1.7735,2.7336,0.010575
+NOR,Norway,Resource & extraction,C31T33,1.6578,2.4025,0.010006
+NOR,Norway,Resource & extraction,D,1.3403,1.5299,0.016102
+NOR,Norway,Resource & extraction,E,1.9262,2.431,0.009765
+NOR,Norway,Resource & extraction,F,1.9394,2.435,0.103785
+NOR,Norway,Resource & extraction,G,1.4843,1.8638,0.075738
+NOR,Norway,Resource & extraction,H49,1.5648,1.9549,0.019424
+NOR,Norway,Resource & extraction,H50,1.8303,2.6267,0.026561
+NOR,Norway,Resource & extraction,H51,1.9627,2.6515,0.00763
+NOR,Norway,Resource & extraction,H52,1.7413,2.3605,0.014613
+NOR,Norway,Resource & extraction,H53,1.5307,1.9039,0.002993
+NOR,Norway,Resource & extraction,I,1.7729,2.131,0.016475
+NOR,Norway,Resource & extraction,J58T60,1.5667,2.0093,0.011381
+NOR,Norway,Resource & extraction,J61,1.7165,2.0319,0.011642
+NOR,Norway,Resource & extraction,J62_63,1.5356,1.8838,0.021607
+NOR,Norway,Resource & extraction,K,1.3529,1.5374,0.037836
+NOR,Norway,Resource & extraction,L,1.4847,1.6948,0.063109
+NOR,Norway,Resource & extraction,M,1.523,1.891,0.047473
+NOR,Norway,Resource & extraction,N,1.5763,1.9904,0.029133
+NOR,Norway,Resource & extraction,O,1.5329,1.8026,0.060628
+NOR,Norway,Resource & extraction,P,1.2082,1.3185,0.034741
+NOR,Norway,Resource & extraction,Q,1.23,1.3895,0.075776
+NOR,Norway,Resource & extraction,R,1.555,1.9088,0.010238
+NOR,Norway,Resource & extraction,S,1.4706,1.7682,0.009344
+NOR,Norway,Resource & extraction,T,1.0,1.0,4.5e-05
+AUS,Australia,Resource & extraction,A01_02,1.9898,2.2602,0.02477
+AUS,Australia,Resource & extraction,A03,1.9789,2.3754,0.003294
+AUS,Australia,Resource & extraction,B05_06,1.6215,1.7857,0.038044
+AUS,Australia,Resource & extraction,B07_08,1.6636,1.8634,0.047142
+AUS,Australia,Resource & extraction,B09,1.8155,2.0013,0.005082
+AUS,Australia,Resource & extraction,C10T12,2.368,2.6926,0.030712
+AUS,Australia,Resource & extraction,C13T15,1.8972,2.3439,0.001609
+AUS,Australia,Resource & extraction,C16,2.2148,2.5253,0.003936
+AUS,Australia,Resource & extraction,C17_18,2.0775,2.4685,0.004274
+AUS,Australia,Resource & extraction,C19,2.0561,2.5524,0.005053
+AUS,Australia,Resource & extraction,C20,1.9358,2.3877,0.004949
+AUS,Australia,Resource & extraction,C21,1.9362,2.3153,0.003663
+AUS,Australia,Resource & extraction,C22,1.9604,2.4662,0.003971
+AUS,Australia,Resource & extraction,C23,2.0326,2.3555,0.005653
+AUS,Australia,Resource & extraction,C24,2.2415,2.6916,0.015942
+AUS,Australia,Resource & extraction,C25,2.0132,2.5115,0.009063
+AUS,Australia,Resource & extraction,C26,1.5089,2.1029,0.003285
+AUS,Australia,Resource & extraction,C27,1.8056,2.48,0.001903
+AUS,Australia,Resource & extraction,C28,1.8467,2.4372,0.004175
+AUS,Australia,Resource & extraction,C29,1.8747,2.5349,0.003085
+AUS,Australia,Resource & extraction,C30,1.9997,2.5285,0.004305
+AUS,Australia,Resource & extraction,C31T33,1.8431,2.4297,0.006692
+AUS,Australia,Resource & extraction,D,2.283,2.485,0.021667
+AUS,Australia,Resource & extraction,E,1.8939,2.0974,0.011852
+AUS,Australia,Resource & extraction,F,2.2464,2.6062,0.125209
+AUS,Australia,Resource & extraction,G,1.7409,1.9313,0.081653
+AUS,Australia,Resource & extraction,H49,1.907,2.22,0.017648
+AUS,Australia,Resource & extraction,H50,1.9239,2.1313,0.006571
+AUS,Australia,Resource & extraction,H51,1.9186,2.3695,0.006611
+AUS,Australia,Resource & extraction,H52,1.8395,1.9754,0.018029
+AUS,Australia,Resource & extraction,H53,1.9109,2.2342,0.004083
+AUS,Australia,Resource & extraction,I,1.9001,2.1198,0.022338
+AUS,Australia,Resource & extraction,J58T60,1.8719,2.1251,0.007301
+AUS,Australia,Resource & extraction,J61,2.0753,2.3315,0.015824
+AUS,Australia,Resource & extraction,J62_63,1.7547,1.908,0.022997
+AUS,Australia,Resource & extraction,K,1.6582,1.7549,0.067489
+AUS,Australia,Resource & extraction,L,1.4845,1.5466,0.082153
+AUS,Australia,Resource & extraction,M,1.8383,1.9839,0.054344
+AUS,Australia,Resource & extraction,N,1.7343,1.8547,0.042509
+AUS,Australia,Resource & extraction,O,1.7083,1.8634,0.048561
+AUS,Australia,Resource & extraction,P,1.4685,1.6156,0.037273
+AUS,Australia,Resource & extraction,Q,1.4353,1.6156,0.055423
+AUS,Australia,Resource & extraction,R,1.9561,2.2364,0.010412
+AUS,Australia,Resource & extraction,S,1.6461,1.8843,0.009451
+AUS,Australia,Resource & extraction,T,1.0,1.0,0.0
+RUS,Russia,Resource & extraction,A01_02,1.7651,2.0205,0.034829
+RUS,Russia,Resource & extraction,A03,1.6288,1.9222,0.002774
+RUS,Russia,Resource & extraction,B05_06,1.3379,1.4063,0.065731
+RUS,Russia,Resource & extraction,B07_08,1.1607,1.2096,0.006501
+RUS,Russia,Resource & extraction,B09,2.8169,3.1839,0.03242
+RUS,Russia,Resource & extraction,C10T12,2.2641,2.6466,0.046026
+RUS,Russia,Resource & extraction,C13T15,1.7705,2.3963,0.00349
+RUS,Russia,Resource & extraction,C16,2.141,2.4434,0.004378
+RUS,Russia,Resource & extraction,C17_18,2.1072,2.4985,0.006538
+RUS,Russia,Resource & extraction,C19,2.4397,2.6157,0.056052
+RUS,Russia,Resource & extraction,C20,2.088,2.4595,0.015745
+RUS,Russia,Resource & extraction,C21,1.7104,2.1986,0.003633
+RUS,Russia,Resource & extraction,C22,2.0745,2.7586,0.006218
+RUS,Russia,Resource & extraction,C23,2.149,2.4868,0.009108
+RUS,Russia,Resource & extraction,C24,2.1779,2.5069,0.03849
+RUS,Russia,Resource & extraction,C25,2.1612,2.6243,0.013782
+RUS,Russia,Resource & extraction,C26,1.6806,2.393,0.007646
+RUS,Russia,Resource & extraction,C27,2.0955,2.7559,0.004657
+RUS,Russia,Resource & extraction,C28,1.9846,2.6255,0.006619
+RUS,Russia,Resource & extraction,C29,1.935,3.0895,0.01406
+RUS,Russia,Resource & extraction,C30,1.9442,2.558,0.012299
+RUS,Russia,Resource & extraction,C31T33,1.8933,2.4007,0.010251
+RUS,Russia,Resource & extraction,D,2.2856,2.4301,0.043434
+RUS,Russia,Resource & extraction,E,2.1716,2.4389,0.006612
+RUS,Russia,Resource & extraction,F,1.8944,2.2515,0.062636
+RUS,Russia,Resource & extraction,G,1.6384,1.7907,0.111721
+RUS,Russia,Resource & extraction,H49,1.7891,1.9528,0.04104
+RUS,Russia,Resource & extraction,H50,1.9772,2.2327,0.001306
+RUS,Russia,Resource & extraction,H51,2.3691,2.6957,0.008556
+RUS,Russia,Resource & extraction,H52,1.9761,2.2051,0.022675
+RUS,Russia,Resource & extraction,H53,1.635,1.7914,0.001538
+RUS,Russia,Resource & extraction,I,1.8536,2.0747,0.009886
+RUS,Russia,Resource & extraction,J58T60,1.8202,2.1044,0.003653
+RUS,Russia,Resource & extraction,J61,1.7493,2.0508,0.010325
+RUS,Russia,Resource & extraction,J62_63,1.5086,1.7894,0.011402
+RUS,Russia,Resource & extraction,K,1.4091,1.5108,0.03113
+RUS,Russia,Resource & extraction,L,1.3382,1.4139,0.061531
+RUS,Russia,Resource & extraction,M,1.5582,1.8346,0.036493
+RUS,Russia,Resource & extraction,N,1.4348,1.5999,0.014485
+RUS,Russia,Resource & extraction,O,1.5574,1.7078,0.057691
+RUS,Russia,Resource & extraction,P,1.3562,1.4368,0.020127
+RUS,Russia,Resource & extraction,Q,1.4524,1.6918,0.026355
+RUS,Russia,Resource & extraction,R,1.6112,1.7686,0.008306
+RUS,Russia,Resource & extraction,S,1.6026,1.8198,0.005198
+RUS,Russia,Resource & extraction,T,1.0,1.0,0.00265
+CHL,Chile,Resource & extraction,A01_02,1.7212,2.0426,0.035091
+CHL,Chile,Resource & extraction,A03,1.9519,2.4743,0.01128
+CHL,Chile,Resource & extraction,B05_06,1.7279,2.1267,0.000597
+CHL,Chile,Resource & extraction,B07_08,1.5594,1.8074,0.090849
+CHL,Chile,Resource & extraction,B09,1.4784,1.7205,0.00027
+CHL,Chile,Resource & extraction,C10T12,2.0462,2.4343,0.072626
+CHL,Chile,Resource & extraction,C13T15,1.8555,2.7339,0.003834
+CHL,Chile,Resource & extraction,C16,2.1544,2.574,0.010882
+CHL,Chile,Resource & extraction,C17_18,1.9345,2.3872,0.015599
+CHL,Chile,Resource & extraction,C19,1.3935,2.8877,0.011987
+CHL,Chile,Resource & extraction,C20,1.9333,2.5499,0.014149
+CHL,Chile,Resource & extraction,C21,1.7004,2.1038,0.004256
+CHL,Chile,Resource & extraction,C22,1.8164,2.5964,0.005845
+CHL,Chile,Resource & extraction,C23,2.1083,2.6439,0.00705
+CHL,Chile,Resource & extraction,C24,2.0144,2.8236,0.005379
+CHL,Chile,Resource & extraction,C25,1.6291,2.3287,0.007783
+CHL,Chile,Resource & extraction,C26,1.3815,1.7364,0.000696
+CHL,Chile,Resource & extraction,C27,1.7127,2.596,0.001647
+CHL,Chile,Resource & extraction,C28,1.6799,2.419,0.004879
+CHL,Chile,Resource & extraction,C29,1.0,1.0,0.0
+CHL,Chile,Resource & extraction,C30,1.673,2.4747,0.001735
+CHL,Chile,Resource & extraction,C31T33,1.6524,2.1896,0.006384
+CHL,Chile,Resource & extraction,D,1.7186,2.1991,0.035897
+CHL,Chile,Resource & extraction,E,1.5869,1.795,0.006273
+CHL,Chile,Resource & extraction,F,1.7753,2.1662,0.086368
+CHL,Chile,Resource & extraction,G,1.6574,1.8895,0.106168
+CHL,Chile,Resource & extraction,H49,1.7188,2.22,0.035808
+CHL,Chile,Resource & extraction,H50,1.6219,2.3608,0.002394
+CHL,Chile,Resource & extraction,H51,1.8364,2.3095,0.009772
+CHL,Chile,Resource & extraction,H52,1.4535,1.5719,0.01527
+CHL,Chile,Resource & extraction,H53,1.5482,1.693,0.001203
+CHL,Chile,Resource & extraction,I,1.6791,1.9284,0.024801
+CHL,Chile,Resource & extraction,J58T60,1.8586,2.0904,0.003931
+CHL,Chile,Resource & extraction,J61,2.0764,2.3508,0.016963
+CHL,Chile,Resource & extraction,J62_63,1.4885,1.6534,0.011753
+CHL,Chile,Resource & extraction,K,1.5764,1.6855,0.044005
+CHL,Chile,Resource & extraction,L,1.3266,1.3942,0.060723
+CHL,Chile,Resource & extraction,M,1.3888,1.4911,0.051014
+CHL,Chile,Resource & extraction,N,1.4212,1.5692,0.035705
+CHL,Chile,Resource & extraction,O,1.3401,1.4932,0.03867
+CHL,Chile,Resource & extraction,P,1.2499,1.3239,0.037853
+CHL,Chile,Resource & extraction,Q,1.4196,1.6343,0.045961
+CHL,Chile,Resource & extraction,R,1.5729,1.6903,0.005375
+CHL,Chile,Resource & extraction,S,1.3389,1.5009,0.011277
+CHL,Chile,Resource & extraction,T,1.0,1.0,0.0
+SGP,Singapore,Financial / service hub,A01_02,1.5299,2.1867,0.000224
+SGP,Singapore,Financial / service hub,A03,1.5988,2.2892,0.00018
+SGP,Singapore,Financial / service hub,B05_06,1.0,1.0,0.0
+SGP,Singapore,Financial / service hub,B07_08,1.0,1.0,0.0
+SGP,Singapore,Financial / service hub,B09,1.0,1.0,0.0
+SGP,Singapore,Financial / service hub,C10T12,1.6524,2.5525,0.010994
+SGP,Singapore,Financial / service hub,C13T15,1.9131,3.1095,0.001463
+SGP,Singapore,Financial / service hub,C16,1.579,2.3874,0.000222
+SGP,Singapore,Financial / service hub,C17_18,1.7044,2.4198,0.002206
+SGP,Singapore,Financial / service hub,C19,1.321,3.0525,0.034724
+SGP,Singapore,Financial / service hub,C20,1.5623,2.6516,0.046173
+SGP,Singapore,Financial / service hub,C21,1.6004,2.3385,0.010213
+SGP,Singapore,Financial / service hub,C22,1.726,2.637,0.002009
+SGP,Singapore,Financial / service hub,C23,1.6381,2.8504,0.001333
+SGP,Singapore,Financial / service hub,C24,1.771,3.1586,0.004885
+SGP,Singapore,Financial / service hub,C25,1.6535,2.6192,0.004143
+SGP,Singapore,Financial / service hub,C26,1.7531,2.4818,0.111529
+SGP,Singapore,Financial / service hub,C27,1.7349,2.8851,0.004143
+SGP,Singapore,Financial / service hub,C28,1.7754,2.5807,0.021397
+SGP,Singapore,Financial / service hub,C29,1.6184,2.767,0.001087
+SGP,Singapore,Financial / service hub,C30,1.4385,2.5061,0.019092
+SGP,Singapore,Financial / service hub,C31T33,1.603,2.3226,0.014899
+SGP,Singapore,Financial / service hub,D,2.2359,2.6692,0.008199
+SGP,Singapore,Financial / service hub,E,1.8823,2.3364,0.004488
+SGP,Singapore,Financial / service hub,F,2.1254,2.7658,0.046599
+SGP,Singapore,Financial / service hub,G,1.4216,2.2261,0.141697
+SGP,Singapore,Financial / service hub,H49,1.2902,2.048,0.007533
+SGP,Singapore,Financial / service hub,H50,1.602,3.3297,0.081349
+SGP,Singapore,Financial / service hub,H51,1.3445,2.718,0.013378
+SGP,Singapore,Financial / service hub,H52,1.3953,2.2767,0.023831
+SGP,Singapore,Financial / service hub,H53,1.4281,2.4438,0.00214
+SGP,Singapore,Financial / service hub,I,1.5842,2.1539,0.017279
+SGP,Singapore,Financial / service hub,J58T60,1.5813,2.4824,0.010322
+SGP,Singapore,Financial / service hub,J61,1.6534,2.3112,0.010624
+SGP,Singapore,Financial / service hub,J62_63,1.6254,2.7165,0.055368
+SGP,Singapore,Financial / service hub,K,1.4194,1.9177,0.102027
+SGP,Singapore,Financial / service hub,L,1.3874,1.6548,0.040855
+SGP,Singapore,Financial / service hub,M,1.4541,2.0493,0.04597
+SGP,Singapore,Financial / service hub,N,1.2556,1.5679,0.02378
+SGP,Singapore,Financial / service hub,O,1.5,2.3159,0.027872
+SGP,Singapore,Financial / service hub,P,1.2452,1.4514,0.0147
+SGP,Singapore,Financial / service hub,Q,1.4566,1.8123,0.017231
+SGP,Singapore,Financial / service hub,R,1.4162,1.7961,0.006589
+SGP,Singapore,Financial / service hub,S,1.4512,1.8714,0.004855
+SGP,Singapore,Financial / service hub,T,1.0,1.0,0.002396
+CHE,Switzerland,Financial / service hub,A01_02,1.8869,2.3256,0.008219
+CHE,Switzerland,Financial / service hub,A03,1.1183,1.6908,4e-05
+CHE,Switzerland,Financial / service hub,B05_06,2.3472,3.0513,0.002069
+CHE,Switzerland,Financial / service hub,B07_08,1.8602,2.3256,0.000795
+CHE,Switzerland,Financial / service hub,B09,1.2961,1.4629,2.1e-05
+CHE,Switzerland,Financial / service hub,C10T12,1.9998,2.5069,0.028934
+CHE,Switzerland,Financial / service hub,C13T15,1.5173,2.3818,0.002328
+CHE,Switzerland,Financial / service hub,C16,1.8809,2.3922,0.005638
+CHE,Switzerland,Financial / service hub,C17_18,1.7811,2.3388,0.004099
+CHE,Switzerland,Financial / service hub,C19,1.9841,2.6563,0.001978
+CHE,Switzerland,Financial / service hub,C20,2.1188,2.7283,0.017842
+CHE,Switzerland,Financial / service hub,C21,2.025,2.5285,0.07815
+CHE,Switzerland,Financial / service hub,C22,1.8751,2.4393,0.005075
+CHE,Switzerland,Financial / service hub,C23,1.8552,2.4064,0.004452
+CHE,Switzerland,Financial / service hub,C24,1.804,2.7852,0.00427
+CHE,Switzerland,Financial / service hub,C25,1.591,2.1441,0.012389
+CHE,Switzerland,Financial / service hub,C26,1.7874,2.4957,0.043322
+CHE,Switzerland,Financial / service hub,C27,1.9332,2.8107,0.014588
+CHE,Switzerland,Financial / service hub,C28,1.6907,2.392,0.021244
+CHE,Switzerland,Financial / service hub,C29,1.6545,2.356,0.00124
+CHE,Switzerland,Financial / service hub,C30,1.7065,2.497,0.004244
+CHE,Switzerland,Financial / service hub,C31T33,1.7283,2.3764,0.011622
+CHE,Switzerland,Financial / service hub,D,2.3148,2.8164,0.028016
+CHE,Switzerland,Financial / service hub,E,1.9743,2.4377,0.003501
+CHE,Switzerland,Financial / service hub,F,1.7552,2.2084,0.055068
+CHE,Switzerland,Financial / service hub,G,1.7164,2.0601,0.124721
+CHE,Switzerland,Financial / service hub,H49,1.6884,2.0746,0.020716
+CHE,Switzerland,Financial / service hub,H50,2.6036,3.5011,0.015167
+CHE,Switzerland,Financial / service hub,H51,1.9075,2.5483,0.005789
+CHE,Switzerland,Financial / service hub,H52,2.0832,2.5915,0.013106
+CHE,Switzerland,Financial / service hub,H53,1.5463,1.7946,0.003873
+CHE,Switzerland,Financial / service hub,I,1.7434,2.114,0.017182
+CHE,Switzerland,Financial / service hub,J58T60,1.7353,2.1913,0.005426
+CHE,Switzerland,Financial / service hub,J61,1.6464,2.0785,0.010984
+CHE,Switzerland,Financial / service hub,J62_63,1.3874,1.8749,0.021321
+CHE,Switzerland,Financial / service hub,K,1.6356,1.8903,0.08236
+CHE,Switzerland,Financial / service hub,L,1.4002,1.5439,0.048261
+CHE,Switzerland,Financial / service hub,M,1.779,2.1784,0.08314
+CHE,Switzerland,Financial / service hub,N,1.6166,1.9554,0.025586
+CHE,Switzerland,Financial / service hub,O,1.4777,1.7048,0.073986
+CHE,Switzerland,Financial / service hub,P,1.6655,2.0082,0.005098
+CHE,Switzerland,Financial / service hub,Q,1.5091,1.7317,0.057668
+CHE,Switzerland,Financial / service hub,R,2.0273,2.5149,0.011928
+CHE,Switzerland,Financial / service hub,S,1.7667,2.1319,0.012887
+CHE,Switzerland,Financial / service hub,T,1.0,1.0,0.001658
+NLD,Netherlands,Financial / service hub,A01_02,1.6989,2.2887,0.021349
+NLD,Netherlands,Financial / service hub,A03,1.4522,1.8653,0.000371
+NLD,Netherlands,Financial / service hub,B05_06,1.438,1.9296,0.004834
+NLD,Netherlands,Financial / service hub,B07_08,1.6009,2.3683,0.000778
+NLD,Netherlands,Financial / service hub,B09,1.5135,2.2016,0.001227
+NLD,Netherlands,Financial / service hub,C10T12,1.9105,2.6889,0.049135
+NLD,Netherlands,Financial / service hub,C13T15,1.7814,2.5355,0.002692
+NLD,Netherlands,Financial / service hub,C16,1.6901,2.42,0.002415
+NLD,Netherlands,Financial / service hub,C17_18,1.7364,2.5359,0.007393
+NLD,Netherlands,Financial / service hub,C19,1.2902,2.6831,0.019548
+NLD,Netherlands,Financial / service hub,C20,1.6937,2.6901,0.032435
+NLD,Netherlands,Financial / service hub,C21,1.5971,2.1044,0.004224
+NLD,Netherlands,Financial / service hub,C22,1.6378,2.5342,0.006676
+NLD,Netherlands,Financial / service hub,C23,1.7084,2.3896,0.004373
+NLD,Netherlands,Financial / service hub,C24,1.7085,2.6729,0.006201
+NLD,Netherlands,Financial / service hub,C25,1.6932,2.4901,0.014255
+NLD,Netherlands,Financial / service hub,C26,1.461,2.6928,0.015043
+NLD,Netherlands,Financial / service hub,C27,1.5807,2.3181,0.005444
+NLD,Netherlands,Financial / service hub,C28,1.6067,2.4278,0.023403
+NLD,Netherlands,Financial / service hub,C29,1.6409,2.9623,0.010262
+NLD,Netherlands,Financial / service hub,C30,1.8982,2.834,0.005482
+NLD,Netherlands,Financial / service hub,C31T33,1.5952,2.1715,0.013524
+NLD,Netherlands,Financial / service hub,D,1.5181,1.9701,0.012403
+NLD,Netherlands,Financial / service hub,E,1.8373,2.2338,0.007619
+NLD,Netherlands,Financial / service hub,F,1.9615,2.5748,0.076585
+NLD,Netherlands,Financial / service hub,G,1.4481,1.8597,0.118313
+NLD,Netherlands,Financial / service hub,H49,1.594,2.2254,0.021259
+NLD,Netherlands,Financial / service hub,H50,1.6062,2.5684,0.005952
+NLD,Netherlands,Financial / service hub,H51,1.7003,2.4509,0.008347
+NLD,Netherlands,Financial / service hub,H52,1.5795,2.0286,0.016521
+NLD,Netherlands,Financial / service hub,H53,1.4302,2.3228,0.004339
+NLD,Netherlands,Financial / service hub,I,1.6199,2.0469,0.020348
+NLD,Netherlands,Financial / service hub,J58T60,1.463,2.3747,0.012841
+NLD,Netherlands,Financial / service hub,J61,1.5504,2.0132,0.00954
+NLD,Netherlands,Financial / service hub,J62_63,1.5655,2.0341,0.033358
+NLD,Netherlands,Financial / service hub,K,1.5327,1.8208,0.054498
+NLD,Netherlands,Financial / service hub,L,1.6406,1.9261,0.063702
+NLD,Netherlands,Financial / service hub,M,1.4965,2.0025,0.081183
+NLD,Netherlands,Financial / service hub,N,1.3884,1.7162,0.055536
+NLD,Netherlands,Financial / service hub,O,1.4709,1.7191,0.047697
+NLD,Netherlands,Financial / service hub,P,1.264,1.4142,0.026458
+NLD,Netherlands,Financial / service hub,Q,1.33,1.5446,0.054317
+NLD,Netherlands,Financial / service hub,R,1.6046,1.9649,0.009385
+NLD,Netherlands,Financial / service hub,S,1.4638,1.8005,0.008264
+NLD,Netherlands,Financial / service hub,T,1.0,1.0,0.000471
+GBR,United Kingdom,Financial / service hub,A01_02,1.7959,2.2601,0.008572
+GBR,United Kingdom,Financial / service hub,A03,1.9022,2.3479,0.000571
+GBR,United Kingdom,Financial / service hub,B05_06,1.4926,1.8133,0.007863
+GBR,United Kingdom,Financial / service hub,B07_08,1.989,2.4295,0.001543
+GBR,United Kingdom,Financial / service hub,B09,2.0694,2.5421,0.001386
+GBR,United Kingdom,Financial / service hub,C10T12,1.9576,2.4818,0.026106
+GBR,United Kingdom,Financial / service hub,C13T15,1.5382,1.8424,0.003177
+GBR,United Kingdom,Financial / service hub,C16,1.763,2.2705,0.002332
+GBR,United Kingdom,Financial / service hub,C17_18,1.7755,2.2519,0.006043
+GBR,United Kingdom,Financial / service hub,C19,1.4528,2.5166,0.008035
+GBR,United Kingdom,Financial / service hub,C20,1.8031,2.3508,0.009282
+GBR,United Kingdom,Financial / service hub,C21,1.6139,1.9803,0.007277
+GBR,United Kingdom,Financial / service hub,C22,1.8114,2.4136,0.006074
+GBR,United Kingdom,Financial / service hub,C23,1.8478,2.2527,0.004155
+GBR,United Kingdom,Financial / service hub,C24,1.7395,2.5274,0.003835
+GBR,United Kingdom,Financial / service hub,C25,1.6431,2.1185,0.009607
+GBR,United Kingdom,Financial / service hub,C26,1.4833,1.9046,0.006224
+GBR,United Kingdom,Financial / service hub,C27,1.6739,2.3328,0.003446
+GBR,United Kingdom,Financial / service hub,C28,1.6601,2.3268,0.010018
+GBR,United Kingdom,Financial / service hub,C29,1.7546,2.6528,0.016539
+GBR,United Kingdom,Financial / service hub,C30,1.7528,2.4493,0.00889
+GBR,United Kingdom,Financial / service hub,C31T33,1.5915,2.0861,0.0097
+GBR,United Kingdom,Financial / service hub,D,2.47,2.8784,0.032439
+GBR,United Kingdom,Financial / service hub,E,1.7111,1.9053,0.012063
+GBR,United Kingdom,Financial / service hub,F,2.0282,2.3549,0.088346
+GBR,United Kingdom,Financial / service hub,G,1.5961,1.8427,0.096474
+GBR,United Kingdom,Financial / service hub,H49,1.7192,2.0383,0.017665
+GBR,United Kingdom,Financial / service hub,H50,1.7182,2.0643,0.004001
+GBR,United Kingdom,Financial / service hub,H51,1.8657,2.4805,0.006984
+GBR,United Kingdom,Financial / service hub,H52,1.7133,2.0127,0.013587
+GBR,United Kingdom,Financial / service hub,H53,1.5548,1.7546,0.005497
+GBR,United Kingdom,Financial / service hub,I,1.5699,1.8429,0.028548
+GBR,United Kingdom,Financial / service hub,J58T60,1.7319,2.0247,0.018466
+GBR,United Kingdom,Financial / service hub,J61,1.4678,1.6443,0.013918
+GBR,United Kingdom,Financial / service hub,J62_63,1.5819,1.7948,0.027673
+GBR,United Kingdom,Financial / service hub,K,1.6707,1.891,0.084891
+GBR,United Kingdom,Financial / service hub,L,1.3268,1.4196,0.08826
+GBR,United Kingdom,Financial / service hub,M,1.6078,1.8177,0.069698
+GBR,United Kingdom,Financial / service hub,N,1.5878,1.8435,0.048727
+GBR,United Kingdom,Financial / service hub,O,1.547,1.8179,0.044789
+GBR,United Kingdom,Financial / service hub,P,1.3836,1.5044,0.043503
+GBR,United Kingdom,Financial / service hub,Q,1.5077,1.7336,0.065906
+GBR,United Kingdom,Financial / service hub,R,1.5616,1.7929,0.01369
+GBR,United Kingdom,Financial / service hub,S,1.3936,1.5577,0.013175
+GBR,United Kingdom,Financial / service hub,T,1.0,1.0,0.001024
+LUX,Luxembourg,Financial / service hub,A01_02,1.3107,2.6183,0.002647
+LUX,Luxembourg,Financial / service hub,A03,1.0,1.0,0.0
+LUX,Luxembourg,Financial / service hub,B05_06,1.0,1.0,0.0
+LUX,Luxembourg,Financial / service hub,B07_08,1.2127,2.1304,0.000369
+LUX,Luxembourg,Financial / service hub,B09,1.0,1.0,0.0
+LUX,Luxembourg,Financial / service hub,C10T12,1.4217,2.8644,0.008561
+LUX,Luxembourg,Financial / service hub,C13T15,1.6919,2.6916,0.005327
+LUX,Luxembourg,Financial / service hub,C16,1.2204,1.9417,0.001444
+LUX,Luxembourg,Financial / service hub,C17_18,1.4681,2.4966,0.000968
+LUX,Luxembourg,Financial / service hub,C19,1.0,1.0,0.0
+LUX,Luxembourg,Financial / service hub,C20,1.5262,2.8773,0.002314
+LUX,Luxembourg,Financial / service hub,C21,1.6621,3.1115,0.000796
+LUX,Luxembourg,Financial / service hub,C22,2.035,3.4516,0.026214
+LUX,Luxembourg,Financial / service hub,C23,1.5738,2.8457,0.005888
+LUX,Luxembourg,Financial / service hub,C24,1.8561,3.072,0.023182
+LUX,Luxembourg,Financial / service hub,C25,1.8544,2.9711,0.005628
+LUX,Luxembourg,Financial / service hub,C26,1.6196,2.654,0.001105
+LUX,Luxembourg,Financial / service hub,C27,1.7086,2.9309,0.000605
+LUX,Luxembourg,Financial / service hub,C28,1.779,2.9583,0.008772
+LUX,Luxembourg,Financial / service hub,C29,1.7577,3.0803,0.000902
+LUX,Luxembourg,Financial / service hub,C30,1.7088,2.903,4.4e-05
+LUX,Luxembourg,Financial / service hub,C31T33,1.5286,2.4949,0.00122
+LUX,Luxembourg,Financial / service hub,D,1.4029,2.1388,0.004771
+LUX,Luxembourg,Financial / service hub,E,1.2525,1.9922,0.002431
+LUX,Luxembourg,Financial / service hub,F,1.5062,2.3116,0.039181
+LUX,Luxembourg,Financial / service hub,G,1.3181,2.2004,0.054576
+LUX,Luxembourg,Financial / service hub,H49,1.2907,1.8982,0.010989
+LUX,Luxembourg,Financial / service hub,H50,1.2204,2.4737,0.000889
+LUX,Luxembourg,Financial / service hub,H51,1.3231,2.4349,0.012836
+LUX,Luxembourg,Financial / service hub,H52,1.2934,2.1365,0.003398
+LUX,Luxembourg,Financial / service hub,H53,1.2749,2.0657,0.002135
+LUX,Luxembourg,Financial / service hub,I,1.3092,2.0532,0.009384
+LUX,Luxembourg,Financial / service hub,J58T60,1.2224,2.2576,0.003881
+LUX,Luxembourg,Financial / service hub,J61,1.2397,2.2923,0.016538
+LUX,Luxembourg,Financial / service hub,J62_63,1.4335,2.8647,0.064325
+LUX,Luxembourg,Financial / service hub,K,1.6232,3.0579,0.463123
+LUX,Luxembourg,Financial / service hub,L,1.1855,1.5325,0.02964
+LUX,Luxembourg,Financial / service hub,M,1.3584,2.6213,0.102395
+LUX,Luxembourg,Financial / service hub,N,1.3452,1.9809,0.019756
+LUX,Luxembourg,Financial / service hub,O,1.1656,1.547,0.021789
+LUX,Luxembourg,Financial / service hub,P,1.0577,1.2437,0.012534
+LUX,Luxembourg,Financial / service hub,Q,1.1826,1.5105,0.022246
+LUX,Luxembourg,Financial / service hub,R,1.1661,1.9207,0.003411
+LUX,Luxembourg,Financial / service hub,S,1.2503,1.6541,0.00308
+LUX,Luxembourg,Financial / service hub,T,1.0,1.0,0.000704
+IRL,Ireland,Financial / service hub,A01_02,1.4477,2.3407,0.012681
+IRL,Ireland,Financial / service hub,A03,1.4192,2.4992,0.000893
+IRL,Ireland,Financial / service hub,B05_06,1.2358,2.7297,0.000289
+IRL,Ireland,Financial / service hub,B07_08,1.2654,2.3428,0.002169
+IRL,Ireland,Financial / service hub,B09,1.2019,2.1537,4.1e-05
+IRL,Ireland,Financial / service hub,C10T12,1.2988,2.2007,0.057335
+IRL,Ireland,Financial / service hub,C13T15,1.3666,2.2906,0.000818
+IRL,Ireland,Financial / service hub,C16,1.4249,2.2943,0.001686
+IRL,Ireland,Financial / service hub,C17_18,1.2307,2.0152,0.001884
+IRL,Ireland,Financial / service hub,C19,1.0839,1.6101,0.023652
+IRL,Ireland,Financial / service hub,C20,1.0558,1.6583,0.040069
+IRL,Ireland,Financial / service hub,C21,1.0652,2.0672,0.112394
+IRL,Ireland,Financial / service hub,C22,1.3938,2.4547,0.004303
+IRL,Ireland,Financial / service hub,C23,1.2288,1.9554,0.003404
+IRL,Ireland,Financial / service hub,C24,1.3585,2.4789,0.002486
+IRL,Ireland,Financial / service hub,C25,1.2592,2.0653,0.004275
+IRL,Ireland,Financial / service hub,C26,1.158,1.8529,0.051115
+IRL,Ireland,Financial / service hub,C27,1.2547,2.2335,0.002181
+IRL,Ireland,Financial / service hub,C28,1.263,1.9894,0.004916
+IRL,Ireland,Financial / service hub,C29,1.2506,2.2156,0.001194
+IRL,Ireland,Financial / service hub,C30,1.3266,2.6374,0.001358
+IRL,Ireland,Financial / service hub,C31T33,1.1973,1.9526,0.032683
+IRL,Ireland,Financial / service hub,D,1.3689,2.1463,0.011032
+IRL,Ireland,Financial / service hub,E,1.1739,1.9425,0.004299
+IRL,Ireland,Financial / service hub,F,1.2277,2.2966,0.038156
+IRL,Ireland,Financial / service hub,G,1.2059,1.9374,0.071966
+IRL,Ireland,Financial / service hub,H49,1.1942,1.8319,0.00725
+IRL,Ireland,Financial / service hub,H50,1.2615,3.0141,0.000995
+IRL,Ireland,Financial / service hub,H51,1.1584,2.4865,0.01076
+IRL,Ireland,Financial / service hub,H52,1.0539,2.2996,0.007776
+IRL,Ireland,Financial / service hub,H53,1.3553,2.1321,0.003217
+IRL,Ireland,Financial / service hub,I,1.1973,1.661,0.012178
+IRL,Ireland,Financial / service hub,J58T60,1.1514,1.6704,0.055797
+IRL,Ireland,Financial / service hub,J61,1.2393,1.8358,0.008932
+IRL,Ireland,Financial / service hub,J62_63,1.0322,2.3475,0.132269
+IRL,Ireland,Financial / service hub,K,1.0877,2.1303,0.06675
+IRL,Ireland,Financial / service hub,L,1.0404,1.3217,0.036645
+IRL,Ireland,Financial / service hub,M,1.184,1.6989,0.035948
+IRL,Ireland,Financial / service hub,N,1.0723,1.4984,0.049691
+IRL,Ireland,Financial / service hub,O,1.1792,1.7481,0.022204
+IRL,Ireland,Financial / service hub,P,1.0913,1.1657,0.01662
+IRL,Ireland,Financial / service hub,Q,1.1761,1.5175,0.033086
+IRL,Ireland,Financial / service hub,R,1.1239,1.6525,0.00595
+IRL,Ireland,Financial / service hub,S,1.3413,2.1138,0.006382
+IRL,Ireland,Financial / service hub,T,1.0,1.0,0.000273
+USA,United States,Large diversified,A01_02,2.0605,2.2809,0.012251
+USA,United States,Large diversified,A03,1.2871,1.3834,0.000152
+USA,United States,Large diversified,B05_06,1.7273,1.9407,0.010767
+USA,United States,Large diversified,B07_08,1.8426,2.0418,0.002022
+USA,United States,Large diversified,B09,1.7709,1.9342,0.002904
+USA,United States,Large diversified,C10T12,2.2646,2.5244,0.025846
+USA,United States,Large diversified,C13T15,1.894,2.2078,0.001829
+USA,United States,Large diversified,C16,2.053,2.3319,0.003029
+USA,United States,Large diversified,C17_18,2.0015,2.2627,0.007389
+USA,United States,Large diversified,C19,1.8636,2.3854,0.015415
+USA,United States,Large diversified,C20,1.9085,2.1691,0.013972
+USA,United States,Large diversified,C21,1.4816,1.6954,0.007963
+USA,United States,Large diversified,C22,2.0325,2.3375,0.006775
+USA,United States,Large diversified,C23,1.9165,2.1366,0.004395
+USA,United States,Large diversified,C24,2.0559,2.4912,0.007155
+USA,United States,Large diversified,C25,1.9176,2.2558,0.010878
+USA,United States,Large diversified,C26,1.359,1.4999,0.011519
+USA,United States,Large diversified,C27,1.7089,2.066,0.003583
+USA,United States,Large diversified,C28,1.8195,2.205,0.01081
+USA,United States,Large diversified,C29,2.1037,2.7332,0.018319
+USA,United States,Large diversified,C30,1.7266,2.0331,0.009166
+USA,United States,Large diversified,C31T33,1.6834,1.9173,0.007417
+USA,United States,Large diversified,D,1.6379,1.7745,0.013887
+USA,United States,Large diversified,E,1.7254,1.8719,0.003427
+USA,United States,Large diversified,F,1.7157,1.9442,0.046509
+USA,United States,Large diversified,G,1.6992,1.789,0.100218
+USA,United States,Large diversified,H49,1.8073,1.9304,0.017213
+USA,United States,Large diversified,H50,2.2191,2.3805,0.00166
+USA,United States,Large diversified,H51,1.7749,1.8919,0.006343
+USA,United States,Large diversified,H52,1.7928,1.9063,0.008146
+USA,United States,Large diversified,H53,1.5981,1.7236,0.004305
+USA,United States,Large diversified,I,1.7554,1.8564,0.030571
+USA,United States,Large diversified,J58T60,1.6283,1.7013,0.021805
+USA,United States,Large diversified,J61,1.7221,1.839,0.017398
+USA,United States,Large diversified,J62_63,1.5179,1.5873,0.025995
+USA,United States,Large diversified,K,1.7237,1.7809,0.082555
+USA,United States,Large diversified,L,1.5074,1.5564,0.1
+USA,United States,Large diversified,M,1.5731,1.6458,0.071463
+USA,United States,Large diversified,N,1.6445,1.7301,0.039279
+USA,United States,Large diversified,O,1.6228,1.75,0.079655
+USA,United States,Large diversified,P,1.3985,1.461,0.040876
+USA,United States,Large diversified,Q,1.603,1.69,0.070794
+USA,United States,Large diversified,R,1.6055,1.6717,0.009731
+USA,United States,Large diversified,S,1.659,1.7523,0.013995
+USA,United States,Large diversified,T,1.0,1.0,0.000622
+FRA,France,Large diversified,A01_02,1.8263,2.2745,0.020399
+FRA,France,Large diversified,A03,1.7735,2.3651,0.000559
+FRA,France,Large diversified,B05_06,1.4731,1.7036,6.6e-05
+FRA,France,Large diversified,B07_08,1.7804,2.3922,0.001048
+FRA,France,Large diversified,B09,1.2308,1.4282,4e-05
+FRA,France,Large diversified,C10T12,2.0568,2.5405,0.037949
+FRA,France,Large diversified,C13T15,1.8558,2.7206,0.005944
+FRA,France,Large diversified,C16,2.1958,2.5778,0.002605
+FRA,France,Large diversified,C17_18,1.8747,2.4678,0.005767
+FRA,France,Large diversified,C19,1.4221,2.7398,0.008216
+FRA,France,Large diversified,C20,1.7333,2.4187,0.015191
+FRA,France,Large diversified,C21,1.6875,2.1769,0.006822
+FRA,France,Large diversified,C22,1.6503,2.3444,0.006865
+FRA,France,Large diversified,C23,1.9172,2.4199,0.005821
+FRA,France,Large diversified,C24,2.0265,2.9867,0.007877
+FRA,France,Large diversified,C25,1.7449,2.4387,0.012288
+FRA,France,Large diversified,C26,1.5693,2.2425,0.00686
+FRA,France,Large diversified,C27,1.6624,2.5379,0.004917
+FRA,France,Large diversified,C28,1.7582,2.5647,0.00901
+FRA,France,Large diversified,C29,1.8407,2.891,0.015897
+FRA,France,Large diversified,C30,1.7327,2.7773,0.01915
+FRA,France,Large diversified,C31T33,1.6929,2.3518,0.018326
+FRA,France,Large diversified,D,2.0372,2.5331,0.029147
+FRA,France,Large diversified,E,1.8713,2.2618,0.009207
+FRA,France,Large diversified,F,1.8737,2.3293,0.071955
+FRA,France,Large diversified,G,1.6695,1.9926,0.105064
+FRA,France,Large diversified,H49,1.6531,2.0184,0.022844
+FRA,France,Large diversified,H50,2.2291,2.8757,0.003915
+FRA,France,Large diversified,H51,1.6685,2.1485,0.004822
+FRA,France,Large diversified,H52,1.7122,2.0473,0.017254
+FRA,France,Large diversified,H53,1.4378,1.6468,0.002853
+FRA,France,Large diversified,I,1.7181,2.0115,0.028057
+FRA,France,Large diversified,J58T60,1.7283,2.0894,0.013326
+FRA,France,Large diversified,J61,1.7703,2.1265,0.012919
+FRA,France,Large diversified,J62_63,1.5334,1.7766,0.02522
+FRA,France,Large diversified,K,1.9772,2.224,0.054226
+FRA,France,Large diversified,L,1.269,1.3455,0.079286
+FRA,France,Large diversified,M,1.7442,2.0107,0.087579
+FRA,France,Large diversified,N,1.5744,1.8027,0.050989
+FRA,France,Large diversified,O,1.3405,1.5009,0.052616
+FRA,France,Large diversified,P,1.2451,1.3359,0.032346
+FRA,France,Large diversified,Q,1.3047,1.4519,0.060269
+FRA,France,Large diversified,R,1.5698,1.8153,0.013282
+FRA,France,Large diversified,S,1.495,1.7505,0.010868
+FRA,France,Large diversified,T,1.0,1.0,0.000343
+CAN,Canada,Large diversified,A01_02,1.8144,2.3138,0.024075
+CAN,Canada,Large diversified,A03,1.4701,1.8798,0.001326
+CAN,Canada,Large diversified,B05_06,1.5436,1.8257,0.034139
+CAN,Canada,Large diversified,B07_08,1.4529,1.7433,0.010511
+CAN,Canada,Large diversified,B09,1.4114,1.6834,0.005841
+CAN,Canada,Large diversified,C10T12,2.0355,2.5576,0.032858
+CAN,Canada,Large diversified,C13T15,1.6259,2.2886,0.001784
+CAN,Canada,Large diversified,C16,2.0067,2.467,0.008148
+CAN,Canada,Large diversified,C17_18,1.811,2.3508,0.009803
+CAN,Canada,Large diversified,C19,1.8259,2.4219,0.017124
+CAN,Canada,Large diversified,C20,1.7218,2.3385,0.011661
+CAN,Canada,Large diversified,C21,1.6412,2.1856,0.003535
+CAN,Canada,Large diversified,C22,1.6796,2.3836,0.008067
+CAN,Canada,Large diversified,C23,1.8375,2.3108,0.006404
+CAN,Canada,Large diversified,C24,1.8647,2.9363,0.018695
+CAN,Canada,Large diversified,C25,1.68,2.3418,0.010792
+CAN,Canada,Large diversified,C26,1.442,2.2259,0.00426
+CAN,Canada,Large diversified,C27,1.5932,2.4563,0.003036
+CAN,Canada,Large diversified,C28,1.5706,2.303,0.010564
+CAN,Canada,Large diversified,C29,1.5849,2.9485,0.025942
+CAN,Canada,Large diversified,C30,1.5716,2.4072,0.01007
+CAN,Canada,Large diversified,C31T33,1.6323,2.1744,0.010097
+CAN,Canada,Large diversified,D,1.3364,1.5023,0.015115
+CAN,Canada,Large diversified,E,1.5912,1.7881,0.005023
+CAN,Canada,Large diversified,F,1.645,2.1112,0.087381
+CAN,Canada,Large diversified,G,1.5129,1.6968,0.091063
+CAN,Canada,Large diversified,H49,1.729,2.0297,0.027832
+CAN,Canada,Large diversified,H50,1.8751,2.4434,0.001343
+CAN,Canada,Large diversified,H51,1.809,2.2276,0.007282
+CAN,Canada,Large diversified,H52,1.686,2.0618,0.012376
+CAN,Canada,Large diversified,H53,1.5545,1.8416,0.004147
+CAN,Canada,Large diversified,I,1.718,2.0454,0.026208
+CAN,Canada,Large diversified,J58T60,1.664,2.005,0.011508
+CAN,Canada,Large diversified,J61,1.4915,1.8238,0.015909
+CAN,Canada,Large diversified,J62_63,1.5308,1.7569,0.01876
+CAN,Canada,Large diversified,K,1.6476,1.8136,0.069176
+CAN,Canada,Large diversified,L,1.3438,1.4456,0.086477
+CAN,Canada,Large diversified,M,1.4629,1.6562,0.037178
+CAN,Canada,Large diversified,N,1.5064,1.7426,0.028169
+CAN,Canada,Large diversified,O,1.5872,1.8106,0.069366
+CAN,Canada,Large diversified,P,1.2935,1.4219,0.03691
+CAN,Canada,Large diversified,Q,1.3819,1.5945,0.059065
+CAN,Canada,Large diversified,R,1.6299,1.9315,0.00859
+CAN,Canada,Large diversified,S,1.5914,1.8701,0.011511
+CAN,Canada,Large diversified,T,1.0,1.0,0.00088
+ESP,Spain,Large diversified,A01_02,1.6,1.9148,0.024407
+ESP,Spain,Large diversified,A03,1.5529,1.9242,0.001142
+ESP,Spain,Large diversified,B05_06,1.3961,1.6243,0.0005
+ESP,Spain,Large diversified,B07_08,1.9027,2.4192,0.001764
+ESP,Spain,Large diversified,B09,1.8789,2.4374,0.00012
+ESP,Spain,Large diversified,C10T12,2.1419,2.6546,0.056544
+ESP,Spain,Large diversified,C13T15,1.5592,2.0438,0.008934
+ESP,Spain,Large diversified,C16,2.007,2.5797,0.003267
+ESP,Spain,Large diversified,C17_18,1.9487,2.5081,0.00885
+ESP,Spain,Large diversified,C19,1.2728,2.6926,0.016729
+ESP,Spain,Large diversified,C20,1.8411,2.6497,0.017837
+ESP,Spain,Large diversified,C21,1.6428,2.1296,0.007067
+ESP,Spain,Large diversified,C22,1.8194,2.5563,0.009
+ESP,Spain,Large diversified,C23,1.866,2.4605,0.008903
+ESP,Spain,Large diversified,C24,2.0332,2.8795,0.01563
+ESP,Spain,Large diversified,C25,1.9503,2.6992,0.016605
+ESP,Spain,Large diversified,C26,1.6294,2.41,0.002257
+ESP,Spain,Large diversified,C27,1.8619,2.7875,0.008105
+ESP,Spain,Large diversified,C28,1.7969,2.5907,0.009908
+ESP,Spain,Large diversified,C29,1.8842,2.9914,0.031
+ESP,Spain,Large diversified,C30,1.8482,2.7356,0.007553
+ESP,Spain,Large diversified,C31T33,1.6825,2.1677,0.011423
+ESP,Spain,Large diversified,D,1.6692,2.2384,0.025723
+ESP,Spain,Large diversified,E,1.9214,2.267,0.013875
+ESP,Spain,Large diversified,F,1.8088,2.195,0.072932
+ESP,Spain,Large diversified,G,1.5705,1.8039,0.11011
+ESP,Spain,Large diversified,H49,1.7694,2.0985,0.025101
+ESP,Spain,Large diversified,H50,1.9723,2.3941,0.001126
+ESP,Spain,Large diversified,H51,2.0048,2.56,0.005934
+ESP,Spain,Large diversified,H52,1.9243,2.2324,0.021962
+ESP,Spain,Large diversified,H53,1.8369,1.9787,0.002344
+ESP,Spain,Large diversified,I,1.6661,1.9302,0.057158
+ESP,Spain,Large diversified,J58T60,1.7113,2.1577,0.009074
+ESP,Spain,Large diversified,J61,1.8276,2.183,0.014575
+ESP,Spain,Large diversified,J62_63,1.6965,2.0374,0.017954
+ESP,Spain,Large diversified,K,1.53,1.6764,0.033356
+ESP,Spain,Large diversified,L,1.2394,1.3064,0.069676
+ESP,Spain,Large diversified,M,1.669,1.9251,0.045765
+ESP,Spain,Large diversified,N,1.5897,1.8342,0.038441
+ESP,Spain,Large diversified,O,1.4478,1.6059,0.041405
+ESP,Spain,Large diversified,P,1.2794,1.3903,0.029503
+ESP,Spain,Large diversified,Q,1.4808,1.7143,0.061195
+ESP,Spain,Large diversified,R,1.6133,1.7785,0.016371
+ESP,Spain,Large diversified,S,1.4552,1.6014,0.014622
+ESP,Spain,Large diversified,T,1.0,1.0,0.004252
+IND,India,Emerging industrializer,A01_02,1.283,1.3517,0.108504
+IND,India,Emerging industrializer,A03,1.2051,1.2534,0.007166
+IND,India,Emerging industrializer,B05_06,1.4912,1.7057,0.008221
+IND,India,Emerging industrializer,B07_08,1.7654,2.1578,0.004424
+IND,India,Emerging industrializer,B09,1.3414,1.4967,0.003416
+IND,India,Emerging industrializer,C10T12,2.1294,2.2839,0.050967
+IND,India,Emerging industrializer,C13T15,2.0756,2.4828,0.03333
+IND,India,Emerging industrializer,C16,1.8898,2.2931,0.003758
+IND,India,Emerging industrializer,C17_18,2.0476,2.5752,0.00659
+IND,India,Emerging industrializer,C19,1.489,2.6447,0.032765
+IND,India,Emerging industrializer,C20,2.0447,2.6094,0.025551
+IND,India,Emerging industrializer,C21,1.8091,2.1817,0.010655
+IND,India,Emerging industrializer,C22,2.0707,2.6395,0.011346
+IND,India,Emerging industrializer,C23,1.8692,2.3216,0.013998
+IND,India,Emerging industrializer,C24,2.2204,2.8473,0.041603
+IND,India,Emerging industrializer,C25,2.1279,2.656,0.008962
+IND,India,Emerging industrializer,C26,2.0522,2.7108,0.006893
+IND,India,Emerging industrializer,C27,2.2547,2.8755,0.010101
+IND,India,Emerging industrializer,C28,2.0362,2.571,0.015168
+IND,India,Emerging industrializer,C29,2.1799,2.7783,0.024465
+IND,India,Emerging industrializer,C30,1.8804,2.4326,0.007738
+IND,India,Emerging industrializer,C31T33,1.9878,2.7965,0.012506
+IND,India,Emerging industrializer,D,1.6568,2.1039,0.027041
+IND,India,Emerging industrializer,E,1.6942,2.058,0.005606
+IND,India,Emerging industrializer,F,1.9677,2.3094,0.103538
+IND,India,Emerging industrializer,G,1.3384,1.4698,0.078083
+IND,India,Emerging industrializer,H49,1.6539,1.9545,0.041276
+IND,India,Emerging industrializer,H50,1.6282,2.3309,0.000985
+IND,India,Emerging industrializer,H51,2.0387,2.5088,0.00341
+IND,India,Emerging industrializer,H52,1.766,2.0942,0.008077
+IND,India,Emerging industrializer,H53,1.5498,1.8308,0.00205
+IND,India,Emerging industrializer,I,1.8883,1.9749,0.016026
+IND,India,Emerging industrializer,J58T60,1.7742,2.1104,0.005402
+IND,India,Emerging industrializer,J61,1.8693,2.258,0.011916
+IND,India,Emerging industrializer,J62_63,1.3676,1.4834,0.033588
+IND,India,Emerging industrializer,K,1.3917,1.5213,0.040867
+IND,India,Emerging industrializer,L,1.2604,1.3387,0.041334
+IND,India,Emerging industrializer,M,1.4864,1.6882,0.004463
+IND,India,Emerging industrializer,N,1.4228,1.6039,0.027184
+IND,India,Emerging industrializer,O,1.324,1.4166,0.04177
+IND,India,Emerging industrializer,P,1.2443,1.3547,0.029803
+IND,India,Emerging industrializer,Q,1.5621,1.7268,0.014255
+IND,India,Emerging industrializer,R,1.5473,1.735,0.002969
+IND,India,Emerging industrializer,S,1.3762,1.5558,0.011447
+IND,India,Emerging industrializer,T,1.0,1.0,0.000781
+IDN,Indonesia,Emerging industrializer,A01_02,1.2234,1.302,0.065455
+IDN,Indonesia,Emerging industrializer,A03,1.1434,1.1768,0.016063
+IDN,Indonesia,Emerging industrializer,B05_06,1.2527,1.3363,0.033231
+IDN,Indonesia,Emerging industrializer,B07_08,1.3405,1.499,0.012884
+IDN,Indonesia,Emerging industrializer,B09,1.3651,1.525,0.003423
+IDN,Indonesia,Emerging industrializer,C10T12,1.795,1.9541,0.093413
+IDN,Indonesia,Emerging industrializer,C13T15,1.9041,2.388,0.022289
+IDN,Indonesia,Emerging industrializer,C16,1.953,2.178,0.007684
+IDN,Indonesia,Emerging industrializer,C17_18,1.8997,2.3139,0.009939
+IDN,Indonesia,Emerging industrializer,C19,1.5653,1.8001,0.023484
+IDN,Indonesia,Emerging industrializer,C20,1.9549,2.3793,0.023989
+IDN,Indonesia,Emerging industrializer,C21,1.3158,1.4294,0.003113
+IDN,Indonesia,Emerging industrializer,C22,1.9647,2.4573,0.010632
+IDN,Indonesia,Emerging industrializer,C23,2.0631,2.357,0.011197
+IDN,Indonesia,Emerging industrializer,C24,1.7177,1.913,0.00838
+IDN,Indonesia,Emerging industrializer,C25,2.1176,2.9492,0.006039
+IDN,Indonesia,Emerging industrializer,C26,2.0525,2.8133,0.009969
+IDN,Indonesia,Emerging industrializer,C27,1.6715,2.1262,0.014884
+IDN,Indonesia,Emerging industrializer,C28,2.0733,2.9172,0.010206
+IDN,Indonesia,Emerging industrializer,C29,1.5395,1.7774,0.013996
+IDN,Indonesia,Emerging industrializer,C30,2.3385,3.2877,0.007458
+IDN,Indonesia,Emerging industrializer,C31T33,2.1129,2.7912,0.011808
+IDN,Indonesia,Emerging industrializer,D,2.4459,2.6824,0.027107
+IDN,Indonesia,Emerging industrializer,E,2.2959,2.9417,0.002307
+IDN,Indonesia,Emerging industrializer,F,1.757,2.0575,0.118948
+IDN,Indonesia,Emerging industrializer,G,1.7049,1.9278,0.132847
+IDN,Indonesia,Emerging industrializer,H49,1.6942,1.9506,0.02675
+IDN,Indonesia,Emerging industrializer,H50,1.8351,2.1808,0.005772
+IDN,Indonesia,Emerging industrializer,H51,1.7611,2.0643,0.018936
+IDN,Indonesia,Emerging industrializer,H52,1.733,1.9572,0.007302
+IDN,Indonesia,Emerging industrializer,H53,1.9336,2.186,0.001987
+IDN,Indonesia,Emerging industrializer,I,1.8945,2.0525,0.037079
+IDN,Indonesia,Emerging industrializer,J58T60,1.8298,2.0638,0.008532
+IDN,Indonesia,Emerging industrializer,J61,1.2127,1.2677,0.018406
+IDN,Indonesia,Emerging industrializer,J62_63,2.0964,2.3315,0.004508
+IDN,Indonesia,Emerging industrializer,K,1.4095,1.5132,0.031605
+IDN,Indonesia,Emerging industrializer,L,1.7788,1.9665,0.029333
+IDN,Indonesia,Emerging industrializer,M,1.2079,1.2649,0.005673
+IDN,Indonesia,Emerging industrializer,N,2.1458,2.5626,0.022395
+IDN,Indonesia,Emerging industrializer,O,1.56,1.7115,0.029861
+IDN,Indonesia,Emerging industrializer,P,1.403,1.5323,0.023964
+IDN,Indonesia,Emerging industrializer,Q,1.7139,1.9235,0.011194
+IDN,Indonesia,Emerging industrializer,R,1.31,1.3896,0.003255
+IDN,Indonesia,Emerging industrializer,S,1.6355,2.0731,0.009912
+IDN,Indonesia,Emerging industrializer,T,1.0,1.0,0.002791
+VNM,Vietnam,Emerging industrializer,A01_02,1.8638,2.7073,0.093599
+VNM,Vietnam,Emerging industrializer,A03,2.319,3.3073,0.029052
+VNM,Vietnam,Emerging industrializer,B05_06,1.5051,2.6776,0.046338
+VNM,Vietnam,Emerging industrializer,B07_08,1.6002,2.74,0.003272
+VNM,Vietnam,Emerging industrializer,B09,1.6094,2.3209,0.000904
+VNM,Vietnam,Emerging industrializer,C10T12,2.6514,3.6031,0.11442
+VNM,Vietnam,Emerging industrializer,C13T15,1.4989,3.0224,0.082237
+VNM,Vietnam,Emerging industrializer,C16,2.2508,3.4803,0.011159
+VNM,Vietnam,Emerging industrializer,C17_18,2.0748,3.3715,0.013127
+VNM,Vietnam,Emerging industrializer,C19,1.8694,3.3569,0.026278
+VNM,Vietnam,Emerging industrializer,C20,1.6928,3.1177,0.023356
+VNM,Vietnam,Emerging industrializer,C21,1.7507,2.8636,0.004829
+VNM,Vietnam,Emerging industrializer,C22,1.884,3.2675,0.021122
+VNM,Vietnam,Emerging industrializer,C23,1.7931,2.9137,0.020532
+VNM,Vietnam,Emerging industrializer,C24,1.535,3.3184,0.01736
+VNM,Vietnam,Emerging industrializer,C25,1.2944,2.2798,0.010016
+VNM,Vietnam,Emerging industrializer,C26,2.2011,3.5279,0.110051
+VNM,Vietnam,Emerging industrializer,C27,1.6883,3.3743,0.026078
+VNM,Vietnam,Emerging industrializer,C28,1.4045,3.336,0.010042
+VNM,Vietnam,Emerging industrializer,C29,1.7548,3.3633,0.013949
+VNM,Vietnam,Emerging industrializer,C30,1.866,3.4109,0.007087
+VNM,Vietnam,Emerging industrializer,C31T33,1.8371,3.214,0.029056
+VNM,Vietnam,Emerging industrializer,D,1.4446,2.0217,0.012488
+VNM,Vietnam,Emerging industrializer,E,1.5166,2.3661,0.00275
+VNM,Vietnam,Emerging industrializer,F,1.8185,3.1965,0.054878
+VNM,Vietnam,Emerging industrializer,G,1.6186,2.2683,0.049668
+VNM,Vietnam,Emerging industrializer,H49,1.6291,2.9633,0.013923
+VNM,Vietnam,Emerging industrializer,H50,1.7379,3.1925,0.004888
+VNM,Vietnam,Emerging industrializer,H51,1.8194,3.1888,0.005005
+VNM,Vietnam,Emerging industrializer,H52,1.591,2.4482,0.007642
+VNM,Vietnam,Emerging industrializer,H53,1.4898,2.078,0.000714
+VNM,Vietnam,Emerging industrializer,I,2.1212,3.0047,0.021946
+VNM,Vietnam,Emerging industrializer,J58T60,2.0067,2.9071,0.002257
+VNM,Vietnam,Emerging industrializer,J61,2.1423,3.1507,0.009865
+VNM,Vietnam,Emerging industrializer,J62_63,1.6166,2.1334,0.002788
+VNM,Vietnam,Emerging industrializer,K,1.7861,2.2161,0.022617
+VNM,Vietnam,Emerging industrializer,L,1.5779,2.0908,0.016063
+VNM,Vietnam,Emerging industrializer,M,1.692,2.4697,0.01231
+VNM,Vietnam,Emerging industrializer,N,1.6348,2.3641,0.003964
+VNM,Vietnam,Emerging industrializer,O,1.5642,2.2415,0.011938
+VNM,Vietnam,Emerging industrializer,P,1.4574,1.9581,0.013408
+VNM,Vietnam,Emerging industrializer,Q,1.6034,2.6179,0.007809
+VNM,Vietnam,Emerging industrializer,R,1.6916,2.2209,0.004984
+VNM,Vietnam,Emerging industrializer,S,1.6963,2.6742,0.003895
+VNM,Vietnam,Emerging industrializer,T,1.0,1.0,0.000337
+MEX,Mexico,Emerging industrializer,A01_02,1.3966,1.6461,0.030369
+MEX,Mexico,Emerging industrializer,A03,1.4669,1.8095,0.001082
+MEX,Mexico,Emerging industrializer,B05_06,1.2655,1.4542,0.023263
+MEX,Mexico,Emerging industrializer,B07_08,1.3468,1.5982,0.008746
+MEX,Mexico,Emerging industrializer,B09,1.4954,1.8613,0.00429
+MEX,Mexico,Emerging industrializer,C10T12,1.7304,2.085,0.070104
+MEX,Mexico,Emerging industrializer,C13T15,1.5682,2.1866,0.010193
+MEX,Mexico,Emerging industrializer,C16,1.7286,2.0745,0.002112
+MEX,Mexico,Emerging industrializer,C17_18,1.7381,2.4129,0.008547
+MEX,Mexico,Emerging industrializer,C19,1.8149,2.4113,0.019849
+MEX,Mexico,Emerging industrializer,C20,1.6866,2.3059,0.0186
+MEX,Mexico,Emerging industrializer,C21,1.7649,2.305,0.006988
+MEX,Mexico,Emerging industrializer,C22,1.6708,2.3669,0.010554
+MEX,Mexico,Emerging industrializer,C23,1.8614,2.2866,0.009194
+MEX,Mexico,Emerging industrializer,C24,1.7411,2.3102,0.020998
+MEX,Mexico,Emerging industrializer,C25,1.7396,2.4863,0.012671
+MEX,Mexico,Emerging industrializer,C26,1.2583,2.8621,0.042272
+MEX,Mexico,Emerging industrializer,C27,1.6228,2.6459,0.013094
+MEX,Mexico,Emerging industrializer,C28,1.5208,2.3463,0.012026
+MEX,Mexico,Emerging industrializer,C29,1.5849,2.6805,0.085226
+MEX,Mexico,Emerging industrializer,C30,1.6172,2.4392,0.005222
+MEX,Mexico,Emerging industrializer,C31T33,1.6115,2.3924,0.010391
+MEX,Mexico,Emerging industrializer,D,1.311,1.6501,0.016845
+MEX,Mexico,Emerging industrializer,E,1.4845,1.7426,0.003698
+MEX,Mexico,Emerging industrializer,F,1.4567,1.8018,0.07054
+MEX,Mexico,Emerging industrializer,G,1.2089,1.3208,0.138944
+MEX,Mexico,Emerging industrializer,H49,1.363,1.6944,0.04895
+MEX,Mexico,Emerging industrializer,H50,1.713,2.032,0.001262
+MEX,Mexico,Emerging industrializer,H51,1.8669,2.4078,0.006941
+MEX,Mexico,Emerging industrializer,H52,1.3969,1.7514,0.008075
+MEX,Mexico,Emerging industrializer,H53,1.5222,1.8213,0.001474
+MEX,Mexico,Emerging industrializer,I,1.3889,1.5863,0.020876
+MEX,Mexico,Emerging industrializer,J58T60,1.5811,1.8958,0.004556
+MEX,Mexico,Emerging industrializer,J61,1.3391,1.7678,0.01138
+MEX,Mexico,Emerging industrializer,J62_63,1.5481,1.9395,0.001394
+MEX,Mexico,Emerging industrializer,K,1.3793,1.5093,0.037833
+MEX,Mexico,Emerging industrializer,L,1.1212,1.1663,0.062441
+MEX,Mexico,Emerging industrializer,M,1.2883,1.4511,0.018916
+MEX,Mexico,Emerging industrializer,N,1.2243,1.3521,0.027903
+MEX,Mexico,Emerging industrializer,O,1.3913,1.5637,0.033023
+MEX,Mexico,Emerging industrializer,P,1.1352,1.2035,0.02506
+MEX,Mexico,Emerging industrializer,Q,1.3799,1.6383,0.020892
+MEX,Mexico,Emerging industrializer,R,1.3843,1.5708,0.003764
+MEX,Mexico,Emerging industrializer,S,1.2321,1.3825,0.006777
+MEX,Mexico,Emerging industrializer,T,1.0,1.0,0.002666
+TUR,Turkey,Emerging industrializer,A01_02,1.4219,1.6727,0.050182
+TUR,Turkey,Emerging industrializer,A03,1.3189,1.5117,0.001346
+TUR,Turkey,Emerging industrializer,B05_06,1.5353,1.9473,0.003254
+TUR,Turkey,Emerging industrializer,B07_08,1.4516,1.8187,0.006211
+TUR,Turkey,Emerging industrializer,B09,1.6582,1.9916,0.000376
+TUR,Turkey,Emerging industrializer,C10T12,2.0278,2.4249,0.05208
+TUR,Turkey,Emerging industrializer,C13T15,1.9725,2.4406,0.053675
+TUR,Turkey,Emerging industrializer,C16,1.9674,2.4998,0.003871
+TUR,Turkey,Emerging industrializer,C17_18,1.8909,2.4888,0.011683
+TUR,Turkey,Emerging industrializer,C19,1.2859,2.7263,0.014303
+TUR,Turkey,Emerging industrializer,C20,1.643,2.4618,0.016234
+TUR,Turkey,Emerging industrializer,C21,1.5896,2.0614,0.003853
+TUR,Turkey,Emerging industrializer,C22,1.773,2.6131,0.015818
+TUR,Turkey,Emerging industrializer,C23,1.8816,2.348,0.013716
+TUR,Turkey,Emerging industrializer,C24,2.212,2.9458,0.030942
+TUR,Turkey,Emerging industrializer,C25,1.8883,2.5734,0.019133
+TUR,Turkey,Emerging industrializer,C26,1.592,2.3873,0.005016
+TUR,Turkey,Emerging industrializer,C27,1.9117,2.761,0.015269
+TUR,Turkey,Emerging industrializer,C28,1.879,2.581,0.014044
+TUR,Turkey,Emerging industrializer,C29,2.0074,2.9143,0.027027
+TUR,Turkey,Emerging industrializer,C30,1.5864,2.14,0.005371
+TUR,Turkey,Emerging industrializer,C31T33,1.8545,2.4305,0.018864
+TUR,Turkey,Emerging industrializer,D,2.3906,3.0648,0.041742
+TUR,Turkey,Emerging industrializer,E,1.7954,2.1097,0.00819
+TUR,Turkey,Emerging industrializer,F,2.1829,2.7147,0.098718
+TUR,Turkey,Emerging industrializer,G,1.5188,1.7455,0.103479
+TUR,Turkey,Emerging industrializer,H49,1.5481,1.8703,0.052592
+TUR,Turkey,Emerging industrializer,H50,1.4577,1.8742,0.005012
+TUR,Turkey,Emerging industrializer,H51,1.7342,2.3905,0.012694
+TUR,Turkey,Emerging industrializer,H52,1.4922,1.7775,0.013938
+TUR,Turkey,Emerging industrializer,H53,1.7762,2.0749,0.002536
+TUR,Turkey,Emerging industrializer,I,1.739,1.9649,0.032673
+TUR,Turkey,Emerging industrializer,J58T60,1.8713,2.1913,0.004351
+TUR,Turkey,Emerging industrializer,J61,1.693,1.928,0.009092
+TUR,Turkey,Emerging industrializer,J62_63,1.2397,1.3535,0.008478
+TUR,Turkey,Emerging industrializer,K,1.4907,1.6576,0.026025
+TUR,Turkey,Emerging industrializer,L,1.3163,1.4644,0.042932
+TUR,Turkey,Emerging industrializer,M,1.6292,1.8706,0.021453
+TUR,Turkey,Emerging industrializer,N,1.5584,1.7735,0.025584
+TUR,Turkey,Emerging industrializer,O,1.4836,1.6735,0.040209
+TUR,Turkey,Emerging industrializer,P,1.2101,1.2798,0.02636
+TUR,Turkey,Emerging industrializer,Q,1.5456,1.7746,0.022543
+TUR,Turkey,Emerging industrializer,R,1.5643,1.7412,0.009335
+TUR,Turkey,Emerging industrializer,S,1.6566,1.9582,0.009549
+TUR,Turkey,Emerging industrializer,T,1.0,1.0,0.00025
+POL,Poland,Emerging industrializer,A01_02,1.859,2.4502,0.031633
+POL,Poland,Emerging industrializer,A03,1.6196,2.1135,0.000159
+POL,Poland,Emerging industrializer,B05_06,1.4612,1.7921,0.005522
+POL,Poland,Emerging industrializer,B07_08,1.595,2.0885,0.006256
+POL,Poland,Emerging industrializer,B09,1.6345,1.9177,0.00099
+POL,Poland,Emerging industrializer,C10T12,2.1597,2.7723,0.061248
+POL,Poland,Emerging industrializer,C13T15,1.6923,2.5545,0.008411
+POL,Poland,Emerging industrializer,C16,1.9834,2.5701,0.009999
+POL,Poland,Emerging industrializer,C17_18,1.8903,2.6284,0.01422
+POL,Poland,Emerging industrializer,C19,1.5029,2.5753,0.01876
+POL,Poland,Emerging industrializer,C20,1.7284,2.6456,0.015168
+POL,Poland,Emerging industrializer,C21,1.6748,2.2589,0.003426
+POL,Poland,Emerging industrializer,C22,1.7421,2.6337,0.022335
+POL,Poland,Emerging industrializer,C23,1.8641,2.464,0.01445
+POL,Poland,Emerging industrializer,C24,1.8836,2.9547,0.014597
+POL,Poland,Emerging industrializer,C25,1.7525,2.5929,0.029603
+POL,Poland,Emerging industrializer,C26,1.5509,2.9885,0.009158
+POL,Poland,Emerging industrializer,C27,1.7883,3.0093,0.01609
+POL,Poland,Emerging industrializer,C28,1.6809,2.5757,0.012267
+POL,Poland,Emerging industrializer,C29,1.7751,2.9375,0.034746
+POL,Poland,Emerging industrializer,C30,1.7724,2.7207,0.00686
+POL,Poland,Emerging industrializer,C31T33,1.715,2.4381,0.025532
+POL,Poland,Emerging industrializer,D,1.6885,2.0832,0.024367
+POL,Poland,Emerging industrializer,E,1.6906,2.1228,0.011203
+POL,Poland,Emerging industrializer,F,1.9996,2.5409,0.096879
+POL,Poland,Emerging industrializer,G,1.6098,1.9481,0.124853
+POL,Poland,Emerging industrializer,H49,1.718,2.2801,0.050445
+POL,Poland,Emerging industrializer,H50,1.9734,2.4965,0.000689
+POL,Poland,Emerging industrializer,H51,1.9862,2.4761,0.002454
+POL,Poland,Emerging industrializer,H52,1.8563,2.2184,0.021934
+POL,Poland,Emerging industrializer,H53,1.5529,1.8577,0.00257
+POL,Poland,Emerging industrializer,I,1.8467,2.2539,0.014598
+POL,Poland,Emerging industrializer,J58T60,1.7202,2.2133,0.008247
+POL,Poland,Emerging industrializer,J61,1.5949,2.1063,0.009835
+POL,Poland,Emerging industrializer,J62_63,1.4758,1.9607,0.019446
+POL,Poland,Emerging industrializer,K,1.4962,1.7683,0.030933
+POL,Poland,Emerging industrializer,L,1.616,1.8382,0.04054
+POL,Poland,Emerging industrializer,M,1.5838,1.8764,0.045008
+POL,Poland,Emerging industrializer,N,1.6652,1.9996,0.02644
+POL,Poland,Emerging industrializer,O,1.3448,1.5186,0.030999
+POL,Poland,Emerging industrializer,P,1.3166,1.4542,0.026078
+POL,Poland,Emerging industrializer,Q,1.5534,1.8448,0.034519
+POL,Poland,Emerging industrializer,R,1.8699,2.2066,0.007735
+POL,Poland,Emerging industrializer,S,1.6559,2.0747,0.008255
+POL,Poland,Emerging industrializer,T,1.0,1.0,0.000544
+BRA,Brazil,Emerging industrializer,A01_02,1.8274,2.1,0.046045
+BRA,Brazil,Emerging industrializer,A03,1.2276,1.2717,0.002248
+BRA,Brazil,Emerging industrializer,B05_06,1.806,2.1411,0.017044
+BRA,Brazil,Emerging industrializer,B07_08,1.9123,2.1667,0.013432
+BRA,Brazil,Emerging industrializer,B09,1.7421,1.9331,0.001049
+BRA,Brazil,Emerging industrializer,C10T12,2.4633,2.7581,0.063672
+BRA,Brazil,Emerging industrializer,C13T15,2.0487,2.382,0.013236
+BRA,Brazil,Emerging industrializer,C16,2.1004,2.3588,0.002664
+BRA,Brazil,Emerging industrializer,C17_18,2.163,2.5102,0.010336
+BRA,Brazil,Emerging industrializer,C19,2.6191,3.1115,0.036792
+BRA,Brazil,Emerging industrializer,C20,2.2772,2.7406,0.030983
+BRA,Brazil,Emerging industrializer,C21,1.7917,2.0383,0.006142
+BRA,Brazil,Emerging industrializer,C22,2.2316,2.6956,0.009837
+BRA,Brazil,Emerging industrializer,C23,2.2229,2.5221,0.006939
+BRA,Brazil,Emerging industrializer,C24,2.3156,2.8075,0.017455
+BRA,Brazil,Emerging industrializer,C25,2.117,2.5166,0.008825
+BRA,Brazil,Emerging industrializer,C26,2.1688,2.9773,0.008556
+BRA,Brazil,Emerging industrializer,C27,2.2026,2.7485,0.006882
+BRA,Brazil,Emerging industrializer,C28,2.0953,2.5501,0.010862
+BRA,Brazil,Emerging industrializer,C29,2.408,2.8964,0.024769
+BRA,Brazil,Emerging industrializer,C30,1.6939,2.6929,0.002668
+BRA,Brazil,Emerging industrializer,C31T33,1.9376,2.3337,0.012884
+BRA,Brazil,Emerging industrializer,D,1.9409,2.1413,0.02705
+BRA,Brazil,Emerging industrializer,E,1.5885,1.7165,0.006955
+BRA,Brazil,Emerging industrializer,F,1.9672,2.2101,0.044876
+BRA,Brazil,Emerging industrializer,G,1.5862,1.7093,0.106968
+BRA,Brazil,Emerging industrializer,H49,1.9406,2.1779,0.033169
+BRA,Brazil,Emerging industrializer,H50,1.7792,2.0813,0.001869
+BRA,Brazil,Emerging industrializer,H51,2.1775,2.4774,0.003777
+BRA,Brazil,Emerging industrializer,H52,1.671,1.8248,0.009107
+BRA,Brazil,Emerging industrializer,H53,1.5948,1.7222,0.002913
+BRA,Brazil,Emerging industrializer,I,1.9285,2.121,0.026018
+BRA,Brazil,Emerging industrializer,J58T60,1.8496,2.0947,0.004871
+BRA,Brazil,Emerging industrializer,J61,1.8494,2.0025,0.013218
+BRA,Brazil,Emerging industrializer,J62_63,1.4794,1.625,0.015057
+BRA,Brazil,Emerging industrializer,K,1.4455,1.519,0.054694
+BRA,Brazil,Emerging industrializer,L,1.145,1.1674,0.054307
+BRA,Brazil,Emerging industrializer,M,1.5642,1.7209,0.03343
+BRA,Brazil,Emerging industrializer,N,1.4774,1.5826,0.029863
+BRA,Brazil,Emerging industrializer,O,1.3965,1.4636,0.070292
+BRA,Brazil,Emerging industrializer,P,1.2728,1.3377,0.041444
+BRA,Brazil,Emerging industrializer,Q,1.5975,1.7233,0.042391
+BRA,Brazil,Emerging industrializer,R,1.5839,1.7018,0.00401
+BRA,Brazil,Emerging industrializer,S,1.7147,1.904,0.0145
+BRA,Brazil,Emerging industrializer,T,1.0,1.0,0.005899
+TWN,Taiwan,Edge case,A01_02,1.6643,2.0233,0.013018
+TWN,Taiwan,Edge case,A03,1.7438,2.302,0.002671
+TWN,Taiwan,Edge case,B05_06,1.478,2.0041,0.000539
+TWN,Taiwan,Edge case,B07_08,1.6211,2.3256,0.001199
+TWN,Taiwan,Edge case,B09,1.6025,2.2474,0.000582
+TWN,Taiwan,Edge case,C10T12,2.014,2.5231,0.023746
+TWN,Taiwan,Edge case,C13T15,2.1277,2.9491,0.017102
+TWN,Taiwan,Edge case,C16,1.8597,2.6843,0.001204
+TWN,Taiwan,Edge case,C17_18,2.0146,2.7149,0.00933
+TWN,Taiwan,Edge case,C19,1.2759,2.5653,0.029935
+TWN,Taiwan,Edge case,C20,1.9764,3.0942,0.060007
+TWN,Taiwan,Edge case,C21,1.7188,2.309,0.003059
+TWN,Taiwan,Edge case,C22,1.891,2.7597,0.015853
+TWN,Taiwan,Edge case,C23,1.7858,2.6659,0.010158
+TWN,Taiwan,Edge case,C24,2.119,3.2499,0.045715
+TWN,Taiwan,Edge case,C25,2.0147,2.8549,0.026715
+TWN,Taiwan,Edge case,C26,1.6559,2.5891,0.176429
+TWN,Taiwan,Edge case,C27,1.9302,2.9958,0.017768
+TWN,Taiwan,Edge case,C28,1.8881,2.8742,0.026651
+TWN,Taiwan,Edge case,C29,1.8518,2.7514,0.012517
+TWN,Taiwan,Edge case,C30,1.8659,2.8563,0.010392
+TWN,Taiwan,Edge case,C31T33,1.8341,2.7521,0.007692
+TWN,Taiwan,Edge case,D,1.4177,2.2248,0.018556
+TWN,Taiwan,Edge case,E,1.8124,2.2497,0.006016
+TWN,Taiwan,Edge case,F,1.9166,2.7742,0.042373
+TWN,Taiwan,Edge case,G,1.3508,1.5712,0.112188
+TWN,Taiwan,Edge case,H49,1.5498,2.0481,0.011513
+TWN,Taiwan,Edge case,H50,2.1477,3.2966,0.006404
+TWN,Taiwan,Edge case,H51,1.7407,2.7037,0.008262
+TWN,Taiwan,Edge case,H52,1.441,1.7956,0.006817
+TWN,Taiwan,Edge case,H53,1.5364,1.9783,0.001808
+TWN,Taiwan,Edge case,I,1.6555,1.9836,0.022708
+TWN,Taiwan,Edge case,J58T60,1.8187,2.2778,0.007398
+TWN,Taiwan,Edge case,J61,1.4707,1.734,0.010485
+TWN,Taiwan,Edge case,J62_63,1.4082,1.7169,0.007377
+TWN,Taiwan,Edge case,K,1.3953,1.5184,0.043843
+TWN,Taiwan,Edge case,L,1.3009,1.4291,0.048479
+TWN,Taiwan,Edge case,M,1.5547,1.9284,0.018309
+TWN,Taiwan,Edge case,N,1.3502,1.6026,0.009968
+TWN,Taiwan,Edge case,O,1.3288,1.5007,0.038507
+TWN,Taiwan,Edge case,P,1.2259,1.3709,0.0229
+TWN,Taiwan,Edge case,Q,1.4224,1.76,0.022017
+TWN,Taiwan,Edge case,R,1.4967,1.7377,0.006207
+TWN,Taiwan,Edge case,S,1.4996,1.752,0.012692
+TWN,Taiwan,Edge case,T,1.0,1.0,0.00289
+ZAF,South Africa,Edge case,A01_02,2.1884,2.7164,0.033003
+ZAF,South Africa,Edge case,A03,1.7439,1.9743,0.001753
+ZAF,South Africa,Edge case,B05_06,1.94,2.306,0.015394
+ZAF,South Africa,Edge case,B07_08,1.9027,2.3432,0.056561
+ZAF,South Africa,Edge case,B09,2.1667,2.5104,0.0013
+ZAF,South Africa,Edge case,C10T12,2.2816,2.7408,0.048307
+ZAF,South Africa,Edge case,C13T15,2.0047,2.6419,0.007688
+ZAF,South Africa,Edge case,C16,2.227,2.6666,0.003298
+ZAF,South Africa,Edge case,C17_18,2.0903,2.5651,0.011961
+ZAF,South Africa,Edge case,C19,1.8393,2.6719,0.03509
+ZAF,South Africa,Edge case,C20,1.9941,2.7077,0.019585
+ZAF,South Africa,Edge case,C21,1.9837,2.5747,0.003429
+ZAF,South Africa,Edge case,C22,2.1325,2.7666,0.006343
+ZAF,South Africa,Edge case,C23,2.057,2.5865,0.006669
+ZAF,South Africa,Edge case,C24,2.5534,3.0552,0.020616
+ZAF,South Africa,Edge case,C25,2.3084,2.7079,0.011015
+ZAF,South Africa,Edge case,C26,2.2309,2.9684,0.003102
+ZAF,South Africa,Edge case,C27,2.2356,2.867,0.005834
+ZAF,South Africa,Edge case,C28,2.1262,2.6609,0.013176
+ZAF,South Africa,Edge case,C29,2.0194,3.0702,0.027419
+ZAF,South Africa,Edge case,C30,1.8917,2.4694,0.002187
+ZAF,South Africa,Edge case,C31T33,2.1743,2.666,0.006564
+ZAF,South Africa,Edge case,D,1.8714,2.2062,0.025664
+ZAF,South Africa,Edge case,E,1.821,2.1297,0.012574
+ZAF,South Africa,Edge case,F,2.1257,2.6581,0.038527
+ZAF,South Africa,Edge case,G,1.6684,1.851,0.087498
+ZAF,South Africa,Edge case,H49,1.7169,2.0864,0.027634
+ZAF,South Africa,Edge case,H50,1.9073,2.2598,0.000833
+ZAF,South Africa,Edge case,H51,2.0095,2.4987,0.007476
+ZAF,South Africa,Edge case,H52,2.0667,2.4431,0.018343
+ZAF,South Africa,Edge case,H53,1.8625,2.2707,0.002488
+ZAF,South Africa,Edge case,I,2.0475,2.3273,0.014442
+ZAF,South Africa,Edge case,J58T60,2.0529,2.4453,0.005715
+ZAF,South Africa,Edge case,J61,2.1091,2.5866,0.033347
+ZAF,South Africa,Edge case,J62_63,1.8955,2.1245,0.014083
+ZAF,South Africa,Edge case,K,1.7822,1.9262,0.064965
+ZAF,South Africa,Edge case,L,1.5437,1.6685,0.050552
+ZAF,South Africa,Edge case,M,1.7628,1.9428,0.038383
+ZAF,South Africa,Edge case,N,1.8875,2.1396,0.024697
+ZAF,South Africa,Edge case,O,1.5977,1.7531,0.06541
+ZAF,South Africa,Edge case,P,1.3032,1.3894,0.04317
+ZAF,South Africa,Edge case,Q,1.6084,1.8843,0.034791
+ZAF,South Africa,Edge case,R,1.8622,2.1617,0.006727
+ZAF,South Africa,Edge case,S,1.8811,2.1724,0.004484
+ZAF,South Africa,Edge case,T,1.0,1.0,0.037902

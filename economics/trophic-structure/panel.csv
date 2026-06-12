@@ -1,0 +1,301 @@
+code,country,archetype,year,trophic_depth,incoherence
+AUS,Australia,Resource & extraction,2011,1.84303,0.83745
+AUS,Australia,Resource & extraction,2012,1.82789,0.82844
+AUS,Australia,Resource & extraction,2013,1.81623,0.82858
+AUS,Australia,Resource & extraction,2014,1.80495,0.82485
+AUS,Australia,Resource & extraction,2015,1.81299,0.82565
+AUS,Australia,Resource & extraction,2016,1.82076,0.82647
+AUS,Australia,Resource & extraction,2017,1.82689,0.82814
+AUS,Australia,Resource & extraction,2018,1.82661,0.82728
+AUS,Australia,Resource & extraction,2019,1.82691,0.82462
+AUS,Australia,Resource & extraction,2020,1.82975,0.81515
+BRA,Brazil,Emerging industrializer,2011,1.79295,0.76214
+BRA,Brazil,Emerging industrializer,2012,1.79332,0.75988
+BRA,Brazil,Emerging industrializer,2013,1.78538,0.75925
+BRA,Brazil,Emerging industrializer,2014,1.78704,0.75903
+BRA,Brazil,Emerging industrializer,2015,1.77528,0.76774
+BRA,Brazil,Emerging industrializer,2016,1.76235,0.76162
+BRA,Brazil,Emerging industrializer,2017,1.76782,0.76882
+BRA,Brazil,Emerging industrializer,2018,1.79703,0.78142
+BRA,Brazil,Emerging industrializer,2019,1.7937,0.77886
+BRA,Brazil,Emerging industrializer,2020,1.76694,0.77634
+CAN,Canada,Large diversified,2011,1.58303,0.77096
+CAN,Canada,Large diversified,2012,1.5873,0.77717
+CAN,Canada,Large diversified,2013,1.58575,0.80185
+CAN,Canada,Large diversified,2014,1.57683,0.80196
+CAN,Canada,Large diversified,2015,1.57961,0.81208
+CAN,Canada,Large diversified,2016,1.57728,0.81491
+CAN,Canada,Large diversified,2017,1.57836,0.81674
+CAN,Canada,Large diversified,2018,1.573,0.81303
+CAN,Canada,Large diversified,2019,1.57929,0.81479
+CAN,Canada,Large diversified,2020,1.58958,0.80688
+CHE,Switzerland,Financial / service hub,2011,1.74256,0.86512
+CHE,Switzerland,Financial / service hub,2012,1.75051,0.88365
+CHE,Switzerland,Financial / service hub,2013,1.72997,0.8814
+CHE,Switzerland,Financial / service hub,2014,1.74441,0.88155
+CHE,Switzerland,Financial / service hub,2015,1.72957,0.87553
+CHE,Switzerland,Financial / service hub,2016,1.70389,0.87511
+CHE,Switzerland,Financial / service hub,2017,1.71778,0.87966
+CHE,Switzerland,Financial / service hub,2018,1.73625,0.87748
+CHE,Switzerland,Financial / service hub,2019,1.75065,0.87956
+CHE,Switzerland,Financial / service hub,2020,1.75466,0.87106
+CHL,Chile,Resource & extraction,2011,1.70294,0.77079
+CHL,Chile,Resource & extraction,2012,1.6933,0.76672
+CHL,Chile,Resource & extraction,2013,1.6667,0.75561
+CHL,Chile,Resource & extraction,2014,1.69873,0.79041
+CHL,Chile,Resource & extraction,2015,1.64556,0.7783
+CHL,Chile,Resource & extraction,2016,1.63498,0.77673
+CHL,Chile,Resource & extraction,2017,1.63348,0.77449
+CHL,Chile,Resource & extraction,2018,1.6321,0.77155
+CHL,Chile,Resource & extraction,2019,1.63006,0.77893
+CHL,Chile,Resource & extraction,2020,1.65276,0.79997
+CHN,China,Deep manufacturing,2011,2.32916,0.77361
+CHN,China,Deep manufacturing,2012,2.42844,0.78338
+CHN,China,Deep manufacturing,2013,2.45924,0.78411
+CHN,China,Deep manufacturing,2014,2.52199,0.795
+CHN,China,Deep manufacturing,2015,2.65359,0.80748
+CHN,China,Deep manufacturing,2016,2.49554,0.78395
+CHN,China,Deep manufacturing,2017,2.38188,0.7707
+CHN,China,Deep manufacturing,2018,2.34609,0.76522
+CHN,China,Deep manufacturing,2019,2.35725,0.7665
+CHN,China,Deep manufacturing,2020,2.36869,0.7682
+CZE,Czechia,Deep manufacturing,2011,1.8069,0.87802
+CZE,Czechia,Deep manufacturing,2012,1.74801,0.86361
+CZE,Czechia,Deep manufacturing,2013,1.72761,0.86327
+CZE,Czechia,Deep manufacturing,2014,1.72121,0.85844
+CZE,Czechia,Deep manufacturing,2015,1.70127,0.87166
+CZE,Czechia,Deep manufacturing,2016,1.70695,0.87269
+CZE,Czechia,Deep manufacturing,2017,1.70664,0.8646
+CZE,Czechia,Deep manufacturing,2018,1.71303,0.86583
+CZE,Czechia,Deep manufacturing,2019,1.70952,0.86279
+CZE,Czechia,Deep manufacturing,2020,1.6665,0.86377
+DEU,Germany,Deep manufacturing,2011,1.71368,0.83488
+DEU,Germany,Deep manufacturing,2012,1.69294,0.8307
+DEU,Germany,Deep manufacturing,2013,1.68112,0.82453
+DEU,Germany,Deep manufacturing,2014,1.68025,0.82689
+DEU,Germany,Deep manufacturing,2015,1.67491,0.84117
+DEU,Germany,Deep manufacturing,2016,1.67834,0.84601
+DEU,Germany,Deep manufacturing,2017,1.67369,0.84491
+DEU,Germany,Deep manufacturing,2018,1.67626,0.84495
+DEU,Germany,Deep manufacturing,2019,1.67113,0.84452
+DEU,Germany,Deep manufacturing,2020,1.68426,0.83513
+ESP,Spain,Large diversified,2011,1.6913,0.85328
+ESP,Spain,Large diversified,2012,1.68026,0.85964
+ESP,Spain,Large diversified,2013,1.68198,0.86501
+ESP,Spain,Large diversified,2014,1.69204,0.86563
+ESP,Spain,Large diversified,2015,1.67053,0.86629
+ESP,Spain,Large diversified,2016,1.64887,0.86935
+ESP,Spain,Large diversified,2017,1.6458,0.86863
+ESP,Spain,Large diversified,2018,1.65512,0.86018
+ESP,Spain,Large diversified,2019,1.65753,0.86848
+ESP,Spain,Large diversified,2020,1.67855,0.86232
+FRA,France,Large diversified,2011,1.68189,0.83633
+FRA,France,Large diversified,2012,1.6833,0.83457
+FRA,France,Large diversified,2013,1.67211,0.83711
+FRA,France,Large diversified,2014,1.66885,0.83811
+FRA,France,Large diversified,2015,1.65333,0.84375
+FRA,France,Large diversified,2016,1.64849,0.84018
+FRA,France,Large diversified,2017,1.66197,0.84217
+FRA,France,Large diversified,2018,1.66385,0.84299
+FRA,France,Large diversified,2019,1.65907,0.84458
+FRA,France,Large diversified,2020,1.67825,0.84265
+GBR,United Kingdom,Financial / service hub,2011,1.65616,0.84897
+GBR,United Kingdom,Financial / service hub,2012,1.65046,0.85004
+GBR,United Kingdom,Financial / service hub,2013,1.6601,0.85094
+GBR,United Kingdom,Financial / service hub,2014,1.66951,0.85049
+GBR,United Kingdom,Financial / service hub,2015,1.6685,0.86206
+GBR,United Kingdom,Financial / service hub,2016,1.69407,0.85277
+GBR,United Kingdom,Financial / service hub,2017,1.65409,0.86412
+GBR,United Kingdom,Financial / service hub,2018,1.65464,0.8641
+GBR,United Kingdom,Financial / service hub,2019,1.65296,0.86871
+GBR,United Kingdom,Financial / service hub,2020,1.63817,0.85104
+IDN,Indonesia,Emerging industrializer,2011,1.67555,0.72989
+IDN,Indonesia,Emerging industrializer,2012,1.66984,0.72393
+IDN,Indonesia,Emerging industrializer,2013,1.6649,0.71376
+IDN,Indonesia,Emerging industrializer,2014,1.66124,0.71909
+IDN,Indonesia,Emerging industrializer,2015,1.68994,0.71984
+IDN,Indonesia,Emerging industrializer,2016,1.70368,0.71971
+IDN,Indonesia,Emerging industrializer,2017,1.6934,0.71411
+IDN,Indonesia,Emerging industrializer,2018,1.67174,0.71869
+IDN,Indonesia,Emerging industrializer,2019,1.70012,0.71782
+IDN,Indonesia,Emerging industrializer,2020,1.72844,0.73091
+IND,India,Emerging industrializer,2011,1.80066,0.70767
+IND,India,Emerging industrializer,2012,1.70936,0.68616
+IND,India,Emerging industrializer,2013,1.70543,0.66876
+IND,India,Emerging industrializer,2014,1.72443,0.67998
+IND,India,Emerging industrializer,2015,1.69816,0.68297
+IND,India,Emerging industrializer,2016,1.6703,0.6722
+IND,India,Emerging industrializer,2017,1.64699,0.66202
+IND,India,Emerging industrializer,2018,1.67367,0.67169
+IND,India,Emerging industrializer,2019,1.66768,0.66493
+IND,India,Emerging industrializer,2020,1.68238,0.67866
+IRL,Ireland,Financial / service hub,2011,1.32966,0.79559
+IRL,Ireland,Financial / service hub,2012,1.43243,0.84915
+IRL,Ireland,Financial / service hub,2013,1.44407,0.81974
+IRL,Ireland,Financial / service hub,2014,1.378,0.81829
+IRL,Ireland,Financial / service hub,2015,1.29207,0.82549
+IRL,Ireland,Financial / service hub,2016,1.29536,0.79708
+IRL,Ireland,Financial / service hub,2017,1.27041,0.77369
+IRL,Ireland,Financial / service hub,2018,1.27877,0.78267
+IRL,Ireland,Financial / service hub,2019,1.14071,0.737
+IRL,Ireland,Financial / service hub,2020,1.20325,0.79293
+ITA,Italy,Deep manufacturing,2011,1.84191,0.8232
+ITA,Italy,Deep manufacturing,2012,1.82368,0.8162
+ITA,Italy,Deep manufacturing,2013,1.82212,0.81969
+ITA,Italy,Deep manufacturing,2014,1.81935,0.82221
+ITA,Italy,Deep manufacturing,2015,1.77625,0.82419
+ITA,Italy,Deep manufacturing,2016,1.76761,0.84151
+ITA,Italy,Deep manufacturing,2017,1.77074,0.84555
+ITA,Italy,Deep manufacturing,2018,1.76549,0.84448
+ITA,Italy,Deep manufacturing,2019,1.7737,0.8438
+ITA,Italy,Deep manufacturing,2020,1.7723,0.83213
+JPN,Japan,Deep manufacturing,2011,1.71964,0.75592
+JPN,Japan,Deep manufacturing,2012,1.71247,0.75201
+JPN,Japan,Deep manufacturing,2013,1.69762,0.74557
+JPN,Japan,Deep manufacturing,2014,1.68366,0.74317
+JPN,Japan,Deep manufacturing,2015,1.67416,0.75544
+JPN,Japan,Deep manufacturing,2016,1.6599,0.74581
+JPN,Japan,Deep manufacturing,2017,1.66661,0.74533
+JPN,Japan,Deep manufacturing,2018,1.67315,0.74757
+JPN,Japan,Deep manufacturing,2019,1.67359,0.7466
+JPN,Japan,Deep manufacturing,2020,1.68213,0.74911
+KOR,South Korea,Deep manufacturing,2011,1.81361,0.76156
+KOR,South Korea,Deep manufacturing,2012,1.82011,0.76905
+KOR,South Korea,Deep manufacturing,2013,1.82933,0.76715
+KOR,South Korea,Deep manufacturing,2014,1.84038,0.78024
+KOR,South Korea,Deep manufacturing,2015,1.84849,0.79999
+KOR,South Korea,Deep manufacturing,2016,1.84332,0.79836
+KOR,South Korea,Deep manufacturing,2017,1.82918,0.79778
+KOR,South Korea,Deep manufacturing,2018,1.83309,0.79414
+KOR,South Korea,Deep manufacturing,2019,1.85315,0.80488
+KOR,South Korea,Deep manufacturing,2020,1.87271,0.81744
+LUX,Luxembourg,Financial / service hub,2011,1.45113,0.80709
+LUX,Luxembourg,Financial / service hub,2012,1.45182,0.82977
+LUX,Luxembourg,Financial / service hub,2013,1.46053,0.83874
+LUX,Luxembourg,Financial / service hub,2014,1.47529,0.86614
+LUX,Luxembourg,Financial / service hub,2015,1.50666,0.88583
+LUX,Luxembourg,Financial / service hub,2016,1.47859,0.87018
+LUX,Luxembourg,Financial / service hub,2017,1.52381,0.8883
+LUX,Luxembourg,Financial / service hub,2018,1.53053,0.89575
+LUX,Luxembourg,Financial / service hub,2019,1.50704,0.88775
+LUX,Luxembourg,Financial / service hub,2020,1.51951,0.88349
+MEX,Mexico,Emerging industrializer,2011,1.48977,0.6142
+MEX,Mexico,Emerging industrializer,2012,1.4839,0.60658
+MEX,Mexico,Emerging industrializer,2013,1.49231,0.63407
+MEX,Mexico,Emerging industrializer,2014,1.47075,0.62054
+MEX,Mexico,Emerging industrializer,2015,1.43612,0.6249
+MEX,Mexico,Emerging industrializer,2016,1.42807,0.62502
+MEX,Mexico,Emerging industrializer,2017,1.43649,0.62525
+MEX,Mexico,Emerging industrializer,2018,1.42602,0.62522
+MEX,Mexico,Emerging industrializer,2019,1.42093,0.6188
+MEX,Mexico,Emerging industrializer,2020,1.40779,0.6112
+NLD,Netherlands,Financial / service hub,2011,1.65562,0.83503
+NLD,Netherlands,Financial / service hub,2012,1.66152,0.82433
+NLD,Netherlands,Financial / service hub,2013,1.65199,0.8217
+NLD,Netherlands,Financial / service hub,2014,1.64742,0.82498
+NLD,Netherlands,Financial / service hub,2015,1.59955,0.81817
+NLD,Netherlands,Financial / service hub,2016,1.61979,0.83415
+NLD,Netherlands,Financial / service hub,2017,1.61354,0.83863
+NLD,Netherlands,Financial / service hub,2018,1.60789,0.8394
+NLD,Netherlands,Financial / service hub,2019,1.57267,0.83369
+NLD,Netherlands,Financial / service hub,2020,1.56778,0.82068
+NOR,Norway,Resource & extraction,2011,1.58977,0.82722
+NOR,Norway,Resource & extraction,2012,1.58795,0.81653
+NOR,Norway,Resource & extraction,2013,1.59188,0.81641
+NOR,Norway,Resource & extraction,2014,1.60716,0.82032
+NOR,Norway,Resource & extraction,2015,1.60876,0.82505
+NOR,Norway,Resource & extraction,2016,1.59895,0.8128
+NOR,Norway,Resource & extraction,2017,1.58395,0.81365
+NOR,Norway,Resource & extraction,2018,1.58944,0.81533
+NOR,Norway,Resource & extraction,2019,1.60017,0.81924
+NOR,Norway,Resource & extraction,2020,1.60354,0.78061
+POL,Poland,Emerging industrializer,2011,1.7391,0.86638
+POL,Poland,Emerging industrializer,2012,1.73022,0.856
+POL,Poland,Emerging industrializer,2013,1.72911,0.86501
+POL,Poland,Emerging industrializer,2014,1.70207,0.87471
+POL,Poland,Emerging industrializer,2015,1.71374,0.8838
+POL,Poland,Emerging industrializer,2016,1.69577,0.88144
+POL,Poland,Emerging industrializer,2017,1.69967,0.87362
+POL,Poland,Emerging industrializer,2018,1.71138,0.8751
+POL,Poland,Emerging industrializer,2019,1.72189,0.87725
+POL,Poland,Emerging industrializer,2020,1.69991,0.86308
+RUS,Russia,Resource & extraction,2011,1.74824,0.81901
+RUS,Russia,Resource & extraction,2012,1.73111,0.80388
+RUS,Russia,Resource & extraction,2013,1.73808,0.79541
+RUS,Russia,Resource & extraction,2014,1.73526,0.8028
+RUS,Russia,Resource & extraction,2015,1.75874,0.80128
+RUS,Russia,Resource & extraction,2016,1.79561,0.79685
+RUS,Russia,Resource & extraction,2017,1.8214,0.7984
+RUS,Russia,Resource & extraction,2018,1.82475,0.80727
+RUS,Russia,Resource & extraction,2019,1.81735,0.79903
+RUS,Russia,Resource & extraction,2020,1.82084,0.79077
+SAU,Saudi Arabia,Resource & extraction,2011,1.34674,0.76008
+SAU,Saudi Arabia,Resource & extraction,2012,1.36373,0.77302
+SAU,Saudi Arabia,Resource & extraction,2013,1.3574,0.73103
+SAU,Saudi Arabia,Resource & extraction,2014,1.35592,0.66226
+SAU,Saudi Arabia,Resource & extraction,2015,1.35501,0.66533
+SAU,Saudi Arabia,Resource & extraction,2016,1.38017,0.70957
+SAU,Saudi Arabia,Resource & extraction,2017,1.37496,0.65999
+SAU,Saudi Arabia,Resource & extraction,2018,1.37654,0.64188
+SAU,Saudi Arabia,Resource & extraction,2019,1.38561,0.68142
+SAU,Saudi Arabia,Resource & extraction,2020,1.39642,0.65373
+SGP,Singapore,Financial / service hub,2011,1.54419,0.75664
+SGP,Singapore,Financial / service hub,2012,1.55181,0.77713
+SGP,Singapore,Financial / service hub,2013,1.55154,0.79429
+SGP,Singapore,Financial / service hub,2014,1.54835,0.78245
+SGP,Singapore,Financial / service hub,2015,1.58869,0.83705
+SGP,Singapore,Financial / service hub,2016,1.60145,0.819
+SGP,Singapore,Financial / service hub,2017,1.56838,0.81338
+SGP,Singapore,Financial / service hub,2018,1.57921,0.85945
+SGP,Singapore,Financial / service hub,2019,1.55004,0.83503
+SGP,Singapore,Financial / service hub,2020,1.56758,0.86183
+TUR,Turkey,Emerging industrializer,2011,1.71317,0.78997
+TUR,Turkey,Emerging industrializer,2012,1.74953,0.8031
+TUR,Turkey,Emerging industrializer,2013,1.75568,0.80518
+TUR,Turkey,Emerging industrializer,2014,1.76778,0.80945
+TUR,Turkey,Emerging industrializer,2015,1.66031,0.72472
+TUR,Turkey,Emerging industrializer,2016,1.75108,0.80311
+TUR,Turkey,Emerging industrializer,2017,1.7536,0.80195
+TUR,Turkey,Emerging industrializer,2018,1.73291,0.78907
+TUR,Turkey,Emerging industrializer,2019,1.74113,0.79117
+TUR,Turkey,Emerging industrializer,2020,1.7372,0.78576
+TWN,Taiwan,Edge case,2011,1.66363,0.84369
+TWN,Taiwan,Edge case,2012,1.65428,0.84919
+TWN,Taiwan,Edge case,2013,1.646,0.84948
+TWN,Taiwan,Edge case,2014,1.63352,0.84097
+TWN,Taiwan,Edge case,2015,1.57159,0.81704
+TWN,Taiwan,Edge case,2016,1.58478,0.80262
+TWN,Taiwan,Edge case,2017,1.59944,0.80183
+TWN,Taiwan,Edge case,2018,1.60665,0.7996
+TWN,Taiwan,Edge case,2019,1.64288,0.81227
+TWN,Taiwan,Edge case,2020,1.70178,0.82503
+USA,United States,Large diversified,2011,1.68263,0.78376
+USA,United States,Large diversified,2012,1.68761,0.7828
+USA,United States,Large diversified,2013,1.70181,0.79326
+USA,United States,Large diversified,2014,1.70849,0.79281
+USA,United States,Large diversified,2015,1.68179,0.78777
+USA,United States,Large diversified,2016,1.6776,0.7843
+USA,United States,Large diversified,2017,1.68209,0.79073
+USA,United States,Large diversified,2018,1.69138,0.79299
+USA,United States,Large diversified,2019,1.68345,0.78955
+USA,United States,Large diversified,2020,1.66465,0.78099
+VNM,Vietnam,Emerging industrializer,2011,1.62207,0.75588
+VNM,Vietnam,Emerging industrializer,2012,1.73078,0.78798
+VNM,Vietnam,Emerging industrializer,2013,1.76148,0.7883
+VNM,Vietnam,Emerging industrializer,2014,1.82741,0.80629
+VNM,Vietnam,Emerging industrializer,2015,1.88745,0.822
+VNM,Vietnam,Emerging industrializer,2016,1.98498,0.83419
+VNM,Vietnam,Emerging industrializer,2017,1.91885,0.83069
+VNM,Vietnam,Emerging industrializer,2018,1.90616,0.82963
+VNM,Vietnam,Emerging industrializer,2019,1.89384,0.82476
+VNM,Vietnam,Emerging industrializer,2020,1.90762,0.8245
+ZAF,South Africa,Edge case,2011,1.87607,0.86173
+ZAF,South Africa,Edge case,2012,1.87443,0.86127
+ZAF,South Africa,Edge case,2013,1.85355,0.86439
+ZAF,South Africa,Edge case,2014,1.8571,0.86772
+ZAF,South Africa,Edge case,2015,1.84358,0.86811
+ZAF,South Africa,Edge case,2016,1.8298,0.86631
+ZAF,South Africa,Edge case,2017,1.83759,0.86863
+ZAF,South Africa,Edge case,2018,1.8409,0.86921
+ZAF,South Africa,Edge case,2019,1.83844,0.87261
+ZAF,South Africa,Edge case,2020,1.8275,0.87186

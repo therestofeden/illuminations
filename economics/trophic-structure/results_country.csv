@@ -1,0 +1,31 @@
+code,country,archetype,trophic_depth,trophic_depth_global,offshore_gap,incoherence,max_level,spread
+CHN,China,Deep manufacturing,2.3573,2.623,0.2657,0.7665,2.9366,0.4954
+VNM,Vietnam,Emerging industrializer,1.8938,3.028,1.1342,0.8248,2.6514,0.3648
+KOR,South Korea,Deep manufacturing,1.8532,2.3917,0.5385,0.8049,2.5029,0.2937
+ZAF,South Africa,Edge case,1.8384,2.1874,0.349,0.8726,2.5534,0.3071
+AUS,Australia,Resource & extraction,1.8269,2.0489,0.222,0.8246,2.368,0.2697
+RUS,Russia,Resource & extraction,1.8174,2.0646,0.2473,0.799,2.8169,0.3866
+BRA,Brazil,Emerging industrializer,1.7937,2.0131,0.2194,0.7789,2.6191,0.3984
+ITA,Italy,Deep manufacturing,1.7737,2.1257,0.352,0.8438,2.2394,0.2818
+CHE,Switzerland,Financial / service hub,1.7507,2.1681,0.4175,0.8796,2.6036,0.2362
+TUR,Turkey,Emerging industrializer,1.7411,2.1601,0.419,0.7912,2.3906,0.3114
+POL,Poland,Emerging industrializer,1.7219,2.2581,0.5362,0.8772,2.1597,0.2012
+CZE,Czechia,Deep manufacturing,1.7095,2.4009,0.6914,0.8628,2.2578,0.1852
+IDN,Indonesia,Emerging industrializer,1.7001,1.9482,0.2481,0.7178,2.4459,0.2855
+USA,United States,Large diversified,1.6834,1.8199,0.1364,0.7896,2.2646,0.1768
+JPN,Japan,Deep manufacturing,1.6736,1.9273,0.2537,0.7466,2.4999,0.3188
+DEU,Germany,Deep manufacturing,1.6711,2.0627,0.3916,0.8445,2.0337,0.1724
+IND,India,Emerging industrializer,1.6677,1.9697,0.302,0.6649,2.2547,0.3444
+FRA,France,Large diversified,1.6591,2.0193,0.3602,0.8446,2.2291,0.2416
+ESP,Spain,Large diversified,1.6575,2.0323,0.3747,0.8685,2.1419,0.2335
+GBR,United Kingdom,Financial / service hub,1.653,1.9443,0.2913,0.8687,2.47,0.2386
+TWN,Taiwan,Edge case,1.6429,2.2889,0.646,0.8123,2.1477,0.2753
+CHL,Chile,Resource & extraction,1.6301,1.9273,0.2972,0.7789,2.1544,0.2303
+NOR,Norway,Resource & extraction,1.6002,1.9947,0.3945,0.8192,2.2844,0.2796
+CAN,Canada,Large diversified,1.5793,1.9254,0.3461,0.8148,2.0355,0.171
+NLD,Netherlands,Financial / service hub,1.5727,2.1017,0.529,0.8337,1.9615,0.1827
+SGP,Singapore,Financial / service hub,1.55,2.3883,0.8383,0.835,2.2359,0.2023
+LUX,Luxembourg,Financial / service hub,1.507,2.699,1.192,0.8877,2.035,0.1951
+MEX,Mexico,Emerging industrializer,1.4209,1.8415,0.4206,0.6188,1.8669,0.2068
+SAU,Saudi Arabia,Resource & extraction,1.3856,1.5897,0.2041,0.6814,1.9328,0.2532
+IRL,Ireland,Financial / service hub,1.1407,1.9474,0.8067,0.737,1.4477,0.0951

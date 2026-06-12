@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trophic Networks of 30 Economies</title>
+<script>__D3__</script>
+<style>
+  :root{
+    --senape:#c9a227; --senape-dark:#a8851a; --ink:#2a2724; --muted:#6f6a62;
+    --cream:#fbf8f1; --card:#ffffff; --line:#e7e0d2; --green:#3aa86b; --pink:#e76b86;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  header{padding:26px 32px 18px;border-bottom:3px solid var(--senape);background:var(--card);}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;margin:0;font-size:27px;letter-spacing:.2px;}
+  h1 .swatch{display:inline-block;width:15px;height:15px;background:var(--senape);
+    border-radius:3px;margin-right:9px;vertical-align:baseline;}
+  .sub{color:var(--muted);margin:6px 0 0;font-size:14px;max-width:760px;line-height:1.5;}
+  .wrap{max-width:1240px;margin:0 auto;padding:22px 24px 60px;}
+  .top{display:grid;grid-template-columns:1fr 320px;gap:22px;align-items:start;}
+  @media(max-width:900px){.top{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;}
+  .panel-title{font-family:Georgia,serif;font-size:17px;margin:0 0 4px;}
+  .panel-note{color:var(--muted);font-size:12.5px;margin:0 0 10px;line-height:1.45;}
+  select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;
+    font-size:15px;background:#fff;color:var(--ink);}
+  label.sel{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;
+    letter-spacing:.06em;margin-bottom:6px;}
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+  .stat{background:var(--cream);border:1px solid var(--line);border-radius:9px;padding:9px 11px;}
+  .stat .v{font-size:21px;font-weight:700;font-family:Georgia,serif;}
+  .stat .k{font-size:11px;color:var(--muted);margin-top:2px;line-height:1.3;}
+  .chip{display:inline-block;padding:3px 9px;border-radius:20px;font-size:11.5px;
+    font-weight:600;color:#fff;}
+  .legend{margin-top:14px;font-size:12px;color:var(--muted);line-height:1.7;}
+  .legend b{color:var(--ink);font-weight:600;}
+  .charts{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px;}
+  @media(max-width:900px){.charts{grid-template-columns:1fr}}
+  svg{display:block;width:100%;height:auto;}
+  .tooltip{position:fixed;pointer-events:none;background:#2a2724;color:#fff;
+    padding:8px 10px;border-radius:7px;font-size:12.5px;line-height:1.5;opacity:0;
+    transition:opacity .08s;z-index:20;max-width:230px;box-shadow:0 4px 14px rgba(0,0,0,.2);}
+  .tooltip b{color:var(--senape);}
+  .axis text{fill:var(--muted);font-size:11px;}
+  .axis line,.axis path{stroke:#d8d0c0;}
+  .yaxis-label{fill:var(--muted);font-size:11.5px;}
+  footer{color:var(--muted);font-size:11.5px;text-align:center;padding:20px;line-height:1.6;}
+  a{color:var(--senape-dark);}
+  .hint{font-size:11.5px;color:var(--muted);margin-top:8px;font-style:italic;}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="swatch"></span>Trophic Networks of 30 Economies</h1>
+  <p class="sub">The hidden plumbing of 30 economies. Each sector is placed by its
+    <b>trophic level</b> — how many steps of production separate it from raw inputs.
+    Pick a country, hover any sector, and watch where its output sits in the chain.</p>
+</header>
+
+<div class="wrap">
+  <div class="top">
+    <div class="card">
+      <p class="panel-title" id="net-title">—</p>
+      <p class="panel-note">Vertical position = trophic level (raw inputs low, final-facing high).
+        Node size = gross output · inner pink = self-flow · outer green = throughflow ·
+        ring colour = production community · arrows = the heaviest inter-sector flows.</p>
+      <svg id="network" viewBox="0 0 760 600" preserveAspectRatio="xMidYMid meet"></svg>
+      <p class="hint">Hover a node for details. The 12 biggest sectors are labelled.</p>
+    </div>
+
+    <div>
+      <div class="card">
+        <label class="sel" for="country">Country</label>
+        <select id="country"></select>
+        <div id="arch-chip" style="margin-top:12px"></div>
+        <div class="stat-grid" id="stats"></div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <p class="panel-title">How to read a node</p>
+        <div class="legend">
+          <div><b style="color:var(--green)">●</b> outer green disk — <b>throughflow</b> (gross output)</div>
+          <div><b style="color:var(--pink)">●</b> inner pink disk — <b>self-flow</b> (sector buying its own output)</div>
+          <div><b>ring colour</b> — the production community a sector belongs to</div>
+          <div><b>height</b> — trophic level: deeper in the supply chain = higher up</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="charts">
+    <div class="card">
+      <p class="panel-title">Trophic depth, ranked</p>
+      <p class="panel-note">Output-weighted mean chain length. Click any bar to load that economy.</p>
+      <svg id="ranking" viewBox="0 0 560 760" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+    <div class="card">
+      <p class="panel-title">The offshore gap</p>
+      <p class="panel-note">Domestic vs. global chain depth. Points high above the line assemble
+        long chains they don’t own at home. Bubble = GDP. Click to load.</p>
+      <svg id="scatter" viewBox="0 0 560 560" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+  </div>
+
+  <footer>
+    Source: OECD ICIO 2023 edition, year 2019. Trophic level: McNerney et al., <i>PNAS</i> (2022);
+    MacKay, Johnson &amp; Sansom (2020).
+  </footer>
+</div>
+
+<div class="tooltip" id="tip"></div>
+
+<script>
+const DATA = __DATA_JSON__;
+const AC = DATA.meta.archetype_color;
+const tip = document.getElementById('tip');
+let current = 'CHN';
+
+function showTip(html, e){
+  tip.innerHTML = html; tip.style.opacity = 1;
+  tip.style.left = Math.min(e.clientX+14, window.innerWidth-240)+'px';
+  tip.style.top = (e.clientY+14)+'px';
+}
+function hideTip(){ tip.style.opacity = 0; }
+function fmtUSD(m){ // value in million USD
+  const v = m*1e6;
+  if(v>=1e12) return '$'+(v/1e12).toFixed(2)+' tn';
+  if(v>=1e9)  return '$'+(v/1e9).toFixed(0)+' bn';
+  return '$'+(v/1e6).toFixed(0)+' m';
+}
+
+/* ---------- network ---------- */
+function drawNetwork(code){
+  const c = DATA.countries[code];
+  const svg = d3.select('#network'); svg.selectAll('*').remove();
+  const W=760,H=600, pad=46;
+  document.getElementById('net-title').textContent = c.name + ' — production network';
+  const nodes = c.nodes.map(n=>({...n, yL:n.level*3.0}));
+  const maxOut = d3.max(nodes, n=>n.out);
+  nodes.forEach(n=> n.r = 0.035 + 0.13*Math.sqrt(n.out/maxOut));
+  const xExt=[d3.min(nodes,n=>n.x-n.r), d3.max(nodes,n=>n.x+n.r)];
+  const yExt=[d3.min(nodes,n=>n.yL-n.r), d3.max(nodes,n=>n.yL+n.r)];
+  const s = Math.min((W-2*pad)/(xExt[1]-xExt[0]), (H-2*pad)/(yExt[1]-yExt[0]));
+  const cx=(W - s*(xExt[0]+xExt[1]))/2, cy=(H + s*(yExt[0]+yExt[1]))/2;
+  const PX=n=>cx+s*n.x, PY=n=>cy-s*n.yL, PR=n=>s*n.r;
+
+  // y axis (trophic level)
+  const levs = d3.range(Math.ceil(d3.min(nodes,n=>n.level)*4)/4,
+                        d3.max(nodes,n=>n.level)+0.01, 0.25);
+  const g=svg.append('g').attr('class','axis');
+  levs.forEach(L=>{
+    const y=cy-s*(L*3.0);
+    g.append('line').attr('x1',34).attr('x2',W-8).attr('y1',y).attr('y2',y)
+      .attr('stroke','#efe9db');
+    g.append('text').attr('x',30).attr('y',y+3).attr('text-anchor','end').text(L.toFixed(2));
+  });
+  svg.append('text').attr('class','yaxis-label').attr('transform','rotate(-90)')
+     .attr('x',-H/2).attr('y',13).attr('text-anchor','middle')
+     .text('trophic level  →  deeper in the supply chain');
+
+  // edges
+  const heavy = [...c.edges].sort((a,b)=>b[2]-a[2]).slice(0,24);
+  const heavySet = new Set(heavy.map(e=>e[0]+'-'+e[1]));
+  svg.append('defs').html(
+    '<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="'+'#3aa86b'+'"/></marker>');
+  const eg=svg.append('g');
+  c.edges.forEach(e=>{
+    const a=nodes[e[0]], b=nodes[e[1]], w=e[2];
+    const isHeavy=heavySet.has(e[0]+'-'+e[1]);
+    eg.append('line').attr('x1',PX(a)).attr('y1',PY(a)).attr('x2',PX(b)).attr('y2',PY(b))
+      .attr('stroke','#3aa86b')
+      .attr('stroke-width', isHeavy? (0.6+4*w):(0.25+0.9*w))
+      .attr('opacity', isHeavy?0.5:0.10)
+      .attr('marker-end', isHeavy?'url(#arr)':null);
+  });
+
+  // nodes
+  const ng=svg.append('g');
+  const palette = d3.schemeTableau10;
+  nodes.forEach(n=>{
+    const node=ng.append('g').style('cursor','pointer');
+    node.append('circle').attr('cx',PX(n)).attr('cy',PY(n)).attr('r',PR(n))
+      .attr('fill','#3aa86b').attr('stroke',palette[n.comm%10]).attr('stroke-width',2.4);
+    if(n.selfFrac>0)
+      node.append('circle').attr('cx',PX(n)).attr('cy',PY(n))
+        .attr('r',PR(n)*Math.sqrt(n.selfFrac)).attr('fill','#e76b86');
+    node.on('mousemove',e=>showTip(
+      `<b>${n.name}</b><br>trophic level ${n.level.toFixed(2)}<br>`+
+      `output ${fmtUSD(n.out)}<br>self-flow ${(n.selfFrac*100).toFixed(0)}%`, e))
+      .on('mouseleave',hideTip);
+  });
+  // labels for 12 biggest
+  const big=[...nodes].sort((a,b)=>b.out-a.out).slice(0,12);
+  const mid=d3.median(nodes,n=>n.x);
+  ng.selectAll('text.lab').data(big).enter().append('text')
+    .attr('x',n=> n.x<=mid? PX(n)-PR(n)-5 : PX(n)+PR(n)+5)
+    .attr('y',n=>PY(n)+3).attr('text-anchor',n=> n.x<=mid?'end':'start')
+    .attr('font-size',11).attr('fill','#2a2724')
+    .attr('paint-order','stroke').attr('stroke','#fff').attr('stroke-width',2.6)
+    .style('stroke-linejoin','round')
+    .text(n=>n.name);
+}
+
+/* ---------- summary card ---------- */
+function drawSummary(code){
+  const c = DATA.countries[code];
+  document.getElementById('arch-chip').innerHTML =
+    `<span class="chip" style="background:${AC[c.archetype]}">${c.archetype}</span>`;
+  const S=[['depth','trophic depth (domestic)'],['depth_global','global chain depth'],
+    ['offshore_gap','offshore gap'],['incoherence','incoherence'],
+    ['n_comm','production communities'],['intermediation','trade+finance share']];
+  document.getElementById('stats').innerHTML = S.map(([k,lab])=>{
+    let v=c[k];
+    if(k==='intermediation') v=(v*100).toFixed(0)+'%';
+    else if(k==='n_comm') v=v;
+    else v=v.toFixed(2);
+    return `<div class="stat"><div class="v">${v}</div><div class="k">${lab}</div></div>`;
+  }).join('') +
+   `<div class="stat" style="grid-column:1/3"><div class="v" style="font-size:15px">${c.top_hub}</div><div class="k">central hub (most-connected sector)</div></div>`;
+}
+
+/* ---------- ranking bar ---------- */
+function drawRanking(){
+  const svg=d3.select('#ranking'); svg.selectAll('*').remove();
+  const W=560,H=760, m={l:130,r:48,t:10,b:24};
+  const data=DATA.ranking;
+  const x=d3.scaleLinear().domain([1,d3.max(data,d=>d.trophic_depth)+0.05]).range([m.l,W-m.r]);
+  const y=d3.scaleBand().domain(data.map(d=>d.code)).range([m.t,H-m.b]).padding(0.18);
+  const g=svg.append('g');
+  g.selectAll('rect').data(data).enter().append('rect')
+    .attr('x',x(1)).attr('y',d=>y(d.code)).attr('height',y.bandwidth())
+    .attr('width',d=>x(d.trophic_depth)-x(1))
+    .attr('fill',d=>AC[d.archetype])
+    .attr('opacity',d=>d.code===current?1:0.78)
+    .attr('stroke',d=>d.code===current?'#2a2724':'none').attr('stroke-width',2)
+    .style('cursor','pointer').on('click',(e,d)=>select(d.code))
+    .on('mousemove',(e,d)=>showTip(`<b>${d.country}</b><br>depth ${d.trophic_depth.toFixed(2)}`,e))
+    .on('mouseleave',hideTip);
+  g.selectAll('text.name').data(data).enter().append('text')
+    .attr('x',m.l-6).attr('y',d=>y(d.code)+y.bandwidth()/2+4).attr('text-anchor','end')
+    .attr('font-size',11).attr('fill','#2a2724')
+    .style('cursor','pointer').on('click',(e,d)=>select(d.code))
+    .text(d=>d.country);
+  g.selectAll('text.val').data(data).enter().append('text')
+    .attr('x',d=>x(d.trophic_depth)+5).attr('y',d=>y(d.code)+y.bandwidth()/2+4)
+    .attr('font-size',10).attr('fill','#6f6a62').text(d=>d.trophic_depth.toFixed(2));
+}
+
+/* ---------- scatter ---------- */
+function drawScatter(){
+  const svg=d3.select('#scatter'); svg.selectAll('*').remove();
+  const W=560,H=560,m={l:52,r:18,t:14,b:46};
+  const data=DATA.ranking;
+  const x=d3.scaleLinear().domain([1.05,2.45]).range([m.l,W-m.r]);
+  const y=d3.scaleLinear().domain([1.4,3.15]).range([H-m.b,m.t]);
+  const rS=d3.scaleSqrt().domain([0,d3.max(data,d=>d.gdp)]).range([3,30]);
+  const g=svg.append('g');
+  g.append('line').attr('x1',x(1.05)).attr('y1',y(1.05)).attr('x2',x(2.45)).attr('y2',y(2.45))
+    .attr('stroke','#cfc7b6').attr('stroke-dasharray','5 4');
+  // axes
+  const ax=svg.append('g').attr('class','axis');
+  ax.append('g').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(x).ticks(6));
+  ax.append('g').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6));
+  svg.append('text').attr('x',(W)/2).attr('y',H-8).attr('text-anchor','middle')
+    .attr('fill','#6f6a62').attr('font-size',12).text('domestic trophic depth');
+  svg.append('text').attr('transform','rotate(-90)').attr('x',-H/2).attr('y',14)
+    .attr('text-anchor','middle').attr('fill','#6f6a62').attr('font-size',12)
+    .text('global trophic depth');
+  g.selectAll('circle').data(data).enter().append('circle')
+    .attr('cx',d=>x(d.trophic_depth)).attr('cy',d=>y(d.trophic_depth_global))
+    .attr('r',d=>rS(d.gdp)).attr('fill',d=>AC[d.archetype])
+    .attr('opacity',d=>d.code===current?0.95:0.7)
+    .attr('stroke',d=>d.code===current?'#2a2724':'#fff')
+    .attr('stroke-width',d=>d.code===current?2.5:0.8)
+    .style('cursor','pointer').on('click',(e,d)=>select(d.code))
+    .on('mousemove',(e,d)=>showTip(
+      `<b>${d.country}</b><br>domestic ${d.trophic_depth.toFixed(2)} · global ${d.trophic_depth_global.toFixed(2)}<br>offshore gap ${d.offshore_gap.toFixed(2)}`,e))
+    .on('mouseleave',hideTip);
+}
+
+/* ---------- wire-up ---------- */
+function select(code){ current=code;
+  document.getElementById('country').value=code;
+  drawNetwork(code); drawSummary(code); drawRanking(); drawScatter();
+}
+function init(){
+  const sel=document.getElementById('country');
+  DATA.ranking.forEach(d=>{
+    const o=document.createElement('option'); o.value=d.code; o.textContent=d.country;
+    sel.appendChild(o);
+  });
+  sel.addEventListener('change',e=>select(e.target.value));
+  select(current);
+}
+init();
+</script>
+</body>
+</html>
