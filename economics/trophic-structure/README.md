@@ -70,9 +70,24 @@ python3 fetch_growth.py          # -> growth_panel.csv  (needs internet)
 python3 dynamic_test.py          # prints the regression table -> dynamic_sample.csv
 python3 make_dynamic_figures.py  # -> figures/5..7 .png
 
-# --- network visualization (any countries) ---
-python3 network_viz.py DEU SAU   # -> figures/8_network_DEU_SAU.png
+# --- network visualizations ---
+python3 network_viz.py DEU SAU   # a contrast pair  -> figures/8_network_DEU_SAU.png
+python3 network_viz.py --all     # all 30, one file each -> figures/networks/<CODE>.png
+python3 montage_networks.py      # contact sheet -> figures/networks_contact_sheet.png
+python3 build_album.py           # one-per-page PDF -> figures/trophic_networks_album.pdf
+
+# --- structural descriptors + insights ---
+python3 analyze_networks.py      # -> network_descriptors.csv (+ correlations printed)
+
+# --- rebuild the interactive dashboard ---
+npm install d3                   # one-off: provides D3 to inline
+python3 export_web_data.py       # -> docs/data.json
+python3 build_dashboard.py       # inlines D3 + data -> docs/index.html
 ```
+
+Every step above was verified end-to-end from a fresh clone: `results_country.csv`,
+`panel.csv`, and `network_descriptors.csv` regenerate **byte-identical** to the
+committed copies, and all figures, the album, and the dashboard rebuild cleanly.
 
 ## Interactive dashboard (GitHub Pages)
 

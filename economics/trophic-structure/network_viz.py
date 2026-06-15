@@ -194,5 +194,30 @@ def main():
     print("saved", out)
 
 
+def render_single(code, outdir="figures/networks"):
+    import os
+    os.makedirs(outdir, exist_ok=True)
+    fig, ax = plt.subplots(figsize=(15, 11))
+    render(code, ax)
+    leg = ("Node size = gross output    inner pink = self-flow   outer green = throughflow\n"
+           "Ring colour = production community (Louvain)    arrows = largest inter-sector flows")
+    fig.text(0.5, 0.045, leg, ha="center", fontsize=9.5, color="#444")
+    fig.text(0.5, 0.013,
+             "Source: OECD ICIO 2023 edition, year 2019 (values in million USD). "
+             "Trophic level: McNerney et al. (PNAS 2022). Communities: Louvain.",
+             ha="center", fontsize=8, color="#777")
+    fig.suptitle("Trophic structure as a production network",
+                 fontsize=16, weight="bold", y=0.98)
+    fig.tight_layout(rect=[0, 0.06, 1, 0.96])
+    out = f"{outdir}/{code}.png"
+    fig.savefig(out, dpi=130, bbox_inches="tight")
+    plt.close(fig)
+    print("saved", out)
+
+
 if __name__ == "__main__":
-    main()
+    if "--all" in sys.argv:
+        for c, _, _ in COUNTRIES:
+            render_single(c)
+    else:
+        main()
