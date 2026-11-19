@@ -40,6 +40,6 @@ if __name__ == "__main__":
             r["year"] = year
         rows += c
         print(f"ICIO {year}: {len(c)} economies", flush=True)
-    out = pd.DataFrame(rows)[["code", "year", "farmer_depth", "domestic_depth",
+    out = pd.DataFrame(rows)[["code", "year", "farmer_depth", "home_depth", "abroad_depth", "domestic_depth",
                               "global_depth_outw", "domar", "import_int"]]
     out.sort_values(["code", "year"]).round(6).to_csv("icio_country_year.csv", index=False)

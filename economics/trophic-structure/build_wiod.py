@@ -54,7 +54,7 @@ if __name__ == "__main__":
         # multiplier must equal world gross output / world final demand
         print(f"WIOD {yr}: {len(c)} economies", flush=True)
 
-    cy = pd.DataFrame(crows)[["code", "year", "farmer_depth", "domestic_depth",
+    cy = pd.DataFrame(crows)[["code", "year", "farmer_depth", "home_depth", "abroad_depth", "domestic_depth",
                               "global_depth_outw", "domar", "import_int"]]
     cy.round(6).to_csv("wiod_country_year.csv", index=False)
 

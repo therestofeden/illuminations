@@ -303,3 +303,70 @@ fig.tight_layout(rect=[0, 0.025, 1, 0.86])
 fig.savefig("figures/13_chains_or_links.png", bbox_inches="tight")
 plt.close(fig)
 print("figure 13 written")
+
+# === 14. H1 vs H2: does it matter where the steps happen? =====================
+hyp = pd.read_csv("hypotheses_results.csv")
+rows14 = [("ICIO 2011→2019", "cross-section", "ICIO", "2011-2019", "home + abroad"),
+          ("ICIO 2011→2023", "cross-section", "ICIO", "2011-2023", "home + abroad"),
+          ("WIOD 2000→2014", "cross-section", "WIOD", "2000-2014", "home + abroad"),
+          ("WIOD 2000→2019", "cross-section", "WIOD", "2000-2019", "home + abroad"),
+          ("WIOD 2000→2023", "cross-section", "WIOD", "2000-2023", "home + abroad"),
+          ("WIOD, 3 pooled windows", "windows", "WIOD", "3 windows", "pooled windows: home + abroad"),
+          ("ICIO, 2 pooled windows", "windows", "ICIO", "2 windows", "pooled windows: home + abroad")]
+HOME, ABRD = BRICK, BLUE
+fig, axes = plt.subplots(1, 2, figsize=(13, 6.4), gridspec_kw={"width_ratios": [1.6, 1]})
+ax = axes[0]
+for k, (lab, test, ds, win, spec) in enumerate(rows14):
+    r = hyp[(hyp.test == test) & (hyp.dataset == ds) & (hyp.window == win) & (hyp.spec == spec)].iloc[0]
+    for part, col, dy in [("home_depth", HOME, -0.14), ("abroad_depth", ABRD, 0.14)]:
+        b, t, p = r[f"bsd_{part}"], r[f"t_{part}"], r[f"pres_{part}"]
+        se = abs(b / t)
+        ax.plot([b - 1.96 * se, b + 1.96 * se], [k + dy] * 2, color=col, lw=2.2, solid_capstyle="round")
+        ax.scatter([b], [k + dy], s=55, color=col if p < 0.05 else "white", edgecolor=col,
+                   linewidth=2, zorder=3)
+ax.axvline(0, color="#999", lw=1)
+ax.set_yticks(range(len(rows14)), [r_[0] for r_ in rows14], fontsize=9)
+ax.set_ylim(len(rows14) - 0.4, -0.9)
+ax.tick_params(axis="y", length=0)
+ax.spines["left"].set_visible(False)
+ax.grid(axis="x", color="#eeeeee", lw=0.8, zorder=0)
+from matplotlib.lines import Line2D
+ax.legend(handles=[Line2D([0], [0], marker="o", color=HOME, lw=2.2, markersize=7, label="steps at home"),
+                   Line2D([0], [0], marker="o", color=ABRD, lw=2.2, markersize=7, label="steps abroad")],
+          loc="upper right", fontsize=9, frameon=False, ncol=2, bbox_to_anchor=(1.0, 1.0))
+ax.set_xlabel("Extra growth of GDP per hour (pp a year) per 1 SD of each part")
+ax.set_title("Growth: both halves of the chain count", loc="left", fontsize=10.5, weight="bold")
+ax = axes[1]
+pr = [("Within countries", "prices: country FE"), ("Same industry,\nacross countries", "prices: + industry FE")]
+for k, (lab, spec) in enumerate(pr):
+    r = hyp[(hyp.test == "prices") & (hyp.spec == spec)].iloc[0]
+    for part, col, dy in [("L_home", HOME, -0.12), ("L_abroad", ABRD, 0.12)]:
+        b, t, p = r[f"bsd_{part}"], r[f"t_{part}"], r[f"pres_{part}"]
+        se = abs(b / t)
+        ax.plot([b - 1.96 * se, b + 1.96 * se], [k + dy] * 2, color=col, lw=2.2, solid_capstyle="round")
+        ax.scatter([b], [k + dy], s=55, color=col if p < 0.05 else "white", edgecolor=col,
+                   linewidth=2, zorder=3)
+        ax.text(b - 1.96 * se - 0.02, k + dy, f"p {'< 0.001' if p < 0.001 else '= %.2f' % p}",
+                ha="right", va="center", fontsize=8, color=INK if p < 0.05 else MUTED)
+ax.axvline(0, color="#999", lw=1)
+ax.set_yticks(range(len(pr)), [p_[0] for p_ in pr], fontsize=9)
+ax.set_ylim(len(pr) - 0.5, -0.6)
+ax.set_xlim(-0.75, 0.3)
+ax.tick_params(axis="y", length=0)
+ax.spines["left"].set_visible(False)
+ax.grid(axis="x", color="#eeeeee", lw=0.8, zorder=0)
+ax.set_xlabel("Price change relative to wages (pp a year) per 1 SD")
+ax.set_title("Prices: what falls with the stages abroad", loc="left", fontsize=10.5, weight="bold")
+fig.suptitle("Does it matter where the production steps happen?", x=0.01, ha="left",
+             weight="bold", fontsize=13.5)
+fig.text(0.01, 0.905, "Chain length split into the steps done at home and the steps done abroad "
+         "(same final-demand weights; the two add up to Farmer's L̄). Both predict growth by\nabout "
+         "the same amount: no detectable premium for home steps. Industry prices fall with the steps "
+         "abroad. Filled = significant at 5% by resampling; lines = 95% analytic intervals.",
+         fontsize=9, color=MUTED, va="top")
+footer(fig, "Sources: OECD ICIO 2023 ed.; WIOD 2016 (+ Socio-Economic Accounts); Penn World Table 11.0. "
+       "Growth rows control for initial productivity. Script: hypotheses_tests.py.")
+fig.tight_layout(rect=[0, 0.025, 1, 0.85])
+fig.savefig("figures/14_home_vs_abroad.png", bbox_inches="tight")
+plt.close(fig)
+print("figure 14 written")

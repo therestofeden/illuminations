@@ -14,16 +14,26 @@
 \setlength{\parskip}{0.45em}
 \setlength{\parindent}{0pt}
 \graphicspath{{../figures/}}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
 \input{numbers.tex}
 
 \newcommand{\Lbar}{\bar L}
+\newcommand{\Lhome}{\bar L^{\text{home}}}
+\newcommand{\Labroad}{\bar L^{\text{abroad}}}
 
-\title{\textbf{Do Longer Production Chains Make Economies Grow Faster?}\\[0.3em]
-\large An independent replication and stress test of the production-network\\amplification hypothesis}
+\title{\textbf{Do Longer Production Chains Make Economies Grow Faster,\\
+and Does It Matter Where the Chain Is?}\\[0.4em]
+\large A replication of the production-network amplification hypothesis\\
+and a test of the role of location}
 \author{Stefano Restelli\\
 \small Independent researcher, Berlin\\
 \small \href{mailto:stefano.restelli15@gmail.com}{stefano.restelli15@gmail.com}}
-\date{\small Working paper, November 2026 --- draft v0.1\\
+\date{\small Working paper, November 2026 --- draft v0.2\\
 Code and data: \url{https://github.com/therestofeden/illuminations}}
 
 \begin{document}
@@ -31,30 +41,32 @@ Code and data: \url{https://github.com/therestofeden/illuminations}}
 
 \begin{abstract}
 \noindent
-\citet{mcnerney2022} argue that economies with longer production chains grow
-faster, because each improvement in an upstream industry is passed down, and
-compounded, along every chain that uses its output. We replicate and stress-test
-this claim on two independent input--output databases (WIOD 2016, \NWiod{}
-economies, 2000--2014; OECD ICIO 2023, \NIcio{} economies, 2011--2020), with
-growth of real GDP per hour from the Penn World Table 11.0, over horizons up to
-2023. Four findings. (i) Measurement matters: cutting chains at the national
-border, a common shortcut, reshuffles country rankings (rank correlation
-\RankCorr{}) and hides most of the effect. (ii) With the paper's own
-definition, the cross-country pattern replicates in both databases and every
-horizon: one standard deviation of chain length goes with
-\CatchBetaMin{}--\CatchBetaMax{} percentage points a year of faster
-productivity growth after controlling for catch-up ($p\le\CatchPMax$,
-permutation tests). It survives dropping China, Vietnam and the post-2004 EU
-members, though only marginally, and survives a control for reliance on imported
-inputs in one database but not the other. (iii) About \AmpShare\% of the
-cross-country slope is composition (long-chain economies also contain
-faster-improving industries); the rest behaves as the amplification story
-predicts, and a zero-parameter forecast built on it beats simpler benchmarks,
-modestly. (iv) The pattern is a \emph{between}-country regularity: we find no
-detectable effect of a country's own chains lengthening on its subsequent
-growth, and the price mechanism holds across industry types but not for the same
-industry in different countries. The production-network view survives as a
-robust cross-country fact; its causal reading remains open.
+Every product sits at the end of a chain of producers: the farm supplies the
+mill, the mill the bakery. \citet{mcnerney2022} argue that economies whose
+spending runs through \emph{longer} chains grow faster, because each industry's
+productivity gains are passed down, and compounded, along every chain that uses
+its output. We test two hypotheses. \textbf{H1}, theirs: chain length predicts
+growth, wherever the production steps take place. \textbf{H2}, ours: it also
+matters \emph{where} the steps take place, so that the part of the chain located
+at home predicts growth beyond total length. To test H2 we split each country's
+chain length exactly into steps at home and steps abroad. We use two independent
+input--output databases (WIOD 2016, \NWiod{} economies, 2000--2014; OECD ICIO 2023,
+\NIcio{} economies, 2011--2020), growth of real GDP per hour from the Penn World
+Table 11.0 up to 2023, and permutation-based inference.
+\textbf{H1 replicates.} One standard deviation of chain length goes with
+\CatchBetaMin{}--\CatchBetaMax{} percentage points a year of faster productivity
+growth after controlling for catch-up ($p\le\CatchPMax$), in both databases and at
+every horizon. About \AmpShare\% of this is composition (long-chain economies
+contain faster-improving industries).
+\textbf{On H2, both halves of the chain count, by similar amounts.} A step at home
+is worth an estimated \PremMin--\PremMax\% more than a generic step, but the
+interval (\PremLoMin\% to $+$\PremHiMax\%) includes zero: no detectable premium for
+location. Measuring only the domestic chain, a common shortcut, misses the half
+abroad and makes chain length look unimportant. Industry prices fall with the
+steps abroad, not with those at home, consistent with countries importing other
+countries' productivity gains. Neither part predicts growth \emph{within} a
+country over time. Chain length is a robust cross-country regularity; whether a
+country grows faster by lengthening its chains, at home or abroad, remains open.
 \end{abstract}
 
 \section{What are we trying to understand?}\label{sec:intro}
@@ -72,61 +84,63 @@ eat herbivores at three \citep{levine1980}. The same arithmetic applies to an
 economy's input--output table, and it produces a number for every industry: how
 many production steps, on average, stand behind one euro of its output.
 
-Why should anyone care how long the chains are? Because improvements travel
-along them. Suppose each firm in the wheat--flour--bread chain becomes 1\% more
-efficient this year, in the sense that it needs 1\% fewer inputs per unit of
-output. Wheat becomes about 1\% cheaper relative to wages. Flour benefits
-twice: from the mill's own improvement and from cheaper wheat. Bread benefits
-three times. The longer the chain, the more improvements compound into the price
-of the final good, and the more a worker's wage can buy. This is the core of the
-argument made by \citet{mcnerney2022} and popularised in \citet{farmer2024}:
-\emph{production networks amplify technological progress, so economies whose
-spending runs through longer chains should grow faster}.
+\paragraph{Why chain length could matter (H1).} Improvements travel along chains.
+Suppose each firm in the wheat--flour--bread chain becomes 1\% more efficient this
+year, in the sense that it needs 1\% fewer inputs per unit of output. Wheat
+becomes about 1\% cheaper relative to wages. Flour benefits twice: from the mill's
+own improvement and from cheaper wheat. Bread benefits three times. The longer the
+chain, the more improvements compound into the price of the final good, and the
+more a worker's wage can buy. This is the argument of \citet{mcnerney2022},
+popularised in \citet{farmer2024}: \emph{production networks amplify technological
+progress, so economies whose spending runs through longer chains should grow
+faster.} In their account, borders are irrelevant: if Korean chip makers improve,
+Vietnamese phones get cheaper.
 
-The claim matters for at least three reasons. It offers a structural explanation
-for why some countries grow faster than others, beyond capital accumulation and
-education. It bears on industrial policy: if chain length amplifies growth,
-policies that ``deepen'' a domestic industrial base, or plug a country into
-global supply chains, could have payoffs beyond the industries they target. And
-it connects economics to the broader science of complex networks, where the
-position of a node in a directed network often determines how shocks propagate
-through it \citep{acemoglu2012,mackay2020}.
+\paragraph{Why location could matter too (H2).} Our second hypothesis starts from a
+simple observation: the chains that end in a country's shops are partly built at
+home and partly abroad. In 2019, Italy's average chain counted \ItaTotal{} steps, of
+which \ItaHome{} were taken in Italy and \ItaAbroad{} abroad; Ireland's counted
+\IrlHome{} at home and \IrlAbroad{} abroad. There are good reasons to expect the
+home part to matter more for a country's growth. GDP measures what is produced at
+home, so productivity gains made inside the country enter it directly, while
+cheaper imported inputs mainly raise what incomes can buy. Doing the steps
+yourself builds firms, skills and know-how, the capabilities emphasised by the
+economic-complexity literature \citep{hidalgo2009}. And the debates on reshoring,
+industrial policy and supply-chain resilience all presume that where a chain sits
+is not neutral. H2 states this as a testable claim: \emph{the part of the chain
+located at home predicts growth beyond total chain length}.
 
-The original paper supports the claim with data from the World Input--Output
-Database for 1995--2009, finding a correlation of 0.53 between countries' average
-chain length and their subsequent growth. A single correlation on one dataset and
-one period is a reasonable start, but it leaves open the questions a careful reader
-would ask next:
-
+\paragraph{The questions.} The original paper supports H1 with one correlation
+(0.53) on one database for 1995--2009. We ask:
 \begin{enumerate}
-\item \textbf{Does it replicate?} On a different database, in a later period, with
+\item \textbf{Does H1 replicate} on a different database, in a later period, with
 the paper's own outcome (growth of output per hour worked)?
-\item \textbf{Is it chains, or something that travels with them?} Countries with
-long chains are often fast-converging manufacturing economies (China, Central
-Europe), deeply integrated in global supply chains. Is chain length doing the
-work, or catch-up, or trade integration?
-\item \textbf{Is it the multiplication or the ingredients?} The model says growth
-is roughly \emph{chain length times the speed at which industries improve}. Long
-chains could matter because they multiply improvements (amplification), or simply
-because long-chain economies happen to contain faster-improving industries
-(composition).
-\item \textbf{Does it work within a country?} If a country's chains lengthen, does
-it subsequently grow faster? And do prices actually fall faster at the end of
-long chains, as the mechanism requires?
+\item \textbf{Is it chains, or something that travels with them}, such as catch-up
+growth or integration in global supply chains?
+\item \textbf{Does it matter where the steps happen (H2)?} Do steps at home predict
+growth more than steps abroad?
+\item \textbf{Is it the multiplication or the ingredients?} Do long chains multiply
+improvements, or do long-chain economies simply contain faster-improving
+industries?
+\item \textbf{Does it work within a country}, and do prices fall faster at the end
+of long chains, as the mechanism requires?
 \end{enumerate}
 
-This paper answers each question with public data and openly available code. We
-report every specification we ran (\NEstimates{} estimates in the main grid, plus
-the amplification tests), and use resampling-based inference, since the samples
-are small ($30$--$43$ countries).
+\paragraph{Contributions.} (i) An independent replication of H1 on two databases
+and horizons up to 2023. (ii) A new, exact decomposition of chain length into steps
+at home and abroad, and the first test of whether location matters (H2). (iii) A
+separation of composition from amplification and an out-of-sample forecast test.
+(iv) Within-country and price tests of the mechanism. Everything uses public data
+and open code; we report every specification we ran and use resampling-based
+inference, since samples are small (30--43 countries).
 
-\paragraph{Preview of results.} The cross-country pattern is real and robust;
-how one measures chain length matters a great deal; about a quarter of the
-pattern is composition; and nothing in our data shows the effect operating
-within countries over time. Section~\ref{sec:discussion} discusses what this does
-and does not imply.
+\paragraph{Preview.} H1 replicates and is robust. On H2, both halves of the chain
+predict growth by similar amounts; we find no detectable premium for steps taken
+at home, and measuring only the home half makes chain length look unimportant.
+About a quarter of the cross-country pattern is composition. Nothing operates
+within countries over time.
 
-\section{The idea in one equation}\label{sec:theory}
+\section{The idea in equations}\label{sec:theory}
 
 Let $Z_{ij}$ be the value of goods industry $i$ sells to industry $j$ in a year,
 $x_j$ the gross output of $j$, and $A_{ij}=Z_{ij}/x_j$ the input coefficient: how
@@ -156,7 +170,32 @@ the steps performed abroad as well \citep[eq.~5]{mcnerney2022}. In a closed
 economy, $\Lbar$ equals gross output divided by GDP: how many euros of sales
 change hands for each euro of final value created.
 
-\paragraph{The prediction.} Let $\gamma_i$ be the rate at which industry $i$
+\paragraph{Steps at home and steps abroad.} Solve equation~\eqref{eq:L} on the
+country's own block of the table only, $L^{\text{home}}=(I-A_{cc}^\top)^{-1}\mathbf{1}$,
+treating imported inputs like labour: this counts the steps that can be reached
+without crossing the border. With the same weights $\theta$,
+\begin{equation}
+\Lbar_c \;=\; \underbrace{\sum_{i\in c}\theta_i L^{\text{home}}_i}_{\Lhome_c}
+\;+\; \underbrace{\sum_{i\in c}\theta_i \bigl(L_i - L^{\text{home}}_i\bigr)}_{\Labroad_c}.
+\label{eq:split}
+\end{equation}
+The split is exact. It is a transparent version of the domestic/foreign
+decomposition of production length in \citet{wang2017}. Figure~\ref{fig:networks}
+draws it for two economies: each sector's height is its total number of stages,
+and a hollow marker below it shows the stages at home.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{8_network_DEU_SAU.png}
+\caption{Production networks of Germany and Saudi Arabia, 2019 (OECD ICIO). Each
+circle is a sector; height = production stages behind it, counting steps abroad;
+hollow dot = stages at home only, so the dashed line is the part of the chain
+abroad. Fill = share of inputs imported. Figures for all 30 economies are in the
+repository.}
+\label{fig:networks}
+\end{figure}
+
+\paragraph{The predictions.} Let $\gamma_i$ be the rate at which industry $i$
 reduces the inputs it needs per unit of output (its productivity growth). With
 competitive pricing, prices relative to wages change at
 $r=-(I-A^\top)^{-1}\gamma$, so the growth in what a unit of labour can buy is
@@ -165,19 +204,30 @@ g \;=\; \theta^\top (I-A^\top)^{-1}\gamma
 \;\;\overset{\gamma_i=\bar\gamma}{=}\;\; \bar\gamma\,\Lbar .
 \label{eq:g}
 \end{equation}
-If all industries improved at the same rate, growth would be exactly
-proportional to chain length. More generally, in a closed economy
-$g=\Lbar\,\tilde\gamma$, where $\tilde\gamma$ is the gross-output-weighted
-average of $\gamma_i$: this is Hulten's theorem \citep{domar1961,hulten1978}.
+If all industries improved at the same rate, growth would be exactly proportional
+to chain length. In a closed economy $g=\Lbar\,\tilde\gamma$, where $\tilde\gamma$
+is the gross-output-weighted average of $\gamma_i$: this is Hulten's theorem
+\citep{domar1961,hulten1978}.
+
+In a regression of growth on the two parts of equation~\eqref{eq:split},
+\begin{equation}
+g_c = \alpha + \beta_{\text{home}}\,\Lhome_c + \beta_{\text{abroad}}\,\Labroad_c
++ \delta\,\ln y_{c,0} + \varepsilon_c, \label{eq:h}
+\end{equation}
+\textbf{H1} predicts $\beta_{\text{home}}=\beta_{\text{abroad}}>0$: a step is a
+step, wherever it is taken. \textbf{H2} predicts
+$\beta_{\text{home}}>\beta_{\text{abroad}}$. Equivalently, regressing growth on
+total length $\Lbar$ and $\Lhome$, H2 says the coefficient on $\Lhome$ is
+positive; that coefficient is the premium of a home step over a generic one.
 
 \paragraph{What is accounting and what is a claim about the world.}
 Equation~\eqref{eq:g} is close to an identity: \emph{given} industry productivity
-growth, chain length must matter. The empirical content of the hypothesis is
-elsewhere. It is that (a) countries differ enough in $\Lbar$, persistently enough,
-for chain length to predict growth \emph{ahead}; and (b) the differences in
-$\Lbar$ are not offset by long-chain economies having slower-improving industries
-(or, conversely, that the link is not merely because they have faster ones). Our
-tests are designed around these two points rather than around the identity.
+growth, chain length must matter. The empirical content of H1 is that countries
+differ enough in $\Lbar$, persistently enough, for it to predict growth
+\emph{ahead}, and that these differences are not offset by long-chain economies
+having slower-improving industries. H2 has no counterpart in the accounting: the
+model is blind to borders, so any home premium would point to a channel outside
+it, such as learning or the way GDP is measured.
 
 \section{Related literature}\label{sec:lit}
 
@@ -185,7 +235,9 @@ Three literatures meet here. The first measures the position of industries along
 production chains: production staging \citep{fally2012}, upstreamness and
 downstreamness \citep{antras2012,miller2017}, and decompositions of production
 length within and across borders \citep{wang2017}. These papers document
-patterns; \citet{mcnerney2022} add a growth mechanism.
+patterns; \citet{mcnerney2022} add a growth mechanism. Our split of chain length
+into home and abroad borrows the question of the third paper and asks whether the
+two parts matter differently for growth.
 
 The second studies how industry-level productivity aggregates through production
 networks: from \citet{domar1961} and \citet{hulten1978} to the network origins of
@@ -197,8 +249,8 @@ The third comes from complexity science: measures of economic complexity
 \citep{hidalgo2009} and of trophic coherence in directed networks
 \citep{mackay2020} treat the economy's structure as informative about its
 capabilities. \citet{farmer2024} brings these strands together for a general
-audience. This paper contributes an independent, transparent test of the growth
-claim, rather than a new measure or model.
+audience. H2 connects the two views: amplification is border-blind, capabilities
+are not.
 
 \section{Data}\label{sec:data}
 
@@ -209,7 +261,7 @@ tables for \NWiod{} economies plus a rest-of-world region, 56 industries,
 compensation) used for productivity growth and price tests. This is the database
 family used by \citet{mcnerney2022}.
 \item \textbf{OECD ICIO, 2023 edition} \citep{oecdicio2023}: 76 economies and 45
-industries; we use the \NIcio{} economies of our original study for 2011--2020.
+industries; we use \NIcio{} economies for 2011--2020.
 \item \textbf{Penn World Table 11.0} \citep{feenstra2015,pwt110}: real GDP at
 constant national prices (\texttt{rgdpna}) for growth, persons engaged times
 average hours for labour input, and output-side real GDP at PPPs
@@ -221,27 +273,30 @@ terms of use). The raw tables are downloaded by scripts in the repository.
 
 \section{Methods}\label{sec:methods}
 
-\paragraph{Measures.} For every year and database we compute: Farmer's chain
-length $\Lbar_c$ (equation~\ref{eq:Lbar}); a \emph{domestic} variant that solves
-equation~\eqref{eq:L} on the country's own block of the table, treating imported
-inputs like labour, and weights by gross output (the definition used in an
-earlier version of our own study); gross output over value added; and
-\emph{import intensity}, imported intermediates over gross output.
+\paragraph{Measures.} For every year and database we compute Farmer's chain length
+$\Lbar_c$ (equation~\ref{eq:Lbar}) and its two parts $\Lhome_c$ and $\Labroad_c$
+(equation~\ref{eq:split}), with identical final-demand weights. Mixing weights
+(for example output weights for the home part) makes the comparison of the two
+parts misleading, so we avoid it. We also keep the \emph{domestic} measure used in
+an earlier version of our study (home chain, output weights) to show what the
+common shortcut does, and compute \emph{import intensity}, imported intermediates
+over gross output.
 
 \paragraph{Outcomes and controls.} Growth is the average annual log change of
 real GDP per hour worked. Every growth regression controls for the initial
 level of GDP per hour at PPP, because poorer economies grow faster for reasons
 unrelated to chains \citep{barro1991}.
 
-\paragraph{Specifications.} (A) cross-sections, depth at the start of a window
+\paragraph{Specifications.} (A) Cross-sections, depth at the start of a window
 against growth over it: ICIO 2011$\to$2019 and 2011$\to$2023; WIOD
-2000$\to$2014, 2019 and 2023; (B) pooled non-overlapping windows with period
-effects, and the same with country fixed effects (within-country); (C) a
+2000$\to$2014, 2019 and 2023. (B) Pooled non-overlapping windows with period
+effects, and the same with country fixed effects (within-country). (C) A
 ``deepening'' test: change in depth over the previous three years against growth
-over the next three, with and without lagged growth; (D) a price test across
-\PriceN{} industries: annual change of each industry's output price relative to
-the economy-wide wage, 2000--2014, against its 2000 multiplier, with country
-fixed effects and then also with industry fixed effects.
+over the next three. (D) A price test across \PriceN{} industries: annual change
+of each industry's output price relative to the economy-wide wage, 2000--2014,
+against its 2000 multiplier (and its home and abroad parts), with country fixed
+effects and then also with industry fixed effects. (E) The two parts of chain
+length, as in equation~\eqref{eq:h}, in every cross-section and pooled window.
 
 \paragraph{Productivity growth.} For the amplification tests we compute
 gross-output productivity growth for every WIOD industry,
@@ -257,7 +312,7 @@ mislead. For cross-sections we report Freedman--Lane permutation $p$-values
 \citep{freedman1983}; for panels, wild-cluster bootstrap $p$-values with
 Rademacher weights, clustered by country \citep{cameron2008}; 4,999 draws, fixed
 seed. We report every specification in the grid, in the spirit of specification
-curve analysis \citep{simonsohn2020}; Appendix~\ref{app:all} lists all of them.
+curve analysis \citep{simonsohn2020}; Appendix~\ref{app:all} lists the main grid.
 
 \section{Results}\label{sec:results}
 
@@ -269,12 +324,10 @@ measure and by Farmer's measure. The weights barely matter (rank correlation
 lot (\RankCorr{}). Luxembourg moves from \RankLuxembourgDom{}th to
 \RankLuxembourgFar{}nd, Ireland from \RankIrelandDom{}th to \RankIrelandFar{}nd,
 the United States from \RankUsaDom{}th to \RankUsaFar{}th. Small open economies
-assemble goods whose earlier stages happen abroad; a domestic measure sees a
-short chain, the world table sees a long one. For the amplification mechanism the
-world table is the relevant one: a Vietnamese phone gets cheaper when Korean chip
-makers improve.
+assemble goods whose earlier stages happen abroad: a domestic measure sees only
+the home half of their chains.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.72\textwidth]{9_measure_rerank.png}
 \caption{Ranking of 30 economies by chain length in 2019: domestic chains only
@@ -282,30 +335,30 @@ makers improve.
 \label{fig:rerank}
 \end{figure}
 
-\subsection{The cross-country pattern replicates}
+\subsection{H1: the cross-country pattern replicates}
 
-Table~\ref{tab:main} and Figure~\ref{fig:replication} show the central result.
-With Farmer's measure, chain length at the start of a window predicts growth of
-GDP per hour over it in both databases and at every horizon. The raw
+Table~\ref{tab:main} and Figure~\ref{fig:replication} show the central result for
+H1. With Farmer's measure, chain length at the start of a window predicts growth
+of GDP per hour over it in both databases and at every horizon. The raw
 correlations are \RawRMin{}--\RawRMax{} (the original paper reports 0.53 for
 1995--2009). After the catch-up control, one standard deviation of chain length
 goes with \CatchBetaMin{}--\CatchBetaMax{} percentage points a year of extra
 growth, all with $p\le\CatchPMax$; dropping any single country never pushes the
 estimate below \CatchLooMin{}. The domestic measure gives much weaker results:
 \DomIcioBeta{} on ICIO (\DomIcioP) and \DomWiodBetaMin{}--\DomWiodBetaMax{} on WIOD
-($p$ between \DomWiodPMin{} and \DomWiodPMax{}).
+($p$ between \DomWiodPMin{} and \DomWiodPMax{}). Section~\ref{sec:h2} shows why.
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \centering
-\caption{Chain length at the start of the window and growth of GDP per hour over
-it. Coefficients per standard deviation of the depth measure, in percentage
+\caption{H1. Chain length at the start of the window and growth of GDP per hour
+over it. Coefficients per standard deviation of the depth measure, in percentage
 points a year, controlling for the initial PPP level of GDP per hour.
 Permutation $p$-values (4,999 draws).}
 \label{tab:main}
 \input{tables/main.tex}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{10_replication.png}
 \caption{Chain length and later productivity growth in two independent databases.
@@ -324,17 +377,61 @@ not driven by them, but with 26--29 countries left it is only marginally
 significant. Second, integration in global supply chains: Farmer's measure rises
 mechanically with imported inputs. Controlling for import intensity, the WIOD
 results hold ($p\le\ImpWiodPMax$), while the ICIO results do not ($p$ between
-\ImpIcioHourPMin{} and \ImpIcioPcPMax{}). With 30 countries we cannot separate
-long chains from participation in global value chains in that sample.
-Figure~\ref{fig:hold} puts all tests on one scale.
+\ImpIcioHourPMin{} and \ImpIcioPcPMax{}). Figure~\ref{fig:hold} puts all tests of
+H1 on one scale.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.85\textwidth]{11_does_it_hold.png}
-\caption{Every test of the growth claim with Farmer's measure. Points are
-estimates per standard deviation; lines are 95\% analytic intervals; filled
-points are significant at 5\% by resampling.}
+\caption{Every test of H1 with Farmer's measure. Points are estimates per standard
+deviation; lines are 95\% analytic intervals; filled points are significant at 5\%
+by resampling.}
 \label{fig:hold}
+\end{figure}
+
+\subsection{H2: does it matter where the steps happen?}\label{sec:h2}
+
+Table~\ref{tab:hyp} and Figure~\ref{fig:homeabroad} estimate
+equation~\eqref{eq:h}. \textbf{Both halves of the chain predict growth.} In WIOD,
+one standard deviation of steps at home goes with
+\HomeWiodBetaMin{}--\HomeWiodBetaMax{} percentage points a year
+($p\le\HomeWiodPMax$), and one standard deviation of steps abroad with
+\AbroadWiodBetaMin{}--\AbroadWiodBetaMax{} ($p\le\AbroadWiodPMax$). In ICIO the
+estimates are similar, \HomeIcioBetaMin{}--\HomeIcioBetaMax{} at home ($p$ between
+\HomeIcioPMin{} and \HomeIcioPMax{}) and \AbroadIcioBetaMin{}--\AbroadIcioBetaMax{}
+abroad ($p\le\AbroadIcioPMax$). Pooled windows agree (WIOD: home
+\PoolHomeWiod{}, \PoolHomeWiodP; abroad \PoolAbroadWiod{}, \PoolAbroadWiodP).
+
+\textbf{H2 directly.} Holding total chain length fixed, more of it at home adds
+little: the coefficient on $\Lhome$ is positive in every full-sample window but never
+significant ($p$ between \HtwoPMin{} and \HtwoPMax{}). Expressed per step, a step
+at home is worth an estimated \PremMin--\PremMax\% more than a generic step in
+WIOD, with 95\% intervals that span \PremLoMin\% to $+$\PremHiMax\%. We therefore
+find no detectable premium for location, and cannot rule out a moderate one.
+
+This also explains the weak results of the domestic measure. The two halves are
+negatively correlated across countries (\CorrHomeAbroadWiod{} in WIOD): economies
+with long chains at home tend to take fewer steps abroad, and vice versa. A
+measure that sees only the home half omits a part that predicts growth just as
+well, and that part pulls the other way.
+
+\begin{table}[!htbp]
+\centering
+\caption{H2. Growth of GDP per hour on the two parts of chain length, with the
+catch-up control. Top: each part's effect (per standard deviation). Bottom: the
+coefficient on steps at home when total chain length is also included, i.e.\ the
+premium of a home step. Permutation (cross-sections) and wild-cluster bootstrap
+(pooled windows) $p$-values.}
+\label{tab:hyp}
+\input{tables/hypotheses.tex}
+\end{table}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{14_home_vs_abroad.png}
+\caption{Steps at home and steps abroad: growth (left) and industry prices
+(right).}
+\label{fig:homeabroad}
 \end{figure}
 
 \subsection{Chains or the industries in them?}
@@ -354,7 +451,7 @@ own improvements (\FinalPartB{}, $p=\FinalPartP$). As Section~\ref{sec:theory}
 warned, these last two results are close to accounting identities and are best
 read as a consistency check of the framework, not as independent evidence.
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \centering
 \caption{Amplification versus composition, WIOD, growth of GDP per hour
 2000--2014. All regressions include the catch-up control.}
@@ -370,7 +467,7 @@ without cross-country differences in chain length and \FcPastCorr{} for
 ``past growth continues''. The gain is real but modest, and the period includes
 the global financial crisis.
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \centering
 \caption{Zero-parameter forecasts of mean growth of GDP per hour, 2007--2014,
 from information available in 2007 (\FcN{} economies).}
@@ -378,7 +475,7 @@ from information available in 2007 (\FcN{} economies).}
 \input{tables/forecast.tex}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{13_chains_or_links.png}
 \caption{Left: chain length and industry productivity growth across economies.
@@ -390,7 +487,8 @@ Right: zero-parameter forecast of 2007--2014 growth.}
 
 The cross-country pattern does not carry over to changes within a country. With
 country fixed effects, the WIOD estimate is imprecise ($p=\WithinWiodP$) and the
-ICIO estimate is close to zero ($p=\WithinIcioP$). A country whose chains
+ICIO estimate is close to zero ($p=\WithinIcioP$); neither the home nor the
+abroad part is significant within countries either (\texttt{hypotheses\_results.csv}). A country whose chains
 lengthen over three years does not grow detectably faster over the next three
 (WIOD $p=\DeepWiodP$; ICIO $p=\DeepIcioP$). An earlier version of our own study
 reported such a ``deepening'' effect with the domestic measure on ICIO; it
@@ -405,14 +503,15 @@ The mechanism requires that industries with longer chains see their prices fall
 faster relative to wages. Across \PriceN{} WIOD industries, comparing industries
 within the same country, they do: one standard deviation of the multiplier goes
 with \PriceBeta{} percentage points a year (\PriceP; Figure~\ref{fig:prices},
-left). Comparing the \emph{same} industry across countries, the relation
-disappears (\PriceIndBeta{}, $p=\PriceIndP$; right). The first result fits the
-mechanism, but it also fits a simpler story in which long-chain industries such
-as manufacturing improve faster on their own; the second suggests that, within
-an industry, how long its chain happens to be in a given country does not change
-how fast its price falls.
+left). Splitting each industry's chain as in equation~\eqref{eq:split}, the
+decline comes with the stages \emph{abroad} (\PriceAbroadBeta{},
+\PriceAbroadP) rather than those at home (\PriceHomeBeta{}, $p=\PriceHomeP$;
+Figure~\ref{fig:homeabroad}, right): industries become cheaper as their foreign
+suppliers improve, which is the border-blind channel of H1. Comparing the
+\emph{same} industry across countries, the relation disappears (\PriceIndBeta{},
+$p=\PriceIndP$; Figure~\ref{fig:prices}, right), for both parts.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{12_price_mechanism.png}
 \caption{Industry price changes relative to wages, 2000--2014, against the 2000
@@ -423,46 +522,52 @@ means (right). Blue points are averages of 5\% bins.}
 
 \section{Discussion: what have we learned?}\label{sec:discussion}
 
-The production-network view of growth passes a demanding replication. On a
-different database and a later period, using the outcome the original authors
-chose, the cross-country link between chain length and productivity growth is
-about as strong as originally reported, and it survives the controls a sceptic
-would try first. That is not common for a single-correlation result in
-cross-country growth research.
+\paragraph{On H1.} The production-network view of growth passes a demanding
+replication. On a different database and a later period, using the outcome the
+original authors chose, the cross-country link between chain length and
+productivity growth is about as strong as originally reported, and it survives
+the controls a sceptic would try first. About a quarter of it is composition. As
+a forecasting tool, chain length adds a little.
 
-What the evidence supports is a regularity \emph{between} economies, not yet a
-lever \emph{within} them. Three readings are consistent with what we find.
-\begin{enumerate}
-\item \textbf{Amplification is real but slow.} Chain length moves slowly and the
-effect works over decades; ten to fifteen years of annual tables leave too
-little within-country variation to detect it. Longer panels (the 2025 OECD
-edition covers 1995--2022) are the natural next test.
-\item \textbf{Chain length marks a type of economy.} Long chains go with
-manufacturing, integration in global supply chains and catch-up. Part of the
-pattern is composition (\AmpShare\%), and in the ICIO sample long chains cannot be
-separated from imported inputs. On this reading, chain length is a good summary
-statistic of a growth-friendly structure rather than its cause.
-\item \textbf{The mechanism operates across industry types.} The price evidence
-fits a world in which long-chain industries are the ones where technology
-improves fastest, which would make the network a channel for diffusion rather
-than an independent multiplier.
-\end{enumerate}
+\paragraph{On H2.} We expected the home part of the chain to matter more, for
+reasons rooted in how GDP is measured and in how capabilities are built. The data
+do not show it: steps at home and steps abroad predict growth by similar amounts,
+and industry prices fall with the steps abroad. Two readings fit. Either the
+price channel of the model dominates, so that joining long chains, wherever their
+steps are, is what counts; or a home premium of moderate size exists but is
+beyond the power of 30--43 countries to detect. Either way, the evidence offers
+no support for the idea that moving steps home (reshoring) raises growth by more
+than taking part in those steps abroad, and no proof that it does not. What it
+does show clearly is that measuring only the home half of a chain, as is often
+done, leads to the wrong conclusion that chain length does not matter.
 
-For policy, the safe conclusion is modest. Countries that participate in long
-production chains have tended to grow faster, and measuring chains on the
-domestic table alone misses the point for small open economies. Whether
-deliberately lengthening chains would raise growth is not something these data
-can settle.
+\paragraph{Between, not within.} The evidence supports a regularity between
+economies, not yet a lever within them. Chain length moves slowly and its effect
+may work over decades, beyond what 10--15 years of annual tables can detect;
+longer panels (the 2025 OECD edition covers 1995--2022) are the natural next
+test. Alternatively, chain length marks a type of economy (manufacturing,
+integrated, catching up) rather than causing its growth. The price evidence fits
+a world in which long-chain industries are the ones where technology improves
+fastest, which would make the network a channel for diffusion rather than an
+independent multiplier.
 
 \section{Limitations}\label{sec:limits}
 
 \begin{itemize}
+\item \textbf{Location, not ownership.} Our home/abroad split follows where steps
+are performed. A step done in Ireland by a foreign multinational counts as home.
+Testing ownership would require tables split by firm ownership (the OECD analytical
+AMNE database); we leave it for future work.
+\item \textbf{A first-border split.} $L^{\text{home}}$ cuts each chain at the
+first imported input; home steps that lie behind a foreign step count as abroad.
+The finer decomposition of \citet{wang2017} would refine both parts.
 \item \textbf{Small samples.} 30--43 countries; we use resampling inference and
-report all estimates, but power is limited, especially in subsamples.
-\item \textbf{Many specifications.} The main grid has \NEstimates{} estimates. We
-present them all rather than choosing; the pattern is consistent in sign across
-the cross-country rows, but individual $p$-values should be read with that in
-mind.
+report all estimates, but power is limited, especially in subsamples and for H2,
+where the question is a difference between two coefficients.
+\item \textbf{Many specifications.} The main grid has \NEstimates{} estimates plus
+the H2 and amplification tests. We present them all; the pattern is consistent in
+sign across the cross-country rows, but individual $p$-values should be read with
+that in mind.
 \item \textbf{Nominal tables.} Input coefficients come from tables at current
 prices, so chain length can move with relative prices (for example, oil).
 \item \textbf{Aggregation.} With 45--56 industries, part of every chain is hidden
@@ -471,14 +576,24 @@ common classification.
 \item \textbf{Productivity measurement.} $\gamma$ uses persons engaged rather than
 hours (hours are missing for China), the main variant omits capital, and missing
 industries are imputed.
-\item \textbf{Multinational accounting.} Profit shifting inflates measured output
-in economies such as Ireland and Luxembourg.
 \item \textbf{An error we corrected.} A first run of our tests measured the
 catch-up control in national currency units, which made it meaningless across
 countries. Correcting it (to PPP levels) reduced the cross-country coefficients by
-about a third and changed one conclusion (the convergers' role). All results here
-use the corrected control.
+about a third and changed one conclusion (the convergers' role). An early,
+informal comparison of home and abroad steps also mixed two weighting schemes and
+overstated the home part; the split in equation~\eqref{eq:split} uses the same
+weights for both. All results here use the corrected versions.
 \end{itemize}
+
+\section{Conclusion}
+
+Longer production chains go with faster productivity growth across countries, in
+two databases and over two decades, as \citet{mcnerney2022} proposed. Asking
+where those chains are located adds a twist: the steps taken abroad count about as
+much as the steps taken at home, and leaving them out hides the relationship.
+Whether a country can grow faster by lengthening its chains, and whether it should
+do so at home or by plugging into chains abroad, are the questions this evidence
+raises rather than settles.
 
 \section{Reproducibility}\label{sec:repro}
 
@@ -499,7 +614,12 @@ interests related to this work.
 \bibliography{refs}
 
 \appendix
-\section{All estimates}\label{app:all}
+\section{Main grid of estimates}\label{app:all}
+{\sloppy Tests of H1 and the within-country and price tests. The H2 estimates are in
+Table~\ref{tab:hyp} and in the file \texttt{hypotheses\_results.csv}; the
+amplification estimates are in Table~\ref{tab:amp} and in
+\texttt{amplification\_results.csv}.\par}
+
 {\footnotesize
 \setlength{\tabcolsep}{4pt}
 \input{tables/appendix_all.tex}

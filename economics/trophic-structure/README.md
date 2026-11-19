@@ -6,7 +6,21 @@ publication-ready figures. Inspired by J. Doyne Farmer, *Making Sense of Chaos* 
 
 ![Does it hold?](figures/11_does_it_hold.png)
 
-## v2 (November 2026): does it hold?
+## v2 (November 2026): two hypotheses
+
+This study tests two hypotheses about production chains and growth:
+
+- **H1 (Farmer / McNerney et al.)**: economies with **longer** production chains grow
+  faster, because productivity gains compound along every chain. Where the production
+  steps happen doesn't matter.
+- **H2 (this study)**: **where** the steps happen also matters. The part of the chain
+  located **at home** should predict growth beyond total length, because GDP counts
+  domestic production and domestic steps build domestic capabilities.
+
+To test H2, each country's chain length is split exactly into **steps at home** and
+**steps abroad** (same weights for both; they add up to Farmer's measure). In 2019 Italy's
+chains count 2.02 steps: 1.71 at home + 0.31 abroad. Ireland's: 1.15 at home + 0.76
+abroad.
 
 v1 measured depth differently from the paper it was testing. McNerney, Savoie,
 Caravelli, Carvalho & Farmer (PNAS 2022) solve the **whole world** input-output table
@@ -38,21 +52,27 @@ growth claim harder than v1 did:
 | ...without China, Vietnam and the post-2004 EU members? | About as large (+0.5 to +0.7), but with fewer countries only borderline significant (p = 0.05–0.09). |
 | Does a country grow faster after **its own** chains lengthen? | **Not detectably.** Within-country estimates are noisy (p = 0.24, 0.81). v1's "deepening" result (p = 0.025 in its own sample) does not replicate on WIOD (p = 0.47). |
 | Is it the chains, or faster industries inside them? | **Mostly the chains.** Long-chain economies also had faster-improving industries (r = 0.43), which explains about 26% of the cross-country slope; the rest remains (p < 0.001). A zero-parameter forecast, chain length (2007) × industry productivity growth (2000–07), predicts 2007–14 growth slightly better than benchmarks (correlation 0.64 vs 0.55 without chain-length differences and 0.62 for "past growth continues"). See figure 13 and `amplification_tests.py`. |
-| Do prices fall faster at the end of long chains? | **Between industry types, yes** (−0.27 points a year per SD, p < 0.001). For the **same industry in different countries, no** (p = 0.70). This can't yet be told apart from manufacturing simply having faster productivity growth. |
+| **H2: does a step at home count more than a step abroad?** | **No detectable difference.** Both halves predict growth by similar amounts (WIOD: home +0.74 to +0.80 per SD, abroad +0.56 to +0.58, both p ≤ 0.002). Holding total length fixed, more of it at home adds little: a home step is worth an estimated 19–32% more than a generic step in WIOD, but the 95% interval (−35% to +81%) includes zero, and the home coefficient is never significant (p = 0.24–0.93). Measuring only the home half misses a part that predicts growth just as well, which is why v1's domestic measure looked weak. See figure 14 and `hypotheses_tests.py`. |
+| Do prices fall faster at the end of long chains? | **Between industry types, yes** (−0.27 points a year per SD, p < 0.001), and the decline comes with the stages **abroad** (−0.29, p < 0.001), not those at home (p = 0.42): industries get cheaper as their foreign suppliers improve. For the **same industry in different countries, no** (p = 0.70). |
 
-**Bottom line.** Farmer's cross-country pattern replicates on two databases, with the
-paper's own outcome, and survives most of the checks a sceptic would throw at it. What
-this data can't show is the causal step: that lengthening a country's chains *makes* it
-grow faster, rather than long chains marking the kind of economy that grows.
+**Bottom line.** H1, Farmer's cross-country pattern, replicates on two databases, with
+the paper's own outcome, and survives most of the checks a sceptic would throw at it. On
+H2, steps abroad count about as much as steps at home: no detectable premium for location,
+though a moderate one can't be ruled out with 30–43 countries. What this data can't show
+is the causal step: that lengthening a country's chains, at home or abroad, *makes* it grow
+faster, rather than long chains marking the kind of economy that grows.
 
 All numbers come from `robustness_tests.py` → `robustness_results.csv` (55 estimates,
 fixed random seed) and `amplification_tests.py` → `amplification_results.csv`,
-`forecast_results.csv`. Figures 9–13 show the re-ranking, the replication, every test on
-one scale, the price mechanism, and composition vs amplification.
+`forecast_results.csv`, and `hypotheses_tests.py` → `hypotheses_results.csv` (H2).
+Figures 9–14 show the re-ranking, the replication, every test on one scale, the price
+mechanism, composition vs amplification, and steps at home vs abroad. The network figures
+(8 and `figures/networks/`) now draw both halves of every chain.
 
 **Paper.** The full write-up is a working paper: [`paper/main.pdf`](paper/main.pdf),
-*"Do Longer Production Chains Make Economies Grow Faster? An independent replication and
-stress test of the production-network amplification hypothesis"* (draft v0.1). Every number
+*"Do Longer Production Chains Make Economies Grow Faster, and Does It Matter Where the
+Chain Is? A replication of the production-network amplification hypothesis and a test of
+the role of location"* (draft v0.2). Every number
 in it is generated from the result files by `paper/make_numbers.py`.
 
 > **Correction to v1.** The README previously said trophic level "equals the row sums
@@ -149,7 +169,8 @@ python3 fetch_pwt.py             # Penn World Table 11.0 -> pwt_growth.csv (need
 python3 robustness_tests.py      # -> robustness_results.csv, price_test_sample.csv (~5 min)
 python3 build_productivity.py    # industry productivity growth -> wiod_gamma.csv, wiod_amplification.csv
 python3 amplification_tests.py   # -> amplification_results.csv, forecast_results.csv
-python3 make_v2_figures.py       # -> figures/9..13 .png
+python3 hypotheses_tests.py      # H1 vs H2: steps at home vs abroad -> hypotheses_results.csv (~5 min)
+python3 make_v2_figures.py       # -> figures/9..14 .png
 
 # --- the paper ---
 python3 paper/make_numbers.py    # -> paper/numbers.tex, paper/tables/*.tex
@@ -234,11 +255,15 @@ panel — but pointing his way. See `figures/5–7`.
    then grew faster.
 7. **`7_specification_curve.png`** — *(v1; superseded by figure 11)* the honesty plot: the growth link appears *only* in
    the dynamic, within-country specifications, not the naive correlation.
-8. **`8_network_DEU_SAU.png`** — the production network itself, Farmer-style. Sectors are
-   stacked vertically by trophic level; node size = output, inner pink = self-flow, outer
-   green = throughflow, ring colour = production community, arrows = the heaviest flows.
-   Germany spreads up the chain; Saudi Arabia sits on one giant low-trophic mining node.
-   Run `network_viz.py` with any country codes to render others.
+8. **`8_network_DEU_SAU.png`** — the production network itself, Farmer-style, showing both
+   halves of every chain. Height = production stages behind each sector, counting steps
+   abroad; the hollow dot below each node = stages at home only (the dashed line between
+   them = steps abroad). Fill = share of inputs imported; size = gross output; ring =
+   production community (colours have no fixed meaning); pink = the sector's purchases from
+   itself; green arrows = largest domestic flows; blue arrows = largest imports, from a
+   "Rest of world" node. Left-right position carries no information. Germany: 1.99 stages
+   = 1.63 at home + 0.36 abroad; Saudi Arabia: 1.65 = 1.42 + 0.23, with one giant
+   low-level mining node. Run `network_viz.py` with any country codes to render others.
 9. **`9_measure_rerank.png`** *(v2)*: the same 30 economies ranked by v1's domestic
    depth and by Farmer's global measure. Rank correlation 0.45.
 10. **`10_replication.png`** *(v2)*: chain length vs later growth of GDP per hour, on two
@@ -249,6 +274,8 @@ panel — but pointing his way. See `figures/5–7`.
     within countries and within industries.
 13. **`13_chains_or_links.png`** *(v2)*: do long chains come with faster-improving
     industries (composition), and does chain length help forecast growth ahead?
+14. **`14_home_vs_abroad.png`** *(v2, H2)*: steps at home vs steps abroad, for growth and
+    for industry prices.
 
 ## Caveats
 

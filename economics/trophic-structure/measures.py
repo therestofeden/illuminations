@@ -18,6 +18,12 @@ Also exposed:
   domar          gross output / value added. A closed-economy identity makes it
                  equal to L̄; in open economies it tracks L̄ closely and is easy
                  to explain ("euros of sales per euro of value added").
+  home_depth     the same final-demand weights, but multipliers solved on the
+                 country's own block (imported inputs treated like labour): the
+                 production steps that happen at home.
+  abroad_depth   farmer_depth - home_depth: the steps that happen abroad.
+                 (A cruder but transparent version of the domestic/foreign
+                 decomposition of production length in Wang, Wei, Yu & Zhu 2017.)
   import_int     imported intermediate inputs / gross output. The obvious
                  confounder: a country can have long chains simply because it is
                  plugged into foreign supply chains.
@@ -74,6 +80,10 @@ def _world_measures(labels, Z, x, y, va, codes):
         crow.append(dict(
             code=c,
             farmer_depth=float(wy @ Lg[k]),          # headline (PNAS eq. 5)
+            # same final-demand weights, chain cut at the border: steps reachable
+            # without leaving the country. farmer_depth = home_depth + abroad_depth
+            home_depth=float(wy @ Ld),
+            abroad_depth=float(wy @ (Lg[k] - Ld)),
             domestic_depth=float(wx @ Ld),           # v1 headline
             global_depth_outw=float(wx @ Lg[k]),     # v1 "global" number
             domar=float(xc.sum() / va[k].sum()),
@@ -101,4 +111,5 @@ if __name__ == "__main__":
     b = {r["code"]: r for r in c}["BBB"]
     assert np.isclose(b["farmer_depth"], 3) and np.isclose(b["domestic_depth"], 1), b
     assert np.isclose(b["import_int"], 1.0), b
+    assert np.isclose(b["home_depth"], 1) and np.isclose(b["abroad_depth"], 2), b
     print("measures.py self-tests passed")

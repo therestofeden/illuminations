@@ -13,7 +13,8 @@ from countries import COUNTRIES, ARCHETYPE_COLOR
 
 name_of = {c: n for c, n, _ in COUNTRIES}
 desc = pd.read_csv("network_descriptors.csv").set_index("code")
-order = desc.sort_values("depth", ascending=False).index.tolist()
+cl = pd.read_csv("icio_country_year.csv").query("year == 2019").set_index("code")
+order = cl.sort_values("farmer_depth", ascending=False).index.tolist()   # Farmer's chain length
 
 LAB = {"G": "wholesale & retail trade", "F": "construction", "M": "professional services",
        "A01_02": "agriculture", "C10T12": "food processing", "K": "finance"}
@@ -27,11 +28,11 @@ with PdfPages(OUT) as pdf:
     fig.text(0.5, 0.63, "The structure of production, sector by sector", ha="center",
              fontsize=15, color="#666", style="italic")
     fig.text(0.5, 0.45,
-             "Each economy is drawn as a production network: sectors stacked vertically\n"
-             "by trophic level (raw inputs low, final-facing sectors high). Node size =\n"
-             "gross output; inner pink = self-flow; outer green = throughflow; ring colour\n"
-             "= production community; arrows = the largest inter-sector flows.\n\n"
-             "Pages are ordered from the deepest production chains to the shallowest.",
+             "Each economy is drawn as a production network. Height = production stages\n"
+             "behind each sector, counting steps abroad; the hollow dot below each node marks\n"
+             "the stages done at home. Fill = share of inputs imported; size = gross output;\n"
+             "ring = production community; arrows = largest domestic flows and imports.\n\n"
+             "Pages are ordered from the longest production chains to the shortest.",
              ha="center", fontsize=12, color="#333", linespacing=1.6)
     fig.text(0.5, 0.10,
              "Source: OECD ICIO 2023 edition, year 2019.  Method: McNerney et al. (PNAS 2022); "
@@ -54,7 +55,9 @@ with PdfPages(OUT) as pdf:
         fig.text(0.04, 0.915, d["archetype"], fontsize=11, color=col,
                  weight="bold", va="center")
         hub = LAB.get(d["top_hub"], d["top_hub"])
-        cap = (f"trophic depth {d['depth']:.2f}   ·   incoherence {d['incoherence']:.2f}   ·   "
+        c2 = cl.loc[code]
+        cap = (f"chain length {c2.farmer_depth:.2f} = {c2.home_depth:.2f} at home + "
+               f"{c2.abroad_depth:.2f} abroad   ·   "
                f"central hub: {hub}   ·   {int(d['n_comm'])} production communities   ·   "
                f"intermediation {d['intermediation_share']*100:.0f}% of output")
         fig.text(0.5, 0.055, cap, ha="center", fontsize=10, color="#444")
