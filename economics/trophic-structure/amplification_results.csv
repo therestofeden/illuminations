@@ -1,0 +1,14 @@
+spec,variant,n,r2,b_L_bar,t_L_bar,p_L_bar,pperm_L_bar,beta_sd_L_bar,b_gamma_tilde,t_gamma_tilde,p_gamma_tilde,pperm_gamma_tilde,b_pred_network,t_pred_network,p_pred_network,pperm_pred_network,b_pred_no_network,t_pred_no_network,p_pred_no_network,pperm_pred_no_network,b_network_part,t_network_part,p_network_part,pperm_network_part,corr
+1 chain length + catch-up,all 43,42,0.74904,4.24121,4.63714,4e-05,0.0004,0.70276,,,,,,,,,,,,,,,,,
+2 + industry productivity growth γ̃,all 43,42,0.88498,3.12501,4.92506,2e-05,0.0002,0.51781,1.74889,8.13809,0.0,0.0002,,,,,,,,,,,,,
+3 full model prediction,all 43,42,0.84877,,,,,,,,,,1.07781,10.04106,0.0,0.0002,,,,,,,,,
+4 final-stage + network part,all 43,42,0.8581,,,,,,,,,,,,,,0.40746,0.90442,0.37147,0.413,1.47942,3.91912,0.00036,0.0112,
+"corr(L_bar, gamma_tilde)",all 43,42,0.18546,,,,,,,,,,,,,,,,,,,,,,0.43065
+1 chain length + catch-up,excl. Russia (41% imputed),41,0.74701,4.35295,4.56662,5e-05,0.0006,0.72651,,,,,,,,,,,,,,,,,
+2 + industry productivity growth γ̃,excl. Russia (41% imputed),41,0.884,3.20378,4.87647,2e-05,0.0002,0.53472,1.74153,7.97842,0.0,0.0002,,,,,,,,,,,,,
+3 full model prediction,excl. Russia (41% imputed),41,0.84683,,,,,,,,,,1.08418,10.07694,0.0,0.0002,,,,,,,,,
+4 final-stage + network part,excl. Russia (41% imputed),41,0.85688,,,,,,,,,,,,,,0.39411,0.86784,0.39108,0.4346,1.50057,3.98389,0.00031,0.0096,
+1 chain length + catch-up,γ net of capital,42,0.74904,4.24121,4.63714,4e-05,0.0016,0.70276,,,,,,,,,,,,,,,,,
+2 + industry productivity growth γ̃,γ net of capital,42,0.82856,3.49833,4.56216,5e-05,0.001,0.57967,1.4896,3.98238,0.0003,0.0022,,,,,,,,,,,,,
+3 full model prediction,γ net of capital,42,0.75892,,,,,,,,,,1.09632,4.53664,5e-05,0.0004,,,,,,,,,
+4 final-stage + network part,γ net of capital,42,0.80942,,,,,,,,,,,,,,-0.6415,-0.96898,0.33868,0.371,3.01252,5.37845,0.0,0.0002,

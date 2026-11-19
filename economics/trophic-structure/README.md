@@ -37,6 +37,7 @@ growth claim harder than v1 did:
 | ...after controlling for imported inputs? | Yes on WIOD (p ≤ 0.005). No on ICIO (p = 0.12–0.61). Long chains and supply-chain integration are hard to separate with 30 countries. |
 | ...without China, Vietnam and the post-2004 EU members? | About as large (+0.5 to +0.7), but with fewer countries only borderline significant (p = 0.05–0.09). |
 | Does a country grow faster after **its own** chains lengthen? | **Not detectably.** Within-country estimates are noisy (p = 0.24, 0.81). v1's "deepening" result (p = 0.025 in its own sample) does not replicate on WIOD (p = 0.47). |
+| Is it the chains, or faster industries inside them? | **Mostly the chains.** Long-chain economies also had faster-improving industries (r = 0.43), which explains about 26% of the cross-country slope; the rest remains (p < 0.001). A zero-parameter forecast, chain length (2007) × industry productivity growth (2000–07), predicts 2007–14 growth slightly better than benchmarks (correlation 0.64 vs 0.55 without chain-length differences and 0.62 for "past growth continues"). See figure 13 and `amplification_tests.py`. |
 | Do prices fall faster at the end of long chains? | **Between industry types, yes** (−0.27 points a year per SD, p < 0.001). For the **same industry in different countries, no** (p = 0.70). This can't yet be told apart from manufacturing simply having faster productivity growth. |
 
 **Bottom line.** Farmer's cross-country pattern replicates on two databases, with the
@@ -45,8 +46,14 @@ this data can't show is the causal step: that lengthening a country's chains *ma
 grow faster, rather than long chains marking the kind of economy that grows.
 
 All numbers come from `robustness_tests.py` → `robustness_results.csv` (55 estimates,
-fixed random seed). Figures 9–12 show the re-ranking, the replication, every test on one
-scale, and the price mechanism.
+fixed random seed) and `amplification_tests.py` → `amplification_results.csv`,
+`forecast_results.csv`. Figures 9–13 show the re-ranking, the replication, every test on
+one scale, the price mechanism, and composition vs amplification.
+
+**Paper.** The full write-up is a working paper: [`paper/main.pdf`](paper/main.pdf),
+*"Do Longer Production Chains Make Economies Grow Faster? An independent replication and
+stress test of the production-network amplification hypothesis"* (draft v0.1). Every number
+in it is generated from the result files by `paper/make_numbers.py`.
 
 > **Correction to v1.** The README previously said trophic level "equals the row sums
 > of the Leontief inverse". The code computes `(I − Aᵀ)⁻¹ 1`, the **column** sums (the
@@ -140,7 +147,13 @@ bash download_wiod.sh            # WIOD 2016 release -> wiod_data/ (~640 MB down
 python3 build_wiod.py            # -> wiod_country_year.csv, wiod_industry_2000.csv
 python3 fetch_pwt.py             # Penn World Table 11.0 -> pwt_growth.csv (needs internet)
 python3 robustness_tests.py      # -> robustness_results.csv, price_test_sample.csv (~5 min)
-python3 make_v2_figures.py       # -> figures/9..12 .png
+python3 build_productivity.py    # industry productivity growth -> wiod_gamma.csv, wiod_amplification.csv
+python3 amplification_tests.py   # -> amplification_results.csv, forecast_results.csv
+python3 make_v2_figures.py       # -> figures/9..13 .png
+
+# --- the paper ---
+python3 paper/make_numbers.py    # -> paper/numbers.tex, paper/tables/*.tex
+(cd paper && latexmk -pdf main.tex)   # -> paper/main.pdf
 
 # --- rebuild the interactive dashboard ---
 npm install d3                   # one-off: provides D3 to inline
@@ -234,6 +247,8 @@ panel — but pointing his way. See `figures/5–7`.
     resampling p-values.
 12. **`12_price_mechanism.png`** *(v2)*: industry price declines vs output multiplier,
     within countries and within industries.
+13. **`13_chains_or_links.png`** *(v2)*: do long chains come with faster-improving
+    industries (composition), and does chain length help forecast growth ahead?
 
 ## Caveats
 

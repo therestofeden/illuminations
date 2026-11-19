@@ -1,0 +1,5 @@
+forecast,rmse,corr,n
+Farmer: L̄(2007) x γ̃(2000-07),2.1936,0.6433,42
+"same γ̃, average chain length",2.2087,0.5542,42
+past growth 2000-07 (persistence),2.4627,0.6206,42
+everyone grows at the 2000-07 average,2.4149,0.0,42

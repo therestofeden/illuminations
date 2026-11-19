@@ -9,3 +9,12 @@ __pycache__/
 
 # v2: WIOD tables (~830 MB), fetch via download_wiod.sh
 wiod_data/
+
+# LaTeX build artefacts (main.pdf is committed)
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out

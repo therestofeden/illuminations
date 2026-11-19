@@ -237,3 +237,69 @@ fig.tight_layout(rect=[0, 0.025, 1, 0.89])
 fig.savefig("figures/12_price_mechanism.png", bbox_inches="tight")
 plt.close(fig)
 print("figures 9-12 written")
+
+# === 13. Chains or links? composition vs amplification, and the forecast ======
+amp = pd.read_csv("wiod_amplification.csv")
+ares = pd.read_csv("amplification_results.csv")
+fres = pd.read_csv("forecast_results.csv").set_index("forecast")
+fs = pd.read_csv("forecast_sample.csv", index_col=0)
+a = amp[(amp.gamma_def == "gamma") & (amp.y0 == 2000) & (amp.y1 == 2014)].set_index("code")
+base = ares[(ares.variant == "all 43") & ares.spec.str.startswith("1 ")].iloc[0]
+ctrl = ares[(ares.variant == "all 43") & ares.spec.str.startswith("2 ")].iloc[0]
+fig, axes = plt.subplots(1, 2, figsize=(13, 6.2))
+ax = axes[0]
+ax.scatter(a.L_bar, a.gamma_tilde, s=46, color=BLUE, edgecolor="white", linewidth=1.5, zorder=3)
+k1, k0 = np.polyfit(a.L_bar, a.gamma_tilde, 1)
+xs = np.linspace(a.L_bar.min(), a.L_bar.max(), 20)
+ax.plot(xs, k0 + k1 * xs, color=MUST, lw=2.2, zorder=2)
+for c in ["CHN", "SVK", "CZE", "KOR", "USA", "DEU", "MEX", "IRL", "LUX", "ROU", "GRC"]:
+    if c in a.index:
+        ax.annotate(name_of.get(c, c), (a.L_bar[c], a.gamma_tilde[c]), xytext=(5, 4),
+                    textcoords="offset points", fontsize=8, color=MUTED)
+r = np.corrcoef(a.L_bar, a.gamma_tilde)[0, 1]
+share = 1 - ctrl.b_L_bar / base.b_L_bar
+ax.text(0.02, 0.97, f"r = {r:+.2f}. Long-chain economies also had faster-improving\n"
+        f"industries. Holding that fixed, the chain-length effect on growth\n"
+        f"shrinks by about {share:.0%} ({base.b_L_bar:.1f} → {ctrl.b_L_bar:.1f}) but stays clear "
+        f"(p {'< 0.001' if ctrl.pperm_L_bar < 0.001 else '= %.3f' % ctrl.pperm_L_bar}).",
+        transform=ax.transAxes, va="top", fontsize=8.8, color=INK)
+ax.axhline(0, color="#e2e2e2", lw=1, zorder=0)
+ax.set_title("Composition: do long chains come with faster industries?", loc="left",
+             fontsize=10.5, weight="bold")
+ax.set_xlabel("Chain length L̄, 2000")
+ax.set_ylabel("Industry productivity growth γ̃, 2000–2014 (% a year)")
+ax = axes[1]
+pred = fs.L07 * fs.gam_0007
+lim = [min(pred.min(), fs.actual.min()) - 0.5, max(pred.max(), fs.actual.max()) + 0.5]
+ax.plot(lim, lim, color="#bbbbbb", lw=1, ls=(0, (3, 3)), zorder=1)
+ax.text(lim[1], lim[1], "perfect forecast ", ha="right", va="bottom", fontsize=8, color=MUTED)
+ax.scatter(pred, fs.actual, s=46, color=BLUE, edgecolor="white", linewidth=1.5, zorder=3)
+for c in ["CHN", "IRL", "GRC", "SVK", "USA", "DEU", "LVA", "ROU", "LUX"]:
+    if c in fs.index:
+        ax.annotate(name_of.get(c, c), (pred[c], fs.actual[c]), xytext=(5, 4),
+                    textcoords="offset points", fontsize=8, color=MUTED)
+F = fres.loc["Farmer: L̄(2007) x γ̃(2000-07)"]
+S = fres.loc["same γ̃, average chain length"]
+P = fres.loc["past growth 2000-07 (persistence)"]
+ax.text(0.02, 0.97, f"Zero-parameter forecast: L̄(2007) × γ̃(2000–07).\n"
+        f"Correlation with outcome {F['corr']:.2f} vs {S['corr']:.2f} without chain-length\n"
+        f"differences and {P['corr']:.2f} for 'past growth continues'.\n"
+        f"RMSE {F.rmse:.2f} vs {S.rmse:.2f} and {P.rmse:.2f}: a modest gain.",
+        transform=ax.transAxes, va="top", fontsize=8.8, color=INK)
+ax.set_xlim(lim)
+ax.set_ylim(lim)
+ax.set_title("Forecast: does chain length help predict ahead?", loc="left",
+             fontsize=10.5, weight="bold")
+ax.set_xlabel("Forecast made in 2007 (% a year)")
+ax.set_ylabel("Actual growth of GDP per hour, 2007–2014 (% a year)")
+fig.suptitle("Is it the chains or the industries in them?", x=0.01, ha="left",
+             weight="bold", fontsize=13.5)
+fig.text(0.01, 0.905, "Farmer's model says growth ≈ chain length × industry productivity growth. "
+         "Part of the cross-country pattern is composition, most of it is not;\nas a forecasting "
+         "tool the chain-length term adds a little.", fontsize=9, color=MUTED, va="top")
+footer(fig, "Sources: WIOD 2016 (tables + Socio-Economic Accounts), Penn World Table 11.0. γ = gross-output "
+       "productivity growth (intermediates + labour). Left: 43 economies; right and all growth tests: 42 (no PWT data for Taiwan in 2000).")
+fig.tight_layout(rect=[0, 0.025, 1, 0.86])
+fig.savefig("figures/13_chains_or_links.png", bbox_inches="tight")
+plt.close(fig)
+print("figure 13 written")
