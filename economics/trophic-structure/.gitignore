@@ -6,3 +6,6 @@ icio_data/
 __pycache__/
 *.pyc
 .DS_Store
+
+# v2: WIOD tables (~830 MB), fetch via download_wiod.sh
+wiod_data/

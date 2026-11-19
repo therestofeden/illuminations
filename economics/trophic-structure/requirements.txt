@@ -4,3 +4,5 @@ matplotlib>=3.7
 statsmodels>=0.14
 networkx>=3.0
 python-louvain>=0.16
+scipy>=1.10
+openpyxl>=3.1

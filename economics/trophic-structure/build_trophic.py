@@ -29,7 +29,8 @@ sector_cols = {c: [h for h in df.columns if h.startswith(c + "_")] for c in code
 # ---- GLOBAL network: trophic level of every sector in the full ICIO ---------
 # A sector's suppliers include FOREIGN sectors, so chains are not truncated at
 # the border. This is the McNerney/Farmer global-value-chain trophic level.
-all_sectors = [s for s in df.columns if s in df.index]      # intermediate cells
+all_sectors = [s for s in df.columns                          # intermediate cells
+               if s in df.index and s not in ("OUT", "VA", "TLS")]   # (v2: drop totals)
 Zg = df.loc[all_sectors, all_sectors].to_numpy(float)
 xg = df.loc["OUT", all_sectors].to_numpy(float)
 tg = trophic_levels_io(Zg, xg)
